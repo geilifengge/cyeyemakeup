@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InquiryActions } from "./components/InquiryActions";
-import { SiteFooter, SiteHeader } from "./components/SiteShell";
+import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./components/SiteShell";
 import { JsonLd } from "./seo";
 import { baseUrl, company, getPage } from "./site-data";
 
@@ -180,8 +180,13 @@ export default function Home() {
               <li>Contact: {company.whatsappDisplay} and {company.email}</li>
             </ul>
           </div>
-          <div className="proof-card">
-            <img src="/images/business-license.jpg" alt="Business license for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
+          <div className="proof-card license-card">
+            <img
+              className="license-image"
+              src="/images/business-license-landscape.jpg"
+              alt="Business license for Chuangyuan Cosmetics Manufacturing"
+              loading="lazy"
+            />
           </div>
         </section>
 
@@ -217,9 +222,7 @@ export default function Home() {
         />
       </main>
       <SiteFooter />
-      <a className="mobile-whatsapp" href="#inquiry">
-        Send inquiry
-      </a>
+      <FloatingWhatsApp />
     </>
   );
 }

@@ -1,13 +1,18 @@
 import Link from "next/link";
 import { company, navItems } from "../site-data";
 
+const whatsappMessage = [
+  "Hello Venus beautiful,",
+  "I would like to request lash serum or mascara product details.",
+  "Please send catalog, MOQ, sample, packaging, and quote information.",
+].join("\n");
+
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/">
-        <span className="brand-mark">CY</span>
+        <img className="brand-logo" src="/images/logo.png" alt="Venus beautiful" />
         <span>
-          <strong>{company.brand}</strong>
           <small>Eye makeup supplier</small>
         </span>
       </Link>
@@ -43,5 +48,18 @@ export function SiteFooter() {
         <Link href="/faq">FAQ</Link>
       </div>
     </footer>
+  );
+}
+
+export function FloatingWhatsApp() {
+  return (
+    <a
+      className="floating-whatsapp"
+      href={`https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+      aria-label="Contact Venus beautiful on WhatsApp"
+    >
+      <span>WhatsApp</span>
+      <strong>{company.whatsappDisplay}</strong>
+    </a>
   );
 }

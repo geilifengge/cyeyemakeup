@@ -591,7 +591,7 @@ export const pages: Record<string, SitePage> = {
     eyebrow: "Company profile",
     summary:
       "Venus beautiful is the export brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM orders.",
-    heroImage: "/images/business-license.jpg",
+    heroImage: "/images/business-license-landscape.jpg",
     heroAlt: "Business license for Chuangyuan Cosmetics Manufacturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",

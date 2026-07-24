@@ -56,29 +56,24 @@ img {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 210px;
+  gap: 10px;
+  min-width: 230px;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  background: var(--blue);
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: 0;
+.brand-logo {
+  width: 148px;
+  height: 58px;
+  object-fit: contain;
 }
 
-.brand strong,
 .brand small {
   display: block;
 }
 
 .brand small {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 nav {
@@ -339,6 +334,11 @@ main {
   background: var(--mist);
 }
 
+.license-card {
+  min-height: 300px;
+  aspect-ratio: 16 / 9;
+}
+
 .proof-card img {
   position: absolute;
   inset: 0;
@@ -346,6 +346,10 @@ main {
   height: 100%;
   object-fit: contain;
   padding: 18px;
+}
+
+.proof-card .license-image {
+  padding: 14px;
 }
 
 .page-card-grid {
@@ -411,13 +415,15 @@ main {
 
 .process-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
-  gap: 48px;
+  grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
+  gap: clamp(28px, 4vw, 52px);
+  align-items: start;
 }
 
 .process-section ol {
   display: grid;
-  gap: 1px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -425,10 +431,12 @@ main {
 }
 
 .process-section li {
-  display: grid;
-  grid-template-columns: 68px 1fr;
-  gap: 18px;
-  padding: 24px;
+  display: flex;
+  min-height: 230px;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid var(--line);
+  padding: 22px;
   background: var(--soft);
   counter-increment: process;
 }
@@ -436,13 +444,20 @@ main {
 .process-section li::before {
   content: counter(process, decimal-leading-zero);
   color: var(--gold);
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 800;
+  line-height: 1;
 }
 
 .process-section strong {
   display: block;
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.process-section span {
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .content-grid {
@@ -491,7 +506,14 @@ summary {
 }
 
 .inquiry-panel {
-  margin: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: minmax(260px, 0.88fr) minmax(380px, 1.12fr);
+  gap: clamp(24px, 4vw, 44px);
+  width: calc(100% - clamp(40px, 10vw, 144px));
+  max-width: 1180px;
+  margin: clamp(44px, 7vw, 88px) auto;
+  padding: clamp(30px, 4vw, 52px);
+  align-items: start;
   background: var(--blue);
   color: #fff;
 }
@@ -499,6 +521,18 @@ summary {
 .inquiry-panel .panel-kicker,
 .inquiry-panel p {
   color: #cde8e4;
+}
+
+.inquiry-panel h2 {
+  font-size: clamp(30px, 4vw, 48px);
+}
+
+.inquiry-copy {
+  max-width: 560px;
+}
+
+.inquiry-copy .cta-row {
+  margin-top: 24px;
 }
 
 .inquiry-panel .button.primary {
@@ -514,9 +548,12 @@ summary {
 
 .mini-form {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px;
 }
 
 .mini-form label {
@@ -534,12 +571,13 @@ summary {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   font: inherit;
-  padding: 13px;
+  min-height: 44px;
+  padding: 11px 12px;
   outline: none;
 }
 
 .mini-form textarea {
-  min-height: 104px;
+  min-height: 88px;
   resize: vertical;
 }
 
@@ -600,26 +638,50 @@ summary {
   gap: 10px;
 }
 
-.mobile-whatsapp {
+.floating-whatsapp {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 30;
-  display: none;
-  min-height: 46px;
+  left: 18px;
+  bottom: 24px;
+  z-index: 40;
+  display: inline-flex;
+  min-width: 138px;
+  min-height: 58px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--teal);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  background: #168c56;
   color: #fff;
-  padding: 12px 16px;
+  padding: 10px 14px;
   font-weight: 800;
-  box-shadow: var(--shadow);
+  line-height: 1.2;
+  box-shadow: 0 18px 42px rgba(13, 62, 43, 0.26);
+}
+
+.floating-whatsapp span {
+  font-size: 16px;
+}
+
+.floating-whatsapp strong {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.92;
+}
+
+.floating-whatsapp:hover {
+  transform: translateX(2px);
+  background: #0d7948;
 }
 
 @media (max-width: 980px) {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .brand {
+    min-width: 0;
   }
 
   nav {
@@ -661,8 +723,17 @@ summary {
     grid-template-columns: 1fr;
   }
 
-  .mobile-whatsapp {
-    display: inline-flex;
+  .process-section ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inquiry-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-whatsapp {
+    bottom: 16px;
+    min-width: 132px;
   }
 }
 
@@ -693,5 +764,23 @@ summary {
 
   .proof-card {
     min-height: 260px;
+  }
+
+  .license-card {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .process-section ol {
+    grid-template-columns: 1fr;
+  }
+
+  .process-section li {
+    min-height: auto;
+  }
+
+  .inquiry-panel {
+    width: calc(100% - 32px);
   }
 }

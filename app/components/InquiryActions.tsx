@@ -116,17 +116,21 @@ export function InquiryActions({
 
   return (
     <div className="inquiry-panel" id="inquiry">
-      <div>
+      <div className="inquiry-copy">
         <p className="panel-kicker">Request product details</p>
         <h2>Send requirements for catalog, MOQ, samples, or quote.</h2>
-      </div>
-      <div className="cta-row">
-        <a className="button primary" href={primaryHref} data-cta={primaryLabel}>
-          {primaryLabel}
-        </a>
-        <a className="button secondary" href={secondaryHref} data-cta={secondaryLabel}>
-          {secondaryLabel}
-        </a>
+        <p>
+          Share product type, quantity, country, packaging, and service needs so the sales team can reply with practical
+          catalog and quotation details.
+        </p>
+        <div className="cta-row">
+          <a className="button primary" href={primaryHref} data-cta={primaryLabel}>
+            {primaryLabel}
+          </a>
+          <a className="button secondary" href={secondaryHref} data-cta={secondaryLabel}>
+            {secondaryLabel}
+          </a>
+        </div>
       </div>
       <form className="mini-form" onSubmit={onSubmit}>
         <label>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { InquiryActions } from "./InquiryActions";
-import { SiteFooter, SiteHeader } from "./SiteShell";
+import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./SiteShell";
 import { company, getPage, SitePage } from "../site-data";
 import { PageJsonLd } from "../seo";
 
@@ -79,8 +79,13 @@ export function PageTemplate({ page }: PageTemplateProps) {
               <li>Service options: wholesale, private label, light customization, and OEM support</li>
             </ul>
           </div>
-          <div className="proof-card">
-            <img src="/images/business-license.jpg" alt="Business license for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
+          <div className="proof-card license-card">
+            <img
+              className="license-image"
+              src="/images/business-license-landscape.jpg"
+              alt="Business license for Chuangyuan Cosmetics Manufacturing"
+              loading="lazy"
+            />
           </div>
         </section>
 
@@ -116,9 +121,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
         </section>
       </main>
       <SiteFooter />
-      <a className="mobile-whatsapp" href="#inquiry">
-        Send inquiry
-      </a>
+      <FloatingWhatsApp />
     </>
   );
 }
