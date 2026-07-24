@@ -60,7 +60,7 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-lash-serum",
     title: "Private Label Lash Serum Manufacturer | Venus beautiful",
     description:
-      "Private label lash serum supplier for beauty brands, wholesalers, and ecommerce sellers. Service details cover formula direction, packaging, logo, MOQ, samples, and OEM options.",
+      "Private label lash serum supplier for beauty brands, wholesalers, and ecommerce sellers. We provide formula direction, packaging, logo, MOQ, samples, and OEM support.",
     h1: "Private label lash serum for beauty brands and wholesale buyers",
     eyebrow: "Lash serum private label",
     summary:
@@ -83,9 +83,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Suitable orders",
+        title: "Who should order",
         body:
-          "Suitable for brand owners, beauty wholesalers, salons, and online sellers sourcing lash serum supply, private label packaging, or OEM support.",
+          "Suitable for brand owners, beauty wholesalers, salons, and online sellers looking for lash serum supply, private label packaging, or OEM support.",
         bullets: [
           "New beauty brands testing a lash serum line",
           "Distributors looking for wholesale lash care products",
@@ -196,7 +196,7 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-mascara-manufacturer",
     title: "Private Label Mascara Manufacturer | Venus beautiful",
     description:
-      "Private label mascara supplier for beauty brands and wholesale buyers. Service details cover mascara type, tube, brush, color, packaging, MOQ, and OEM needs.",
+      "Private label mascara supplier for beauty brands and wholesale buyers. We supply mascara options for tube, brush, color, packaging, MOQ, and OEM orders.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
@@ -219,9 +219,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Suitable orders",
+        title: "Who should order",
         body:
-          "For beauty brands, wholesalers, importers, and ecommerce sellers sourcing mascara supply, private label packaging, or OEM production.",
+          "For beauty brands, wholesalers, importers, and ecommerce sellers looking for mascara supply, private label packaging, or OEM production.",
         bullets: [
           "New brands launching eye makeup products",
           "Wholesalers adding mascara to an eye makeup catalog",
@@ -472,7 +472,7 @@ export const pages: Record<string, SitePage> = {
     h1: "Lash serum MOQ, samples, and lead time questions",
     eyebrow: "Buying questions",
     summary:
-      "Before ordering lash serum, buyers usually need to clarify MOQ, sample availability, packaging, quotation details, and timeline. This guide explains what to prepare.",
+      "Before ordering lash serum, prepare your MOQ, sample, packaging, and timeline requirements. Here is what to confirm before requesting a quotation.",
     heroImage: "/images/lash-serum-detail-1.jpeg",
     heroAlt: "Lash serum samples and packaging for buyer quotation",
     primaryCta: "Ask MOQ and samples",
@@ -493,7 +493,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Sample questions",
         body:
-          "Samples help buyers check product texture, packaging feel, and brand presentation before a larger order.",
+          "Samples let you check product texture, packaging feel, and brand presentation before a larger order.",
         bullets: [
           "Ask whether sample packaging matches bulk packaging",
           "Confirm sample quantity and shipping destination",
@@ -619,9 +619,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "How we want buyers to use this site",
+        title: "How to request a quotation",
         body:
-          "This website introduces our B2B product supply and service options. It helps buyers prepare the right order details for supplier quotation.",
+          "We supply lash serum, mascara, and eye makeup products for wholesale, private label, light customization, and OEM orders. Send us your product type, quantity, target market, and packaging requirements, and our sales team will reply with catalog, MOQ, sample, and quotation details.",
         bullets: [
           "Request catalog information",
           "Ask about MOQ and samples",
