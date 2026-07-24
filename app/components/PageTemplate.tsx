@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { InquiryActions } from "./InquiryActions";
 import { SiteFooter, SiteHeader } from "./SiteShell";
@@ -34,7 +33,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
           </div>
           {page.heroImage ? (
             <div className="sub-hero-image">
-              <Image src={page.heroImage} alt={page.heroAlt || page.h1} fill sizes="(max-width: 900px) 100vw, 42vw" />
+              <img src={page.heroImage} alt={page.heroAlt || page.h1} loading="lazy" />
             </div>
           ) : (
             <div className="contact-card">

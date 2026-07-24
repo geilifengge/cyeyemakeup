@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { InquiryActions } from "./components/InquiryActions";
 import { SiteFooter, SiteHeader } from "./components/SiteShell";
@@ -59,7 +58,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-media">
-            <Image src="/images/lash-serum-hero.jpeg" alt="Private label lash serum product for eye makeup buyers" fill priority sizes="(max-width: 900px) 100vw, 46vw" />
+            <img src="/images/lash-serum-hero.jpeg" alt="Private label lash serum product for eye makeup buyers" />
           </div>
         </section>
 
@@ -107,7 +106,7 @@ export default function Home() {
           <div className="image-grid">
             {productImages.map((image) => (
               <div className="product-thumb" key={image.src}>
-                <Image src={image.src} alt={image.alt} fill sizes="(max-width: 900px) 50vw, 22vw" />
+                <img src={image.src} alt={image.alt} loading="lazy" />
               </div>
             ))}
           </div>
