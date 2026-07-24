@@ -21,6 +21,16 @@ export const navItems = [
   { href: "/contact", label: "Contact" },
 ];
 
+export function buildWhatsappHref(topic: string) {
+  const message = [
+    "Hello Venus beautiful,",
+    `I would like to request details for ${topic}.`,
+    "Please send catalog, MOQ, sample, packaging, and quote information.",
+  ].join("\n");
+
+  return `https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
+
 export type SitePage = {
   slug: string;
   title: string;
@@ -73,9 +83,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Best buyer fit",
+        title: "Suitable orders",
         body:
-          "Suitable for brand owners, beauty wholesalers, salons, and online sellers that need supplier information instead of retail product pages.",
+          "Suitable for brand owners, beauty wholesalers, salons, and online sellers sourcing lash serum supply, private label packaging, or OEM support.",
         bullets: [
           "New beauty brands testing a lash serum line",
           "Distributors looking for wholesale lash care products",
@@ -118,11 +128,11 @@ export const pages: Record<string, SitePage> = {
     slug: "lash-serum-manufacturer",
     title: "Lash Serum Manufacturer for Wholesale and OEM Orders | Venus beautiful",
     description:
-      "Work with a Shenzhen cosmetic supplier for lash serum manufacturing, packaging, samples, private label, and OEM orders.",
+      "Shenzhen lash serum supplier for manufacturing, packaging, samples, private label, and OEM orders.",
     h1: "Lash serum manufacturer for wholesale, private label, and OEM orders",
     eyebrow: "Manufacturer and supplier",
     summary:
-      "Chuangyuan supports lash serum buyers with product direction, MOQ, sample planning, packaging, lead time, and shipping requirements.",
+      "Chuangyuan supplies lash serum buyers with product direction, MOQ, sample planning, packaging, lead time, and shipping requirement support.",
     heroImage: "/images/lash-serum-packaging.jpg",
     heroAlt: "Packaged lash serum products prepared for beauty brand supply",
     primaryCta: "Send lash serum requirements",
@@ -141,9 +151,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Supplier fit",
+        title: "Order support",
         body:
-          "Best for buyers who already need a supplier, not a retail recommendation. The content answers common purchasing questions directly.",
+          "We support buyers that need direct lash serum supply, private label support, sample planning, packaging details, and quotation information.",
         bullets: [
           "What can be customized",
           "What information is needed for a quote",
@@ -152,14 +162,14 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Responsible claim handling",
+        title: "Label and claim support",
         body:
-          "Lash serum products are sensitive because buyers often ask about growth claims. We keep public wording conservative and recommend confirming market requirements before printing strong claims.",
+          "For lash serum packaging, we can review ingredient details, label text, claim direction, and market requirements with you before bulk production.",
         bullets: [
-          "Use cosmetic appearance wording when proof is not available",
-          "Avoid medical or guaranteed-result wording",
-          "Confirm ingredient and label requirements for the destination market",
-          "Check packaging text before bulk production",
+          "Review cosmetic appearance wording and product documents",
+          "Confirm ingredient and label requirements",
+          "Check tube, box, and website wording before printing",
+          "Prepare packaging text based on the agreed product direction",
         ],
       },
     ],
@@ -209,9 +219,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Best buyer fit",
+        title: "Suitable orders",
         body:
-          "Built for beauty brands and wholesalers that need supplier information rather than a retail mascara page.",
+          "For beauty brands, wholesalers, importers, and ecommerce sellers sourcing mascara supply, private label packaging, or OEM production.",
         bullets: [
           "New brands launching eye makeup products",
           "Wholesalers adding mascara to an eye makeup catalog",
@@ -240,7 +250,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can you supply wholesale mascara?",
         answer:
-          "Yes, wholesale mascara supply is one of the intended order types. Send quantity, product type, and destination market so the quote can be framed correctly.",
+          "Yes, wholesale mascara supply is supported. Send quantity, product type, and target country so we can prepare a more practical quote.",
       },
       {
         question: "Should mascara and lash serum be on one order?",
@@ -273,7 +283,7 @@ export const pages: Record<string, SitePage> = {
           "Order quantity and carton planning",
           "Ready product versus light branding needs",
           "Sample quantity and sample packaging",
-          "Destination market and delivery expectations",
+          "Target country and delivery expectations",
         ],
       },
       {
@@ -345,14 +355,14 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Avoid brand-name confusion",
+        title: "Brand and wholesale order focus",
         body:
-          "Some buyer comparisons include well-known retail brand names. Venus beautiful does not build pages that use another brand name to capture traffic.",
+          "Venus beautiful supplies mascara for your own brand, wholesale catalog, or eye makeup product line.",
         bullets: [
           "We focus on your own brand or wholesale supply",
-          "No competitor brand interception pages",
-          "Product claims and packaging text should be reviewed before printing",
-          "The quote should match your real target market",
+          "Tube, brush, logo, and outer box support",
+          "Product claims and packaging text can be reviewed before printing",
+          "The quote can match your target market and order plan",
         ],
       },
       {
@@ -547,13 +557,13 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "How claims are handled",
+        title: "Label and packaging wording",
         body:
-          "Eye-area cosmetic products should use responsible public wording. Strong claims need documents and market-specific confirmation before packaging or website copy.",
+          "For eye-area cosmetic products, we can review ingredient details, claim direction, label wording, and packaging text before production.",
         bullets: [
-          "Keep eye-area product claims conservative",
           "Confirm ingredient and label requirements",
-          "Use cosmetic appearance wording when proof is limited",
+          "Match public claims with product documents",
+          "Use suitable cosmetic appearance wording",
           "Check packaging text before printing",
         ],
       },
@@ -611,7 +621,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "How we want buyers to use this site",
         body:
-          "The website is a product and service introduction for B2B buyers, not a retail store. It helps buyers prepare the right order details for supplier quotation.",
+          "This website introduces our B2B product supply and service options. It helps buyers prepare the right order details for supplier quotation.",
         bullets: [
           "Request catalog information",
           "Ask about MOQ and samples",

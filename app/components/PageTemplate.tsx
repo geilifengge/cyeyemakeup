@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { InquiryActions } from "./InquiryActions";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./SiteShell";
-import { company, getPage, SitePage } from "../site-data";
+import { buildWhatsappHref, company, getPage, SitePage } from "../site-data";
 import { PageJsonLd } from "../seo";
 
 type PageTemplateProps = {
@@ -24,7 +24,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
             <h1>{page.h1}</h1>
             <p>{page.summary}</p>
             <div className="cta-row">
-              <a className="button primary" href="#inquiry">
+              <a className="button primary" href={buildWhatsappHref(page.h1)}>
                 {page.primaryCta}
               </a>
               <a className="button secondary" href="/contact">
@@ -69,9 +69,9 @@ export function PageTemplate({ page }: PageTemplateProps) {
             <p className="eyebrow">Supplier profile</p>
             <h2>Company details buyers can check before a quote</h2>
             <p>
-              Venus beautiful is the export brand of {company.legalName}, based in {company.location}. Our sales team
-              confirms product type, order quantity, packaging, samples, lead time, and market-ready label wording before
-              bulk production.
+              Venus beautiful is the export brand of {company.legalName}, based in {company.location}. Our team reviews
+              product type, order quantity, packaging, samples, lead time, and label details with buyers before bulk
+              production.
             </p>
             <ul>
               <li>Registered Shenzhen cosmetics company information</li>

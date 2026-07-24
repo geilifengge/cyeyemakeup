@@ -3,7 +3,7 @@ import Link from "next/link";
 import { InquiryActions } from "./components/InquiryActions";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./components/SiteShell";
 import { JsonLd } from "./seo";
-import { baseUrl, company, getPage } from "./site-data";
+import { baseUrl, buildWhatsappHref, company, getPage } from "./site-data";
 
 export const metadata: Metadata = {
   title: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
@@ -81,7 +81,10 @@ export default function Home() {
               importers, and ecommerce sellers that need wholesale, private label, light customization, or OEM orders.
             </p>
             <div className="cta-row">
-              <a className="button primary" href="#inquiry">
+              <a
+                className="button primary"
+                href={buildWhatsappHref("lash serum, mascara, private label eye makeup, or wholesale order")}
+              >
                 Request catalog
               </a>
               <Link className="button secondary" href="/private-label-lash-serum">
@@ -124,7 +127,7 @@ export default function Home() {
             specifications, logo requirements, sample checks, and OEM order support. For lash serum buyers, quotation
             details usually include formula direction, cosmetic claim wording, packaging style, MOQ, sample quantity, and
             lead time. For mascara buyers, pricing depends on product type, brush style, tube appearance, color direction,
-            carton planning, and the destination market. Share your quantity, country, launch timing, and packaging
+            carton planning, and the target country. Share your quantity, country, launch timing, and packaging
             requirements so the sales reply can match a realistic order plan.
           </p>
         </section>
@@ -152,8 +155,8 @@ export default function Home() {
             <h2>Real product and packaging visuals for lash serum and mascara buyers</h2>
             <p>
               Product images show tube appearance, box style, brush and applicator details, packaging finish, and sample
-              presentation for wholesale and private label orders. Final claims and label wording should be confirmed for
-              your destination market.
+              presentation for wholesale and private label orders. We can review formula details, label wording, and
+              packaging requirements with you before bulk production.
             </p>
           </div>
           <div className="image-grid">
@@ -170,9 +173,9 @@ export default function Home() {
             <p className="eyebrow">Company profile</p>
             <h2>Registered Shenzhen supplier for eye makeup orders</h2>
             <p>
-              Venus beautiful is the export brand of {company.legalName}. Public product wording stays conservative for
-              eye-area cosmetics, and buyers are encouraged to confirm ingredient, label, packaging, and
-              market requirements before bulk production.
+              Venus beautiful is the export brand of {company.legalName}. We provide product details, ingredient
+              information, packaging options, and sample checks so buyers can confirm the order clearly before bulk
+              production.
             </p>
             <ul>
               <li>Product focus: lash serum, mascara, and eye makeup supply</li>
