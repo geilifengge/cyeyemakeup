@@ -2,7 +2,7 @@ export const baseUrl = "https://cyeyemakeup.com";
 
 export const company = {
   brand: "Venus beautiful",
-  legalName: "Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
+  legalName: "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
   shortName: "Chuangyuan",
   whatsappDisplay: "+86 181 4449 0882",
   whatsappNumber: "8618144490882",
@@ -73,9 +73,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Who this page is for",
+        title: "Best buyer fit",
         body:
-          "This page is written for brand owners, beauty wholesalers, salons, and online sellers who need a supplier conversation instead of retail product reviews.",
+          "Written for brand owners, beauty wholesalers, salons, and online sellers who need a supplier conversation instead of retail product reviews.",
         bullets: [
           "New beauty brands testing a lash serum line",
           "Distributors looking for wholesale lash care products",
@@ -143,7 +143,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Supplier fit",
         body:
-          "This page is best for buyers who already know they need a supplier, not a retail recommendation. It is built to answer procurement questions directly.",
+          "Best for buyers who already know they need a supplier, not a retail recommendation. The content is built to answer procurement questions directly.",
         bullets: [
           "What can be customized",
           "What information is needed for a quote",
@@ -172,7 +172,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Where are you located?",
         answer:
-          "The company is based in Shenzhen, Guangdong, China, with registered business information under Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
+          "The company is based in Shenzhen, Guangdong, China, with registered business information under Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
       },
       {
         question: "How do I get a quote?",
@@ -200,18 +200,18 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Mascara project options",
         body:
-          "Mascara buyers usually compare brush style, tube appearance, waterproof or washable positioning, color, and packaging. We can help clarify which options fit your order size.",
+          "Mascara buyers usually compare brush style, tube appearance, waterproof or washable direction, color, and packaging. We can help clarify which options fit your order size.",
         bullets: [
           "Private label mascara with brand packaging",
           "Wholesale mascara order discussion",
           "Tube, brush, and box reference review",
-          "Color and product positioning questions",
+          "Color and product direction questions",
         ],
       },
       {
         title: "Best buyer fit",
         body:
-          "This page is aimed at beauty brands and wholesalers who want a supplier conversation rather than a retail mascara review.",
+          "Built for beauty brands and wholesalers who want a supplier conversation rather than a retail mascara review.",
         bullets: [
           "New brands launching eye makeup products",
           "Wholesalers adding mascara to an eye makeup catalog",
@@ -222,7 +222,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "What to prepare",
         body:
-          "Mascara quotes depend heavily on packaging and product positioning. A reference image or rough brief helps shorten the first conversation.",
+          "Mascara quotes depend heavily on packaging and product direction. A reference image or rough brief helps shorten the first conversation.",
         bullets: [
           "Mascara type such as waterproof, lengthening, or volumizing",
           "Tube color, cap style, and brush reference",
@@ -235,7 +235,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I order mascara with my own logo?",
         answer:
-          "Private label discussion can include logo, tube appearance, outer box, and product positioning. Final options depend on order quantity and available packaging choices.",
+          "Private label discussion can include logo, tube appearance, outer box, and product direction. Final options depend on order quantity and available packaging choices.",
       },
       {
         question: "Can you supply wholesale mascara?",
@@ -326,7 +326,7 @@ export const pages: Record<string, SitePage> = {
     h1: "Wholesale mascara supply for beauty brands and distributors",
     eyebrow: "Wholesale mascara",
     summary:
-      "Use this page if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
+      "Use this buying path if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
     heroImage: "/images/lash-serum-detail-3.jpeg",
     heroAlt: "Eye makeup packaging for wholesale mascara supplier inquiries",
     primaryCta: "Get mascara quote",
@@ -338,7 +338,7 @@ export const pages: Record<string, SitePage> = {
         body:
           "Mascara orders depend on type, brush, tube, packaging, and market requirements. We help buyers turn rough ideas into a quote-ready brief.",
         bullets: [
-          "Waterproof, lengthening, volumizing, or natural-looking positioning",
+          "Waterproof, lengthening, volumizing, or natural-looking product direction",
           "Tube and brush reference discussion",
           "Logo and outer box needs",
           "Bulk quantity and sample planning",
@@ -347,7 +347,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Avoid brand-name confusion",
         body:
-          "Some buyer searches include well-known retail brand names. Venus beautiful does not build pages that use another brand name to capture traffic.",
+          "Some buyer comparisons include well-known retail brand names. Venus beautiful does not build pages that use another brand name to capture traffic.",
         bullets: [
           "We focus on your own brand or wholesale supply",
           "No competitor brand interception pages",
@@ -371,7 +371,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can you supply bulk mascara?",
         answer:
-          "Yes, bulk mascara discussion is supported. The best quote starts with quantity, tube style, and product positioning.",
+          "Yes, bulk mascara discussion is supported. The best quote starts with quantity, tube style, and product direction.",
       },
       {
         question: "Can mascara packaging be customized?",
@@ -442,7 +442,7 @@ export const pages: Record<string, SitePage> = {
           "Yes, tube and box discussion is part of the private label path. Available details depend on quantity and packaging option availability.",
       },
       {
-        question: "Can I request vegan or herbal positioning?",
+        question: "Can I request vegan or herbal product direction?",
         answer:
           "You can request that direction. Final wording should match the actual formula documents and the rules of your sales market.",
       },
@@ -462,7 +462,7 @@ export const pages: Record<string, SitePage> = {
     h1: "Lash serum MOQ, samples, and lead time questions",
     eyebrow: "Buying questions",
     summary:
-      "Before ordering lash serum, buyers usually need to clarify MOQ, sample availability, packaging, quotation details, and timeline. This page explains what to prepare.",
+      "Before ordering lash serum, buyers usually need to clarify MOQ, sample availability, packaging, quotation details, and timeline. These notes explain what to prepare.",
     heroImage: "/images/lash-serum-detail-1.jpeg",
     heroAlt: "Lash serum samples and packaging for buyer quotation discussion",
     primaryCta: "Ask MOQ and samples",
@@ -567,7 +567,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Do you offer private label?",
         answer:
-          "Yes. Private label discussion can include logo, tube appearance, packaging, box design, and product positioning.",
+          "Yes. Private label discussion can include logo, tube appearance, packaging, box design, and product direction.",
       },
       {
         question: "Can I request OEM?",
@@ -586,13 +586,13 @@ export const pages: Record<string, SitePage> = {
     slug: "about",
     title: "About Chuangyuan and Venus beautiful | Eye Makeup Supplier",
     description:
-      "Learn about Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd. and Venus beautiful, a Shenzhen supplier for lash serum, mascara, and eye makeup private label orders.",
+      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. and Venus beautiful, a Shenzhen supplier for lash serum, mascara, and eye makeup private label orders.",
     h1: "About Chuangyuan and Venus beautiful",
     eyebrow: "Company profile",
     summary:
-      "Venus beautiful is the buyer-facing brand for Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM conversations.",
+      "Venus beautiful is the buyer-facing brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM conversations.",
     heroImage: "/images/business-license.jpg",
-    heroAlt: "Business license reference for Chuangyuan Cosmetics Manufaturing Shenzhen",
+    heroAlt: "Business license reference for Chuangyuan Cosmetics Manufacturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",
     badges: ["Shenzhen, China", "Beauty supply", "Eye makeup", "Import and export"],
@@ -600,7 +600,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Company information",
         body:
-          "Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd. is registered in Shenzhen, Guangdong, China. The business scope includes cosmetics, personal care products, hair accessories, daily chemical products, packaging-related goods, and import/export activity.",
+          "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. is registered in Shenzhen, Guangdong, China. The business scope includes cosmetics, personal care products, hair accessories, daily chemical products, packaging-related goods, and import/export activity.",
         bullets: [
           "Registered in 2025",
           "Located in Longgang District, Shenzhen",
@@ -611,7 +611,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "How we want buyers to use this site",
         body:
-          "This site is a procurement entry point, not a retail review website. It is built to help buyers ask the right questions and start a practical supplier conversation.",
+          "The website is a procurement entry point, not a retail review website. It is built to help buyers ask the right questions and start a practical supplier conversation.",
         bullets: [
           "Request catalog information",
           "Ask about MOQ and samples",
@@ -624,7 +624,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Is Venus beautiful the company name?",
         answer:
-          "Venus beautiful is the buyer-facing brand. The registered company name is Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
+          "Venus beautiful is the buyer-facing brand. The registered company name is Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
       },
       {
         question: "Where is the company based?",
@@ -671,7 +671,7 @@ export const pages: Record<string, SitePage> = {
           `WhatsApp: ${company.whatsappDisplay}`,
           `Email: ${company.email}`,
           `Location: ${company.location}`,
-          "Company: Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
+          "Company: Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
         ],
       },
     ],

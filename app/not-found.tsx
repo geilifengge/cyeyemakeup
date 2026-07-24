@@ -7,7 +7,7 @@ export default function NotFound() {
       <SiteHeader />
       <main className="not-found">
         <p className="eyebrow">Page not found</p>
-        <h1>This page is not available.</h1>
+        <h1>The requested URL is not available.</h1>
         <p>Return to the eye makeup inquiry pages or send your product requirements directly.</p>
         <div className="cta-row">
           <Link className="button primary" href="/">

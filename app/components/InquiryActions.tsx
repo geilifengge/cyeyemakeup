@@ -37,13 +37,20 @@ function buildMessage(topic: string, cta: string, extra?: string) {
   const currentPage = typeof window === "undefined" ? "" : window.location.href;
   const initialLanding = getInitialLandingPage();
   const initialUtm = getInitialUtm();
+  const sourceNote = [
+    `button: ${cta}`,
+    currentPage ? `current: ${currentPage}` : "",
+    initialLanding ? `first visit: ${initialLanding}` : "",
+    initialUtm && initialUtm !== "none" ? `source tag: ${initialUtm}` : "",
+  ]
+    .filter(Boolean)
+    .join(" | ");
+
   return [
-    `Hello Venus beautiful, I am interested in ${topic}.`,
-    extra ? `Buyer details: ${extra}` : "",
-    `CTA: ${cta}`,
-    `Current page: ${currentPage}`,
-    `Initial landing page: ${initialLanding}`,
-    `Initial UTM: ${initialUtm}`,
+    "Hello Venus beautiful,",
+    `I would like to receive details for ${topic}.`,
+    extra || "Please send catalog, MOQ, sample, packaging, and quote information.",
+    sourceNote ? `[Reference: ${sourceNote}]` : "",
   ]
     .filter(Boolean)
     .join("\n");
@@ -88,7 +95,7 @@ export function InquiryActions({
         "Country:",
         "Private label / wholesale / OEM needs:",
         "",
-        ready ? `Current page: ${window.location.href}` : "",
+        ready ? `I reached you from ${window.location.href}` : "",
       ].join("\n"),
     );
     return `mailto:${company.email}?subject=${subject}&body=${body}`;
@@ -161,4 +168,3 @@ export function InquiryActions({
     </div>
   );
 }
-

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InquiryActions } from "./components/InquiryActions";
 import { SiteFooter, SiteHeader } from "./components/SiteShell";
+import { JsonLd } from "./seo";
 import { baseUrl, company, getPage } from "./site-data";
 
 export const metadata: Metadata = {
@@ -10,6 +11,29 @@ export const metadata: Metadata = {
     "Venus beautiful helps beauty buyers source private label lash serum, mascara, wholesale eye makeup, light customization, and OEM orders from Shenzhen, China.",
   alternates: {
     canonical: `${baseUrl}/`,
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Venus beautiful",
+    title: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
+    description:
+      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+    url: `${baseUrl}/`,
+    images: [
+      {
+        url: `${baseUrl}/images/lash-serum-hero.jpeg`,
+        width: 1200,
+        height: 630,
+        alt: "Private label lash serum product for eye makeup buyers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
+    description:
+      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+    images: [`${baseUrl}/images/lash-serum-hero.jpeg`],
   },
 };
 
@@ -32,6 +56,20 @@ const productImages = [
 export default function Home() {
   return (
     <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": `${baseUrl}/#webpage`,
+          url: `${baseUrl}/`,
+          name: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
+          description:
+            "Venus beautiful helps beauty buyers source private label lash serum, mascara, wholesale eye makeup, light customization, and OEM orders from Shenzhen, China.",
+          isPartOf: { "@id": `${baseUrl}/#website` },
+          about: { "@id": `${baseUrl}/#organization` },
+          inLanguage: "en",
+        }}
+      />
       <SiteHeader />
       <main>
         <section className="home-hero">
@@ -77,6 +115,20 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="supplier-capabilities">
+          <p className="eyebrow">Supplier capabilities</p>
+          <h2>Wholesale and private label eye makeup support from one inquiry path</h2>
+          <p>
+            Venus beautiful focuses on lash serum and mascara projects for buyers who need practical sourcing support,
+            not retail product reviews. We can discuss ready wholesale supply, light private label changes, tube and box
+            references, logo needs, sample checks, and OEM order requirements. For lash serum buyers, the first
+            conversation usually covers formula direction, cosmetic claim wording, packaging style, MOQ, sample quantity,
+            and lead time. For mascara buyers, the quote depends on product type, brush reference, tube appearance,
+            color direction, carton planning, and the destination market. Share your quantity, country, launch timing,
+            and packaging reference so the reply can focus on a realistic buying path.
+          </p>
+        </section>
+
         <section className="section-heading">
           <p className="eyebrow">Buyer pathways</p>
           <h2>Choose the page that matches your purchase path</h2>
@@ -85,7 +137,7 @@ export default function Home() {
           {commercialPages.map((slug) => {
             const page = getPage(slug);
             return (
-              <Link className="page-card" href={`/${slug}/`} key={slug}>
+              <Link className="page-card" href={`/${slug}`} key={slug}>
                 <span>{page.eyebrow}</span>
                 <strong>{page.h1}</strong>
                 <p>{page.description}</p>
@@ -109,6 +161,26 @@ export default function Home() {
                 <img src={image.src} alt={image.alt} loading="lazy" />
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="supplier-proof home-proof">
+          <div>
+            <p className="eyebrow">Company reference</p>
+            <h2>Buyer-facing brand with registered Shenzhen company details</h2>
+            <p>
+              Venus beautiful is the buyer-facing brand of {company.legalName}. The site keeps public product wording
+              conservative for eye-area cosmetics and encourages buyers to confirm ingredient, label, packaging, and
+              market requirements before bulk production.
+            </p>
+            <ul>
+              <li>Product focus: lash serum, mascara, and eye makeup supply</li>
+              <li>Inquiry focus: MOQ, samples, packaging, quote, and lead time</li>
+              <li>Contact: {company.whatsappDisplay} and {company.email}</li>
+            </ul>
+          </div>
+          <div className="proof-card">
+            <img src="/images/business-license.jpg" alt="Business license reference for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
           </div>
         </section>
 
