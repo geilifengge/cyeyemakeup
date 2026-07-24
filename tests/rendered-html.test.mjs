@@ -49,7 +49,7 @@ test("server-renders commercial page schemas and clean internal links", async ()
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /Company details buyers can check before a quote/);
-  assert.match(html, /Business license reference for Chuangyuan Cosmetics Manufacturing/);
+  assert.match(html, /Business license for Chuangyuan Cosmetics Manufacturing/);
   assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page|positioning/i);
   assert.doesNotMatch(html, /Search Console|keyword research|ranking|search volume|pending deploy/i);
 });

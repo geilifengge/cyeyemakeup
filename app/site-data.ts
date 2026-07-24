@@ -50,32 +50,32 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-lash-serum",
     title: "Private Label Lash Serum Manufacturer | Venus beautiful",
     description:
-      "Private label lash serum supplier for beauty brands, wholesalers, and ecommerce sellers. Discuss formula direction, packaging, logo, MOQ, samples, and OEM options.",
+      "Private label lash serum supplier for beauty brands, wholesalers, and ecommerce sellers. Service details cover formula direction, packaging, logo, MOQ, samples, and OEM options.",
     h1: "Private label lash serum for beauty brands and wholesale buyers",
     eyebrow: "Lash serum private label",
     summary:
-      "Venus beautiful helps buyers source cosmetic lash serum with private label packaging, tube color, logo, and ingredient direction. Share your quantity, market, and packaging target to receive a practical quotation path.",
+      "Venus beautiful supplies cosmetic lash serum with private label packaging, tube color, logo, and ingredient direction options. Share your quantity, market, and packaging requirements to receive quotation details.",
     heroImage: "/images/lash-serum-hero.jpeg",
     heroAlt: "Blue lash serum tube and brush for private label cosmetic orders",
     primaryCta: "Ask for private label options",
     secondaryCta: "Request lash serum catalog",
-    badges: ["Private label", "Light customization", "OEM discussion", "Wholesale supply"],
+    badges: ["Private label", "Light customization", "OEM orders", "Wholesale supply"],
     sections: [
       {
         title: "What buyers can customize",
         body:
-          "For lash serum projects, buyers usually need a ready product with brand adjustments or a more detailed OEM discussion. We can start from tube appearance, logo, outer box, color direction, and ingredient preferences, then confirm what is realistic for the order size.",
+          "For lash serum orders, buyers usually need a ready product with brand adjustments or a more detailed OEM service option. Customization can cover tube appearance, logo, outer box, color direction, and ingredient preferences, depending on order size.",
         bullets: [
           "Logo or graphic design on tube and box",
-          "Tube color and packaging style discussion",
+          "Tube color and packaging style options",
           "Ingredient direction such as vegan, herbal, or peptide-positioned formulas when available",
-          "Sample and quotation review before bulk order",
+          "Sample and quotation check before bulk order",
         ],
       },
       {
         title: "Best buyer fit",
         body:
-          "Written for brand owners, beauty wholesalers, salons, and online sellers who need a supplier conversation instead of retail product reviews.",
+          "Suitable for brand owners, beauty wholesalers, salons, and online sellers that need supplier information instead of retail product pages.",
         bullets: [
           "New beauty brands testing a lash serum line",
           "Distributors looking for wholesale lash care products",
@@ -86,11 +86,11 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Information to send first",
         body:
-          "The fastest quotes come from clear project details. If you are still exploring, send what you already know and we will help narrow the next step.",
+          "The fastest quotes come from clear order details. If your product plan is still early, send the available information and our sales team will confirm the next items needed.",
         bullets: [
           "Target market and sales channel",
           "Expected order quantity or sample quantity",
-          "Packaging reference, tube color, or logo file if available",
+          "Packaging photos, tube color, or logo file if available",
           "Required claims, ingredient preferences, and compliance questions",
         ],
       },
@@ -99,7 +99,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can you make a lash serum with my brand name?",
         answer:
-          "Yes, private label discussion can include logo, packaging, tube appearance, and brand presentation. Final options depend on quantity, packaging choice, and available formula direction.",
+          "Yes, private label service can include logo, packaging, tube appearance, and brand presentation. Final options depend on quantity, packaging choice, and available formula direction.",
       },
       {
         question: "Can I use lash growth serum wording?",
@@ -118,32 +118,32 @@ export const pages: Record<string, SitePage> = {
     slug: "lash-serum-manufacturer",
     title: "Lash Serum Manufacturer for Wholesale and OEM Orders | Venus beautiful",
     description:
-      "Work with a Shenzhen cosmetic supplier for lash serum manufacturing, packaging, samples, private label, and OEM order discussion.",
+      "Work with a Shenzhen cosmetic supplier for lash serum manufacturing, packaging, samples, private label, and OEM orders.",
     h1: "Lash serum manufacturer for wholesale, private label, and OEM orders",
     eyebrow: "Manufacturer and supplier",
     summary:
-      "Chuangyuan supports lash serum buyers who need a practical supplier conversation: product direction, MOQ, sample path, packaging, lead time, and shipping requirements.",
+      "Chuangyuan supports lash serum buyers with product direction, MOQ, sample planning, packaging, lead time, and shipping requirements.",
     heroImage: "/images/lash-serum-packaging.jpg",
     heroAlt: "Packaged lash serum products prepared for beauty brand supply",
     primaryCta: "Send lash serum requirements",
     secondaryCta: "Ask about samples",
-    badges: ["Shenzhen supplier", "3 ml reference item", "Packaging support", "Sample discussion"],
+    badges: ["Shenzhen supplier", "3 ml item", "Packaging support", "Sample support"],
     sections: [
       {
         title: "Supply scope",
         body:
-          "The current lash serum reference item is a cosmetic liquid serum in tube packaging. Buyer-facing discussion can cover ready stock, light customization, and OEM project needs.",
+          "The current lash serum item is a cosmetic liquid serum in tube packaging. Supply options can cover ready stock, light customization, and OEM order requirements.",
         bullets: [
-          "Reference capacity around 3 ml",
-          "Private label and custom brand name discussion",
+          "Capacity around 3 ml",
+          "Private label and custom brand name options",
           "Logo, packaging, tube, color, and ingredient direction options",
-          "Sample, quotation, and lead time confirmation by project",
+          "Sample, quotation, and lead time confirmation by order",
         ],
       },
       {
         title: "Supplier fit",
         body:
-          "Best for buyers who already know they need a supplier, not a retail recommendation. The content is built to answer procurement questions directly.",
+          "Best for buyers who already need a supplier, not a retail recommendation. The content answers common purchasing questions directly.",
         bullets: [
           "What can be customized",
           "What information is needed for a quote",
@@ -159,7 +159,7 @@ export const pages: Record<string, SitePage> = {
           "Use cosmetic appearance wording when proof is not available",
           "Avoid medical or guaranteed-result wording",
           "Confirm ingredient and label requirements for the destination market",
-          "Review packaging text before bulk production",
+          "Check packaging text before bulk production",
         ],
       },
     ],
@@ -167,7 +167,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Do you support OEM lash serum?",
         answer:
-          "OEM discussion is available, especially around packaging, branding, tube choice, color direction, and ingredient preferences. Deeper formula work depends on the project requirements.",
+          "OEM service is available, especially around packaging, branding, tube choice, color direction, and ingredient preferences. Deeper formula work depends on the order requirements.",
       },
       {
         question: "Where are you located?",
@@ -186,16 +186,16 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-mascara-manufacturer",
     title: "Private Label Mascara Manufacturer | Venus beautiful",
     description:
-      "Private label mascara supplier for beauty brands and wholesale buyers. Discuss mascara type, tube, brush, color, packaging, MOQ, and OEM needs.",
+      "Private label mascara supplier for beauty brands and wholesale buyers. Service details cover mascara type, tube, brush, color, packaging, MOQ, and OEM needs.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
-      "Venus beautiful supplies eye makeup buyers who need mascara sourcing, private label packaging, and practical OEM communication. Start with your mascara type, quantity, packaging idea, and target market.",
+      "Venus beautiful supplies mascara for eye makeup buyers that need wholesale orders, private label packaging, and OEM support. Start with your mascara type, quantity, packaging idea, and target market.",
     heroImage: "/images/lash-serum-detail-2.jpeg",
     heroAlt: "Eye makeup product packaging for private label mascara and lash serum buyers",
     primaryCta: "Ask for mascara options",
     secondaryCta: "Get eye makeup catalog",
-    badges: ["Mascara supply", "Private label", "Wholesale orders", "Packaging discussion"],
+    badges: ["Mascara supply", "Private label", "Wholesale orders", "Packaging options"],
     sections: [
       {
         title: "Mascara project options",
@@ -203,15 +203,15 @@ export const pages: Record<string, SitePage> = {
           "Mascara buyers usually compare brush style, tube appearance, waterproof or washable direction, color, and packaging. We can help clarify which options fit your order size.",
         bullets: [
           "Private label mascara with brand packaging",
-          "Wholesale mascara order discussion",
-          "Tube, brush, and box reference review",
+          "Wholesale mascara order support",
+          "Tube, brush, and box specification confirmation",
           "Color and product direction questions",
         ],
       },
       {
         title: "Best buyer fit",
         body:
-          "Built for beauty brands and wholesalers who want a supplier conversation rather than a retail mascara review.",
+          "Built for beauty brands and wholesalers that need supplier information rather than a retail mascara page.",
         bullets: [
           "New brands launching eye makeup products",
           "Wholesalers adding mascara to an eye makeup catalog",
@@ -222,10 +222,10 @@ export const pages: Record<string, SitePage> = {
       {
         title: "What to prepare",
         body:
-          "Mascara quotes depend heavily on packaging and product direction. A reference image or rough brief helps shorten the first conversation.",
+          "Mascara quotes depend heavily on packaging and product direction. Product photos, tube samples, or a short order request help speed up quotation.",
         bullets: [
           "Mascara type such as waterproof, lengthening, or volumizing",
-          "Tube color, cap style, and brush reference",
+          "Tube color, cap style, and brush specification",
           "Expected quantity and launch timing",
           "Logo, label, and outer box needs",
         ],
@@ -235,12 +235,12 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I order mascara with my own logo?",
         answer:
-          "Private label discussion can include logo, tube appearance, outer box, and product direction. Final options depend on order quantity and available packaging choices.",
+          "Private label service can include logo, tube appearance, outer box, and product direction. Final options depend on order quantity and available packaging choices.",
       },
       {
         question: "Can you supply wholesale mascara?",
         answer:
-          "Yes, wholesale mascara discussion is one of the intended purchase paths. Send quantity, product type, and destination market so the quote can be framed correctly.",
+          "Yes, wholesale mascara supply is one of the intended order types. Send quantity, product type, and destination market so the quote can be framed correctly.",
       },
       {
         question: "Should mascara and lash serum be on one order?",
@@ -254,7 +254,7 @@ export const pages: Record<string, SitePage> = {
     slug: "wholesale-lash-serum",
     title: "Wholesale Lash Serum Supplier | Venus beautiful",
     description:
-      "Wholesale lash serum supplier for beauty distributors and ecommerce sellers. Discuss MOQ, samples, packaging, private label, and quote requirements.",
+      "Wholesale lash serum supplier for beauty distributors and ecommerce sellers. Request MOQ, samples, packaging, private label, and quote requirements.",
     h1: "Wholesale lash serum supply for distributors and beauty sellers",
     eyebrow: "Wholesale lash serum",
     summary:
@@ -266,9 +266,9 @@ export const pages: Record<string, SitePage> = {
     badges: ["Wholesale", "Samples", "Packaging", "Resale supply"],
     sections: [
       {
-        title: "Wholesale order discussion",
+        title: "Wholesale order support",
         body:
-          "Wholesale buyers often need fast clarity on MOQ, sample path, packaging, and shipment timing. We keep the first conversation focused on those items.",
+          "Wholesale buyers often need fast clarity on MOQ, sample availability, packaging, and shipment timing. Our first quotation reply focuses on those items.",
         bullets: [
           "Order quantity and carton planning",
           "Ready product versus light branding needs",
@@ -282,8 +282,8 @@ export const pages: Record<string, SitePage> = {
           "Wholesale is usually better than OEM when you need to test demand, build a catalog quickly, or place smaller repeated orders.",
         bullets: [
           "You already have a buyer or resale channel",
-          "You need a practical order path before custom formula work",
-          "You want packaging discussion without a complex development process",
+          "You need a clear order option before custom formula work",
+          "You want packaging support without a complex development process",
           "You need clear MOQ and lead time first",
         ],
       },
@@ -322,11 +322,11 @@ export const pages: Record<string, SitePage> = {
     slug: "wholesale-mascara",
     title: "Wholesale Mascara Supplier for Beauty Buyers | Venus beautiful",
     description:
-      "Wholesale mascara supplier for distributors, brands, and ecommerce sellers. Discuss bulk mascara, packaging, brush style, MOQ, and private label needs.",
+      "Wholesale mascara supplier for distributors, brands, and ecommerce sellers. Request bulk mascara, packaging, brush style, MOQ, and private label details.",
     h1: "Wholesale mascara supply for beauty brands and distributors",
     eyebrow: "Wholesale mascara",
     summary:
-      "Use this buying path if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
+      "Use this service page if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
     heroImage: "/images/lash-serum-detail-3.jpeg",
     heroAlt: "Eye makeup packaging for wholesale mascara supplier inquiries",
     primaryCta: "Get mascara quote",
@@ -336,10 +336,10 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Wholesale mascara buying details",
         body:
-          "Mascara orders depend on type, brush, tube, packaging, and market requirements. We help buyers turn rough ideas into a quote-ready brief.",
+          "Mascara orders depend on type, brush, tube, packaging, and market requirements. Clear product specifications help us prepare a faster quote.",
         bullets: [
           "Waterproof, lengthening, volumizing, or natural-looking product direction",
-          "Tube and brush reference discussion",
+          "Tube and brush specification confirmation",
           "Logo and outer box needs",
           "Bulk quantity and sample planning",
         ],
@@ -358,12 +358,12 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Next step",
         body:
-          "Send a short buying brief and any packaging reference. We will reply with the information needed to compare options.",
+          "Send a short order request and any packaging photos or specifications. We will reply with the information needed to compare options.",
         bullets: [
           "Product type",
           "Quantity range",
-          "Tube or brush reference",
-          "Private label, wholesale, or OEM path",
+          "Tube or brush specification",
+          "Private label, wholesale, or OEM order type",
         ],
       },
     ],
@@ -371,12 +371,12 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can you supply bulk mascara?",
         answer:
-          "Yes, bulk mascara discussion is supported. The best quote starts with quantity, tube style, and product direction.",
+          "Yes, bulk mascara supply is supported. The best quote starts with quantity, tube style, and product direction.",
       },
       {
         question: "Can mascara packaging be customized?",
         answer:
-          "Packaging discussion can include tube color, logo, label, and outer box. Available options depend on quantity and packaging stock.",
+          "Packaging options can include tube color, logo, label, and outer box. Available options depend on quantity and packaging stock.",
       },
       {
         question: "Can I combine mascara and lash serum in one inquiry?",
@@ -390,25 +390,25 @@ export const pages: Record<string, SitePage> = {
     slug: "custom-lash-serum-packaging",
     title: "Custom Lash Serum Packaging and Tube Options | Venus beautiful",
     description:
-      "Discuss custom lash serum packaging, tube color, logo, box, ingredient direction, and private label presentation for beauty brand orders.",
+      "Custom lash serum packaging support for tube color, logo, box, ingredient direction, and private label presentation for beauty brand orders.",
     h1: "Custom lash serum packaging for private label beauty brands",
     eyebrow: "Packaging and light customization",
     summary:
-      "Packaging often decides whether a lash serum product feels ready for retail. Share your tube style, color, logo, and box reference so we can confirm available options.",
+      "Packaging often decides whether a lash serum product feels ready for retail. Share your tube style, color, logo, and box requirements so we can confirm available options.",
     heroImage: "/images/lash-serum-detail-4.jpeg",
-    heroAlt: "Lash serum packaging and tube reference for private label buyers",
+    heroAlt: "Lash serum packaging and tube options for private label buyers",
     primaryCta: "Ask packaging options",
-    secondaryCta: "Send logo and box brief",
+    secondaryCta: "Send logo and box requirements",
     badges: ["Tube color", "Logo", "Outer box", "Ingredient direction"],
     sections: [
       {
         title: "Custom packaging scope",
         body:
-          "The current private label path can include practical packaging changes before deeper formula development. This is useful for buyers testing a new brand line.",
+          "The current private label service can include logo, tube, cap, and outer box changes before deeper formula development. This is useful for buyers testing a new brand line.",
         bullets: [
           "Logo or graphic design on product packaging",
-          "Tube color and cap discussion",
-          "Outer box reference and layout review",
+          "Tube color and cap options",
+          "Outer box sample and layout confirmation",
           "Ingredient direction and label wording questions",
         ],
       },
@@ -424,12 +424,12 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Good packaging briefs",
+        title: "Packaging requirements",
         body:
-          "A good brief does not need to be perfect. A few reference images and a quantity range are enough to start the conversation.",
+          "A complete packaging request does not need to be perfect. A few product photos and a quantity range are enough for an initial quotation.",
         bullets: [
           "Brand logo file if available",
-          "Tube and box reference images",
+          "Tube and box sample images",
           "Target retail price or channel",
           "Expected order quantity and timeline",
         ],
@@ -439,7 +439,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I customize the tube and box?",
         answer:
-          "Yes, tube and box discussion is part of the private label path. Available details depend on quantity and packaging option availability.",
+          "Yes, tube and box customization is part of the private label service. Available details depend on quantity and packaging option availability.",
       },
       {
         question: "Can I request vegan or herbal product direction?",
@@ -447,9 +447,9 @@ export const pages: Record<string, SitePage> = {
           "You can request that direction. Final wording should match the actual formula documents and the rules of your sales market.",
       },
       {
-        question: "Can I send a reference photo?",
+        question: "Can I send a product or packaging photo?",
         answer:
-          "Yes. A reference photo is one of the best ways to speed up packaging discussion.",
+          "Yes. A product or packaging photo is one of the best ways to speed up quotation.",
       },
     ],
     related: ["private-label-lash-serum", "lash-serum-moq-samples-lead-time", "contact"],
@@ -462,9 +462,9 @@ export const pages: Record<string, SitePage> = {
     h1: "Lash serum MOQ, samples, and lead time questions",
     eyebrow: "Buying questions",
     summary:
-      "Before ordering lash serum, buyers usually need to clarify MOQ, sample availability, packaging, quotation details, and timeline. These notes explain what to prepare.",
+      "Before ordering lash serum, buyers usually need to clarify MOQ, sample availability, packaging, quotation details, and timeline. This guide explains what to prepare.",
     heroImage: "/images/lash-serum-detail-1.jpeg",
-    heroAlt: "Lash serum samples and packaging for buyer quotation discussion",
+    heroAlt: "Lash serum samples and packaging for buyer quotation",
     primaryCta: "Ask MOQ and samples",
     secondaryCta: "Send quote details",
     badges: ["MOQ", "Samples", "Lead time", "Quotation"],
@@ -472,12 +472,12 @@ export const pages: Record<string, SitePage> = {
       {
         title: "MOQ depends on customization",
         body:
-          "A ready product order, a private label package, and a deeper OEM project can have different MOQ requirements. The first step is to identify which path you need.",
+          "A ready product order, a private label package, and a deeper OEM order can have different MOQ requirements. The first step is to identify which service option you need.",
         bullets: [
           "Ready wholesale product",
           "Logo and packaging customization",
           "Tube, color, and box customization",
-          "Formula or ingredient direction discussion",
+          "Formula or ingredient direction requirements",
         ],
       },
       {
@@ -487,14 +487,14 @@ export const pages: Record<string, SitePage> = {
         bullets: [
           "Ask whether sample packaging matches bulk packaging",
           "Confirm sample quantity and shipping destination",
-          "Review label wording before bulk printing",
-          "Share feedback clearly after sample review",
+          "Check label wording before bulk printing",
+          "Share feedback clearly after sample check",
         ],
       },
       {
         title: "Lead time",
         body:
-          "A reference lead time from current product information is about 15 days, but final timing depends on order quantity, packaging, and customization details.",
+          "A sample lead time from current product information is about 15 days, but final timing depends on order quantity, packaging, and customization details.",
         bullets: [
           "Ready stock can be faster when available",
           "Printed packaging adds time",
@@ -507,7 +507,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What MOQ should I expect?",
         answer:
-          "One current reference product shows 50 pcs for ordering and about 100 pcs for some customization options. Please confirm the exact MOQ for your project before planning a launch.",
+          "One current product shows 50 pcs for ordering and about 100 pcs for some customization options. Please confirm the exact MOQ for your order before planning a launch.",
       },
       {
         question: "What should I send for a quote?",
@@ -517,7 +517,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Is 15 days guaranteed?",
         answer:
-          "No. About 15 days is a reference from current product information. Final lead time must be confirmed by order details.",
+          "No. About 15 days is sample timing from current product information. Final lead time must be confirmed by order details.",
       },
     ],
     related: ["private-label-lash-serum", "custom-lash-serum-packaging", "contact"],
@@ -530,7 +530,7 @@ export const pages: Record<string, SitePage> = {
     h1: "FAQ for lash serum and mascara buyers",
     eyebrow: "Buyer FAQ",
     summary:
-      "These answers help beauty buyers prepare a clear inquiry for lash serum, mascara, private label packaging, wholesale supply, or OEM discussion.",
+      "These answers help beauty buyers prepare a clear inquiry for lash serum, mascara, private label packaging, wholesale supply, or OEM orders.",
     primaryCta: "Ask a question on WhatsApp",
     secondaryCta: "Send inquiry details",
     badges: ["Lash serum", "Mascara", "Private label", "Wholesale"],
@@ -542,19 +542,19 @@ export const pages: Record<string, SitePage> = {
         bullets: [
           "Product: lash serum, mascara, or both",
           "Quantity range",
-          "Private label, wholesale, or OEM path",
-          "Packaging reference and launch timing",
+          "Private label, wholesale, or OEM order type",
+          "Packaging requirements and launch timing",
         ],
       },
       {
         title: "How claims are handled",
         body:
-          "Eye-area cosmetic products should use responsible public wording. Strong claims need documents and market-specific review before packaging or website copy.",
+          "Eye-area cosmetic products should use responsible public wording. Strong claims need documents and market-specific confirmation before packaging or website copy.",
         bullets: [
           "Keep eye-area product claims conservative",
           "Confirm ingredient and label requirements",
           "Use cosmetic appearance wording when proof is limited",
-          "Review packaging text before printing",
+          "Check packaging text before printing",
         ],
       },
     ],
@@ -562,17 +562,17 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What products are the main focus?",
         answer:
-          "The English site focuses first on lash serum and mascara, with private label, wholesale, light customization, and OEM discussion.",
+          "The English site focuses first on lash serum and mascara, with private label, wholesale, light customization, and OEM orders.",
       },
       {
         question: "Do you offer private label?",
         answer:
-          "Yes. Private label discussion can include logo, tube appearance, packaging, box design, and product direction.",
+          "Yes. Private label service can include logo, tube appearance, packaging, box design, and product direction.",
       },
       {
         question: "Can I request OEM?",
         answer:
-          "Yes. OEM can be discussed, especially after you share target product, order size, packaging reference, and market requirements.",
+          "Yes. OEM orders can be evaluated after you share target product, order size, packaging requirements, and market requirements.",
       },
       {
         question: "Can you keep my inquiry details clear?",
@@ -590,9 +590,9 @@ export const pages: Record<string, SitePage> = {
     h1: "About Chuangyuan and Venus beautiful",
     eyebrow: "Company profile",
     summary:
-      "Venus beautiful is the buyer-facing brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM conversations.",
+      "Venus beautiful is the export brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM orders.",
     heroImage: "/images/business-license.jpg",
-    heroAlt: "Business license reference for Chuangyuan Cosmetics Manufacturing Shenzhen",
+    heroAlt: "Business license for Chuangyuan Cosmetics Manufacturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",
     badges: ["Shenzhen, China", "Beauty supply", "Eye makeup", "Import and export"],
@@ -604,18 +604,18 @@ export const pages: Record<string, SitePage> = {
         bullets: [
           "Registered in 2025",
           "Located in Longgang District, Shenzhen",
-          "Buyer-facing brand: Venus beautiful",
+          "Export brand: Venus beautiful",
           "Main site focus: lash serum and mascara",
         ],
       },
       {
         title: "How we want buyers to use this site",
         body:
-          "The website is a procurement entry point, not a retail review website. It is built to help buyers ask the right questions and start a practical supplier conversation.",
+          "The website is a product and service introduction for B2B buyers, not a retail store. It helps buyers prepare the right order details for supplier quotation.",
         bullets: [
           "Request catalog information",
           "Ask about MOQ and samples",
-          "Discuss private label packaging",
+          "Request private label packaging details",
           "Prepare wholesale or OEM order requirements",
         ],
       },
@@ -624,7 +624,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Is Venus beautiful the company name?",
         answer:
-          "Venus beautiful is the buyer-facing brand. The registered company name is Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
+          "Venus beautiful is the export brand. The registered company name is Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
       },
       {
         question: "Where is the company based?",
@@ -634,7 +634,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What should buyers contact you for?",
         answer:
-          "Buyers should contact us for lash serum, mascara, wholesale supply, light customization, private label packaging, and OEM project discussion.",
+          "Buyers should contact us for lash serum, mascara, wholesale supply, light customization, private label packaging, and OEM orders.",
       },
     ],
     related: ["contact", "faq", "private-label-lash-serum"],
@@ -647,7 +647,7 @@ export const pages: Record<string, SitePage> = {
     h1: "Contact Venus beautiful",
     eyebrow: "Inquiry entry",
     summary:
-      "Send your product, quantity, country, customization needs, and launch timing. We will use those details to discuss catalog, MOQ, samples, packaging, and quote options.",
+      "Send your product, quantity, country, customization needs, and launch timing. We will use those details to provide catalog, MOQ, samples, packaging, and quote options.",
     primaryCta: "Send WhatsApp inquiry",
     secondaryCta: "Email product requirements",
     badges: ["WhatsApp", "Email", "Catalog request", "Quote request"],
@@ -660,13 +660,13 @@ export const pages: Record<string, SitePage> = {
           "Product: lash serum, mascara, or both",
           "Quantity and target country",
           "Wholesale, private label, light customization, or OEM",
-          "Packaging reference, logo needs, and timeline",
+          "Packaging requirements, logo needs, and timeline",
         ],
       },
       {
         title: "Contact details",
         body:
-          "Use WhatsApp for fastest conversation. Email is available when you need to send files, packaging references, or a longer brief.",
+          "Use WhatsApp for the fastest response. Email is available when you need to send files, packaging photos, specifications, or a detailed order request.",
         bullets: [
           `WhatsApp: ${company.whatsappDisplay}`,
           `Email: ${company.email}`,
@@ -677,9 +677,9 @@ export const pages: Record<string, SitePage> = {
     ],
     faqs: [
       {
-        question: "Can I send images or packaging references?",
+        question: "Can I send images or packaging requirements?",
         answer:
-          "Yes. Packaging and product references are useful, especially for mascara tube, lash serum tube, box design, and brand presentation.",
+          "Yes. Packaging and product photos are useful, especially for mascara tube, lash serum tube, box design, and brand presentation.",
       },
       {
         question: "Should I ask for catalog or quote first?",
@@ -689,7 +689,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I contact you before registering my brand?",
         answer:
-          "Yes. Many buyers contact suppliers while still shaping the product line. Share the current plan and we can discuss next steps.",
+          "Yes. Many buyers contact suppliers while still shaping the product line. Share the current plan and we can confirm available next steps.",
       },
     ],
     related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "faq"],

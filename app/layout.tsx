@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Venus beautiful",
     title: "Venus beautiful | Private Label Eye Makeup Supplier",
     description:
-      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+      "Lash serum and mascara supply for beauty brands, wholesalers, importers, and private label buyers.",
     url: "https://cyeyemakeup.com/",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Venus beautiful | Private Label Eye Makeup Supplier",
     description:
-      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+      "Lash serum and mascara supply for beauty brands, wholesalers, importers, and private label buyers.",
     images: ["https://cyeyemakeup.com/images/lash-serum-hero.jpeg"],
   },
 };

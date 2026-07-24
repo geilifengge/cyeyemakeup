@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Venus beautiful",
     title: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
     description:
-      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+      "Lash serum and mascara supply for beauty brands, wholesalers, importers, and private label buyers.",
     url: `${baseUrl}/`,
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Venus beautiful | Private Label Lash Serum and Mascara Supplier",
     description:
-      "Lash serum and mascara sourcing for beauty brands, wholesalers, and private label buyers.",
+      "Lash serum and mascara supply for beauty brands, wholesalers, importers, and private label buyers.",
     images: [`${baseUrl}/images/lash-serum-hero.jpeg`],
   },
 };
@@ -49,7 +49,7 @@ const commercialPages = [
 const productImages = [
   { src: "/images/lash-serum-detail-1.jpeg", alt: "Lash serum tube and box for private label buyers" },
   { src: "/images/lash-serum-detail-2.jpeg", alt: "Eye makeup product packaging for wholesale orders" },
-  { src: "/images/lash-serum-detail-3.jpeg", alt: "Custom eye makeup packaging reference" },
+  { src: "/images/lash-serum-detail-3.jpeg", alt: "Custom eye makeup packaging options" },
   { src: "/images/lash-serum-packaging.jpg", alt: "Packaged lash serum products for supplier catalog" },
 ];
 
@@ -75,10 +75,10 @@ export default function Home() {
         <section className="home-hero">
           <div className="hero-copy">
             <p className="eyebrow">Private label eye makeup supplier</p>
-            <h1>Lash serum and mascara sourcing for beauty brands</h1>
+            <h1>Lash serum and mascara supply for beauty brands</h1>
             <p>
-              Venus beautiful helps wholesale buyers, ecommerce sellers, and new beauty brands discuss lash serum,
-              mascara, packaging, light customization, and OEM order requirements with a Shenzhen supplier.
+              Venus beautiful supplies lash serum, mascara, and eye makeup products for beauty brands, wholesalers,
+              importers, and ecommerce sellers that need wholesale, private label, light customization, or OEM orders.
             </p>
             <div className="cta-row">
               <a className="button primary" href="#inquiry">
@@ -92,7 +92,7 @@ export default function Home() {
               <span>Wholesale supply</span>
               <span>Private label</span>
               <span>Light customization</span>
-              <span>OEM discussion</span>
+              <span>OEM orders</span>
             </div>
           </div>
           <div className="hero-media">
@@ -110,28 +110,28 @@ export default function Home() {
             <span>Lash serum, mascara, eye makeup</span>
           </div>
           <div>
-            <strong>Buyer paths</strong>
+            <strong>Service options</strong>
             <span>Wholesale, private label, light customization, OEM</span>
           </div>
         </section>
 
         <section className="supplier-capabilities">
           <p className="eyebrow">Supplier capabilities</p>
-          <h2>Wholesale and private label eye makeup support from one inquiry path</h2>
+          <h2>Wholesale and private label eye makeup support from one supplier team</h2>
           <p>
-            Venus beautiful focuses on lash serum and mascara projects for buyers who need practical sourcing support,
-            not retail product reviews. We can discuss ready wholesale supply, light private label changes, tube and box
-            references, logo needs, sample checks, and OEM order requirements. For lash serum buyers, the first
-            conversation usually covers formula direction, cosmetic claim wording, packaging style, MOQ, sample quantity,
-            and lead time. For mascara buyers, the quote depends on product type, brush reference, tube appearance,
-            color direction, carton planning, and the destination market. Share your quantity, country, launch timing,
-            and packaging reference so the reply can focus on a realistic buying path.
+            Venus beautiful focuses on lash serum and mascara orders for brands, wholesalers, importers, salons, and
+            ecommerce sellers. Service options include ready wholesale supply, light private label changes, tube and box
+            specifications, logo requirements, sample checks, and OEM order support. For lash serum buyers, quotation
+            details usually include formula direction, cosmetic claim wording, packaging style, MOQ, sample quantity, and
+            lead time. For mascara buyers, pricing depends on product type, brush style, tube appearance, color direction,
+            carton planning, and the destination market. Share your quantity, country, launch timing, and packaging
+            requirements so the sales reply can match a realistic order plan.
           </p>
         </section>
 
         <section className="section-heading">
-          <p className="eyebrow">Buyer pathways</p>
-          <h2>Choose the page that matches your purchase path</h2>
+          <p className="eyebrow">Products and services</p>
+          <h2>Choose the product category or service option you need</h2>
         </section>
         <section className="page-card-grid">
           {commercialPages.map((slug) => {
@@ -148,11 +148,12 @@ export default function Home() {
 
         <section className="image-band">
           <div>
-            <p className="eyebrow">Product references</p>
-            <h2>Real product and packaging visuals for first conversations</h2>
+            <p className="eyebrow">Product photos</p>
+            <h2>Real product and packaging visuals for lash serum and mascara buyers</h2>
             <p>
-              Product images are used to start practical discussions about tube appearance, packaging, logo, samples,
-              and quantity. Final claims and label wording should be confirmed for your market.
+              Product images show tube appearance, box style, brush and applicator details, packaging finish, and sample
+              presentation for wholesale and private label orders. Final claims and label wording should be confirmed for
+              your destination market.
             </p>
           </div>
           <div className="image-grid">
@@ -166,11 +167,11 @@ export default function Home() {
 
         <section className="supplier-proof home-proof">
           <div>
-            <p className="eyebrow">Company reference</p>
-            <h2>Buyer-facing brand with registered Shenzhen company details</h2>
+            <p className="eyebrow">Company profile</p>
+            <h2>Registered Shenzhen supplier for eye makeup orders</h2>
             <p>
-              Venus beautiful is the buyer-facing brand of {company.legalName}. The site keeps public product wording
-              conservative for eye-area cosmetics and encourages buyers to confirm ingredient, label, packaging, and
+              Venus beautiful is the export brand of {company.legalName}. Public product wording stays conservative for
+              eye-area cosmetics, and buyers are encouraged to confirm ingredient, label, packaging, and
               market requirements before bulk production.
             </p>
             <ul>
@@ -180,7 +181,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="proof-card">
-            <img src="/images/business-license.jpg" alt="Business license reference for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
+            <img src="/images/business-license.jpg" alt="Business license for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
           </div>
         </section>
 
@@ -195,11 +196,11 @@ export default function Home() {
               <span>Product, quantity, country, packaging, and whether you need wholesale, private label, or OEM.</span>
             </li>
             <li>
-              <strong>Confirm product path</strong>
-              <span>Ready stock, light customization, or deeper OEM discussion.</span>
+              <strong>Confirm service option</strong>
+              <span>Ready stock, light customization, or OEM order support.</span>
             </li>
             <li>
-              <strong>Review samples and packaging</strong>
+              <strong>Check samples and packaging</strong>
               <span>Check product feel, tube, box, logo, and label wording before bulk order.</span>
             </li>
             <li>

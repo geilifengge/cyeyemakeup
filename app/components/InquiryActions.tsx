@@ -50,7 +50,7 @@ function buildMessage(topic: string, cta: string, extra?: string) {
     "Hello Venus beautiful,",
     `I would like to receive details for ${topic}.`,
     extra || "Please send catalog, MOQ, sample, packaging, and quote information.",
-    sourceNote ? `[Reference: ${sourceNote}]` : "",
+    sourceNote ? `[Request page: ${sourceNote}]` : "",
   ]
     .filter(Boolean)
     .join("\n");
@@ -117,7 +117,7 @@ export function InquiryActions({
   return (
     <div className="inquiry-panel" id="inquiry">
       <div>
-        <p className="panel-kicker">Start a supplier conversation</p>
+        <p className="panel-kicker">Request product details</p>
         <h2>Send requirements for catalog, MOQ, samples, or quote.</h2>
       </div>
       <div className="cta-row">

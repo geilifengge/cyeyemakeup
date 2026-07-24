@@ -66,27 +66,27 @@ export function PageTemplate({ page }: PageTemplateProps) {
 
         <section className="supplier-proof">
           <div>
-            <p className="eyebrow">Supplier reference</p>
+            <p className="eyebrow">Supplier profile</p>
             <h2>Company details buyers can check before a quote</h2>
             <p>
-              Venus beautiful is the buyer-facing brand of {company.legalName}, based in {company.location}. Inquiry
-              conversations focus on product type, order quantity, packaging, samples, lead time, and market-ready label
-              wording before bulk production.
+              Venus beautiful is the export brand of {company.legalName}, based in {company.location}. Our sales team
+              confirms product type, order quantity, packaging, samples, lead time, and market-ready label wording before
+              bulk production.
             </p>
             <ul>
               <li>Registered Shenzhen cosmetics company information</li>
               <li>Product focus: lash serum, mascara, and eye makeup supply</li>
-              <li>Buyer paths: wholesale, private label, light customization, and OEM discussion</li>
+              <li>Service options: wholesale, private label, light customization, and OEM support</li>
             </ul>
           </div>
           <div className="proof-card">
-            <img src="/images/business-license.jpg" alt="Business license reference for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
+            <img src="/images/business-license.jpg" alt="Business license for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
           </div>
         </section>
 
         <section className="faq-section">
           <div>
-            <p className="eyebrow">Procurement answers</p>
+            <p className="eyebrow">Buyer questions</p>
             <h2>Questions buyers ask before sending an inquiry</h2>
           </div>
           <div className="faq-list">
@@ -102,7 +102,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
         <InquiryActions topic={page.h1} primaryLabel={page.primaryCta} secondaryLabel={page.secondaryCta} />
 
         <section className="related-section">
-          <p className="eyebrow">Related buying paths</p>
+          <p className="eyebrow">Related products and services</p>
           <div className="related-links">
             {page.related.map((slug) => {
               const related = getPage(slug);
