@@ -34,10 +34,10 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /type="application\/ld\+json"/i);
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"@type":"WebPage"/);
-  assert.match(html, /Chuangyuan Cosmetics Manufacturing \(Shenzhen\) Co\., Ltd\./);
+  assert.match(html, /Chuangyuan Cosmetics Manufaturing\(Shenzhen\)Co\., Ltd\./);
   assert.match(html, /Wholesale and private label eye makeup support/);
   assert.match(html, /src="\/images\/lash-serum-hero\.jpeg"/);
-  assert.doesNotMatch(html, /Manufaturing|\/_vinext\/image|Initial UTM|Current page|CTA:/i);
+  assert.doesNotMatch(html, /\/_vinext\/image|Initial UTM|Current page|CTA:/i);
 });
 
 test("server-renders commercial page schemas and clean internal links", async () => {
@@ -49,7 +49,7 @@ test("server-renders commercial page schemas and clean internal links", async ()
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /Company details buyers can check before a quote/);
-  assert.match(html, /Business license reference for Chuangyuan Cosmetics Manufacturing/);
+  assert.match(html, /Business license reference for Chuangyuan Cosmetics Manufaturing/);
   assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page|positioning/i);
   assert.doesNotMatch(html, /Search Console|keyword research|ranking|search volume|pending deploy/i);
 });

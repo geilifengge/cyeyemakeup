@@ -2,7 +2,7 @@ export const baseUrl = "https://cyeyemakeup.com";
 
 export const company = {
   brand: "Venus beautiful",
-  legalName: "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
+  legalName: "Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
   shortName: "Chuangyuan",
   whatsappDisplay: "+86 181 4449 0882",
   whatsappNumber: "8618144490882",
@@ -172,7 +172,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Where are you located?",
         answer:
-          "The company is based in Shenzhen, Guangdong, China, with registered business information under Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
+          "The company is based in Shenzhen, Guangdong, China, with registered business information under Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
       },
       {
         question: "How do I get a quote?",
@@ -586,13 +586,13 @@ export const pages: Record<string, SitePage> = {
     slug: "about",
     title: "About Chuangyuan and Venus beautiful | Eye Makeup Supplier",
     description:
-      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. and Venus beautiful, a Shenzhen supplier for lash serum, mascara, and eye makeup private label orders.",
+      "Learn about Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd. and Venus beautiful, a Shenzhen supplier for lash serum, mascara, and eye makeup private label orders.",
     h1: "About Chuangyuan and Venus beautiful",
     eyebrow: "Company profile",
     summary:
-      "Venus beautiful is the buyer-facing brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM conversations.",
+      "Venus beautiful is the buyer-facing brand for Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM conversations.",
     heroImage: "/images/business-license.jpg",
-    heroAlt: "Business license reference for Chuangyuan Cosmetics Manufacturing Shenzhen",
+    heroAlt: "Business license reference for Chuangyuan Cosmetics Manufaturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",
     badges: ["Shenzhen, China", "Beauty supply", "Eye makeup", "Import and export"],
@@ -600,7 +600,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Company information",
         body:
-          "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. is registered in Shenzhen, Guangdong, China. The business scope includes cosmetics, personal care products, hair accessories, daily chemical products, packaging-related goods, and import/export activity.",
+          "Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd. is registered in Shenzhen, Guangdong, China. The business scope includes cosmetics, personal care products, hair accessories, daily chemical products, packaging-related goods, and import/export activity.",
         bullets: [
           "Registered in 2025",
           "Located in Longgang District, Shenzhen",
@@ -624,7 +624,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Is Venus beautiful the company name?",
         answer:
-          "Venus beautiful is the buyer-facing brand. The registered company name is Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
+          "Venus beautiful is the buyer-facing brand. The registered company name is Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
       },
       {
         question: "Where is the company based?",
@@ -671,7 +671,7 @@ export const pages: Record<string, SitePage> = {
           `WhatsApp: ${company.whatsappDisplay}`,
           `Email: ${company.email}`,
           `Location: ${company.location}`,
-          "Company: Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
+          "Company: Chuangyuan Cosmetics Manufaturing(Shenzhen)Co., Ltd.",
         ],
       },
     ],
