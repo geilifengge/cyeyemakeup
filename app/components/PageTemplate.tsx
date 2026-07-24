@@ -80,7 +80,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
             </ul>
           </div>
           <div className="proof-card">
-            <img src="/images/business-license.jpg" alt="Business license reference for Chuangyuan Cosmetics Manufaturing" loading="lazy" />
+            <img src="/images/business-license.jpg" alt="Business license reference for Chuangyuan Cosmetics Manufacturing" loading="lazy" />
           </div>
         </section>
 
