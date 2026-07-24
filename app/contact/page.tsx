@@ -7,10 +7,9 @@ const page = getPage("contact");
 export const metadata: Metadata = {
   title: page.title,
   description: page.description,
-  alternates: { canonical: `${baseUrl}/contact/` },
+  alternates: { canonical: `${baseUrl}/contact` },
 };
 
 export default function ContactPage() {
   return <PageTemplate page={page} />;
 }
-

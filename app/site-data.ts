@@ -13,12 +13,12 @@ export const company = {
 };
 
 export const navItems = [
-  { href: "/private-label-lash-serum/", label: "Lash Serum" },
-  { href: "/private-label-mascara-manufacturer/", label: "Mascara" },
-  { href: "/wholesale-lash-serum/", label: "Wholesale" },
-  { href: "/custom-lash-serum-packaging/", label: "Packaging" },
-  { href: "/faq/", label: "FAQ" },
-  { href: "/contact/", label: "Contact" },
+  { href: "/private-label-lash-serum", label: "Lash Serum" },
+  { href: "/private-label-mascara-manufacturer", label: "Mascara" },
+  { href: "/wholesale-lash-serum", label: "Wholesale" },
+  { href: "/custom-lash-serum-packaging", label: "Packaging" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export type SitePage = {

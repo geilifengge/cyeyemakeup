@@ -18,7 +18,7 @@ export function SiteHeader() {
           </Link>
         ))}
       </nav>
-      <a className="header-contact" href="/contact/">
+      <a className="header-contact" href="/contact">
         Inquiry
       </a>
     </header>
@@ -38,11 +38,10 @@ export function SiteFooter() {
         <p>Email: {company.email}</p>
       </div>
       <div>
-        <Link href="/private-label-lash-serum/">Lash serum</Link>
-        <Link href="/private-label-mascara-manufacturer/">Mascara</Link>
-        <Link href="/faq/">FAQ</Link>
+        <Link href="/private-label-lash-serum">Lash serum</Link>
+        <Link href="/private-label-mascara-manufacturer">Mascara</Link>
+        <Link href="/faq">FAQ</Link>
       </div>
     </footer>
   );
 }
-

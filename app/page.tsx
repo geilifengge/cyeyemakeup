@@ -47,7 +47,7 @@ export default function Home() {
               <a className="button primary" href="#inquiry">
                 Request catalog
               </a>
-              <Link className="button secondary" href="/private-label-lash-serum/">
+              <Link className="button secondary" href="/private-label-lash-serum">
                 View lash serum options
               </Link>
             </div>

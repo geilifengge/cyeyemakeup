@@ -13,7 +13,7 @@ export default function NotFound() {
           <Link className="button primary" href="/">
             Back to home
           </Link>
-          <Link className="button secondary" href="/contact/">
+          <Link className="button secondary" href="/contact">
             Contact supplier
           </Link>
         </div>
@@ -22,4 +22,3 @@ export default function NotFound() {
     </>
   );
 }
-

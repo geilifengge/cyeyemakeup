@@ -22,7 +22,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
               <a className="button primary" href="#inquiry">
                 {page.primaryCta}
               </a>
-              <a className="button secondary" href="/contact/">
+              <a className="button secondary" href="/contact">
                 {page.secondaryCta}
               </a>
             </div>
@@ -97,4 +97,3 @@ export function PageTemplate({ page }: PageTemplateProps) {
     </>
   );
 }
-
