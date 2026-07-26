@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: `${baseUrl}/`,
     images: [
       {
-        url: `${baseUrl}/images/lash-serum-hero.jpeg`,
+        url: `${baseUrl}/images/lash-serum-white.jpg`,
         width: 1200,
         height: 630,
         alt: "Private label lash serum product for eye makeup buyers",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Venus beautiful | Private Label Eye Makeup Supplier",
     description:
       "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
-    images: [`${baseUrl}/images/lash-serum-hero.jpeg`],
+    images: [`${baseUrl}/images/lash-serum-white.jpg`],
   },
 };
 
@@ -50,7 +50,7 @@ const commercialPages = [
 ];
 
 const productImages = [
-  { src: "/images/lash-serum-detail-1.jpeg", alt: "Lash serum tube and box for private label buyers" },
+  { src: "/images/lash-serum-white.jpg", alt: "White lash serum tube and box for private label buyers" },
   { src: "/images/mascara-hero.jpg", alt: "Venus beautiful mascara tube, brush, and outer box" },
   { src: "/images/eyeliner-hero.jpg", alt: "Liquid eyeliner pen and packaging for private label orders" },
   { src: "/images/eyeliner-colors.jpg", alt: "Black and brown liquid eyeliner color options" },
@@ -103,7 +103,10 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-media">
-            <img src="/images/lash-serum-hero.jpeg" alt="Private label lash serum product for eye makeup buyers" />
+            <img
+              src="/images/lash-serum-white.jpg"
+              alt="White Venus beautiful lash serum tube and box for eye makeup buyers"
+            />
           </div>
         </section>
 

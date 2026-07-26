@@ -12,7 +12,7 @@ export function pagePath(slug: string) {
 }
 
 function pageImage(page: SitePage) {
-  return page.heroImage || "/images/lash-serum-hero.jpeg";
+  return page.heroImage || "/images/lash-serum-white.jpg";
 }
 
 export function buildPageMetadata(page: SitePage): Metadata {

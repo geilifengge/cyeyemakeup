@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://cyeyemakeup.com/",
     images: [
       {
-        url: "https://cyeyemakeup.com/images/lash-serum-hero.jpeg",
+        url: "https://cyeyemakeup.com/images/lash-serum-white.jpg",
         width: 1200,
         height: 630,
         alt: "Private label lash serum product for eye makeup buyers",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Venus beautiful | Private Label Eye Makeup Supplier",
     description:
       "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
-    images: ["https://cyeyemakeup.com/images/lash-serum-hero.jpeg"],
+    images: ["https://cyeyemakeup.com/images/lash-serum-white.jpg"],
   },
 };
 

@@ -40,7 +40,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /private-label-eyeliner-manufacturer/i);
   assert.match(html, /15 years.*factory production experience/i);
   assert.match(html, /5,000\+ m² facility/i);
-  assert.match(html, /src="\/images\/lash-serum-hero\.jpeg"/);
+  assert.match(html, /src="\/images\/lash-serum-white\.jpg"/);
   assert.doesNotMatch(html, /\/_vinext\/image|Initial UTM|Current page|CTA:/i);
 });
 
