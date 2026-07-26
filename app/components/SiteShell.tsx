@@ -3,7 +3,7 @@ import { company, navItems } from "../site-data";
 
 const whatsappMessage = [
   "Hello Venus beautiful,",
-  "I would like to request lash serum or mascara product details.",
+  "I would like to request lash serum, mascara, or eyeliner product details.",
   "Please send catalog, MOQ, sample, packaging, and quote information.",
 ].join("\n");
 
@@ -45,6 +45,7 @@ export function SiteFooter() {
       <div>
         <Link href="/private-label-lash-serum">Lash serum</Link>
         <Link href="/private-label-mascara-manufacturer">Mascara</Link>
+        <Link href="/private-label-eyeliner-manufacturer">Eyeliner</Link>
         <Link href="/faq">FAQ</Link>
       </div>
     </footer>

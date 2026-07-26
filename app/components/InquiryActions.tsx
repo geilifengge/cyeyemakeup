@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, MouseEvent, useState } from "react";
 import { company } from "../site-data";
 
 type InquiryActionsProps = {
@@ -65,25 +65,13 @@ export function InquiryActions({
   primaryLabel,
   secondaryLabel,
 }: InquiryActionsProps) {
-  const [ready, setReady] = useState(false);
   const [product, setProduct] = useState("");
   const [quantity, setQuantity] = useState("");
   const [country, setCountry] = useState("");
   const [needs, setNeeds] = useState("");
 
-  useEffect(() => {
-    getInitialLandingPage();
-    getInitialUtm();
-    setReady(true);
-  }, []);
-
-  const primaryHref = useMemo(() => {
-    return ready
-      ? whatsappUrl(buildMessage(topic, primaryLabel))
-      : `https://wa.me/${company.whatsappNumber}`;
-  }, [primaryLabel, ready, topic]);
-
-  const secondaryHref = useMemo(() => {
+  const primaryHref = `https://wa.me/${company.whatsappNumber}`;
+  const secondaryHref = (() => {
     const subject = encodeURIComponent(`${secondaryLabel} - ${topic}`);
     const body = encodeURIComponent(
       [
@@ -94,12 +82,32 @@ export function InquiryActions({
         "Quantity:",
         "Country:",
         "Private label / wholesale / OEM needs:",
-        "",
-        ready ? `I reached you from ${window.location.href}` : "",
       ].join("\n"),
     );
     return `mailto:${company.email}?subject=${subject}&body=${body}`;
-  }, [ready, secondaryLabel, topic]);
+  })();
+
+  function onPrimaryClick(event: MouseEvent<HTMLAnchorElement>) {
+    event.currentTarget.href = whatsappUrl(buildMessage(topic, primaryLabel));
+  }
+
+  function onEmailClick(event: MouseEvent<HTMLAnchorElement>) {
+    const subject = encodeURIComponent(`${secondaryLabel} - ${topic}`);
+    const body = encodeURIComponent(
+      [
+        "Hello Venus beautiful,",
+        "",
+        `I am interested in ${topic}.`,
+        "Product:",
+        "Quantity:",
+        "Country:",
+        "Private label / wholesale / OEM needs:",
+        "",
+        `I reached you from ${window.location.href}`,
+      ].join("\n"),
+    );
+    event.currentTarget.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
+  }
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -124,10 +132,10 @@ export function InquiryActions({
           catalog and quotation details.
         </p>
         <div className="cta-row">
-          <a className="button primary" href={primaryHref} data-cta={primaryLabel}>
+          <a className="button primary" href={primaryHref} data-cta={primaryLabel} onClick={onPrimaryClick}>
             {primaryLabel}
           </a>
-          <a className="button secondary" href={secondaryHref} data-cta={secondaryLabel}>
+          <a className="button secondary" href={secondaryHref} data-cta={secondaryLabel} onClick={onEmailClick}>
             {secondaryLabel}
           </a>
         </div>
@@ -138,7 +146,7 @@ export function InquiryActions({
           <input
             value={product}
             onChange={(event) => setProduct(event.target.value)}
-            placeholder="Lash serum, mascara, or both"
+            placeholder="Lash serum, mascara, eyeliner, or packaging"
           />
         </label>
         <label>

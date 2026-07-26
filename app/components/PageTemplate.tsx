@@ -75,7 +75,7 @@ export function PageTemplate({ page }: PageTemplateProps) {
             </p>
             <ul>
               <li>Registered Shenzhen cosmetics company information</li>
-              <li>Product focus: lash serum, mascara, and eye makeup supply</li>
+              <li>Product focus: lash serum, mascara, eyeliner, and cosmetic packaging</li>
               <li>Service options: wholesale, private label, light customization, and OEM support</li>
             </ul>
           </div>

@@ -15,6 +15,7 @@ export const company = {
 export const navItems = [
   { href: "/private-label-lash-serum", label: "Lash Serum" },
   { href: "/private-label-mascara-manufacturer", label: "Mascara" },
+  { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
   { href: "/wholesale-lash-serum", label: "Wholesale" },
   { href: "/custom-lash-serum-packaging", label: "Packaging" },
   { href: "/faq", label: "FAQ" },
@@ -201,8 +202,8 @@ export const pages: Record<string, SitePage> = {
     eyebrow: "Mascara private label",
     summary:
       "Venus beautiful supplies mascara for eye makeup buyers that need wholesale orders, private label packaging, and OEM support. Start with your mascara type, quantity, packaging idea, and target market.",
-    heroImage: "/images/lash-serum-detail-2.jpeg",
-    heroAlt: "Eye makeup product packaging for private label mascara and lash serum buyers",
+    heroImage: "/images/mascara-hero.jpg",
+    heroAlt: "Venus beautiful mascara tube, brush, and box for private label orders",
     primaryCta: "Ask for mascara options",
     secondaryCta: "Get eye makeup catalog",
     badges: ["Mascara supply", "Private label", "Wholesale orders", "Packaging options"],
@@ -258,7 +259,80 @@ export const pages: Record<string, SitePage> = {
           "They can be discussed together as an eye makeup or lash care line, especially if you need matching packaging or a catalog-style quote.",
       },
     ],
-    related: ["wholesale-mascara", "private-label-lash-serum", "contact"],
+    related: ["wholesale-mascara", "private-label-eyeliner-manufacturer", "private-label-lash-serum"],
+  },
+  "private-label-eyeliner-manufacturer": {
+    slug: "private-label-eyeliner-manufacturer",
+    title: "Private Label Eyeliner Manufacturer and Supplier | Venus beautiful",
+    description:
+      "Private label liquid eyeliner supplier for beauty brands, wholesalers, and importers. Ask about black and brown colors, logo, packaging, MOQ, samples, and OEM orders.",
+    h1: "Private label eyeliner manufacturer for beauty brands and wholesalers",
+    eyebrow: "Liquid eyeliner private label",
+    summary:
+      "Venus beautiful supplies liquid eyeliner pens for wholesale, private label, and OEM orders. Share your color, quantity, logo, packaging, and target market so we can prepare product and quotation details.",
+    heroImage: "/images/eyeliner-hero.jpg",
+    heroAlt: "Liquid eyeliner pen, applicator tip, and box for private label supply",
+    primaryCta: "Ask for eyeliner options",
+    secondaryCta: "Request eye makeup catalog",
+    badges: ["Liquid eyeliner", "Black and brown", "Private label", "OEM support"],
+    sections: [
+      {
+        title: "Eyeliner product options",
+        body:
+          "The current eyeliner range includes pen-style liquid eyeliner with a fine applicator tip. Product and packaging options are confirmed by order quantity and target market.",
+        bullets: [
+          "Black and brown color options",
+          "Fine-tip liquid eyeliner pen format",
+          "Tube, cap, logo, and outer box options",
+          "Wholesale, private label, and OEM order support",
+        ],
+      },
+      {
+        title: "Private label and packaging",
+        body:
+          "We can review your logo, tube finish, box layout, label wording, and color requirements before bulk production. Available printing and packaging choices depend on the selected component and quantity.",
+        bullets: [
+          "Logo printing and brand presentation",
+          "Tube color and surface finish direction",
+          "Outer box layout and packaging text",
+          "Sample check before bulk printing",
+        ],
+      },
+      {
+        title: "Information for a quotation",
+        body:
+          "Send the available details even if the project is still being prepared. Our sales team will confirm any missing product, packaging, and shipping information.",
+        bullets: [
+          "Black, brown, or another requested color",
+          "Expected quantity and target country",
+          "Logo file or packaging reference image",
+          "Required sample timing and launch plan",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I order eyeliner with my own logo?",
+        answer:
+          "Yes. Private label options can include the logo, tube appearance, label, and outer box. Final options and MOQ depend on the selected packaging.",
+      },
+      {
+        question: "Which eyeliner colors are available?",
+        answer:
+          "The current product images show black and brown options. Please confirm current color availability and quantity requirements when requesting a quote.",
+      },
+      {
+        question: "Can I request an eyeliner sample?",
+        answer:
+          "Yes. Ready samples and customized samples can be discussed before bulk production. Sample cost, customization cost, freight, and timing are confirmed for each request.",
+      },
+      {
+        question: "What should I send for an eyeliner quote?",
+        answer:
+          "Send your color, quantity, country, logo and packaging needs, and whether you need wholesale, private label, or OEM service.",
+      },
+    ],
+    related: ["private-label-mascara-manufacturer", "custom-lash-serum-packaging", "contact"],
   },
   "wholesale-lash-serum": {
     slug: "wholesale-lash-serum",
@@ -337,8 +411,8 @@ export const pages: Record<string, SitePage> = {
     eyebrow: "Wholesale mascara",
     summary:
       "Use this service page if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
-    heroImage: "/images/lash-serum-detail-3.jpeg",
-    heroAlt: "Eye makeup packaging for wholesale mascara supplier inquiries",
+    heroImage: "/images/mascara-hero.jpg",
+    heroAlt: "Venus beautiful mascara product and packaging for wholesale supplier inquiries",
     primaryCta: "Get mascara quote",
     secondaryCta: "Request product list",
     badges: ["Bulk mascara", "Wholesale", "Private label", "Eye makeup"],
@@ -394,7 +468,7 @@ export const pages: Record<string, SitePage> = {
           "Yes. If you are building an eye makeup line, send both products in one message and mention whether you need matching packaging.",
       },
     ],
-    related: ["private-label-mascara-manufacturer", "custom-lash-serum-packaging", "contact"],
+    related: ["private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer", "contact"],
   },
   "custom-lash-serum-packaging": {
     slug: "custom-lash-serum-packaging",
@@ -517,7 +591,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What MOQ should I expect?",
         answer:
-          "One current product shows 50 pcs for ordering and about 100 pcs for some customization options. Please confirm the exact MOQ for your order before planning a launch.",
+          "A typical first-order MOQ in the current supplier information is 100 pieces. Exact MOQ depends on the product, packaging, logo, and customization level, so please confirm it on the quotation.",
       },
       {
         question: "What should I send for a quote?",
@@ -534,23 +608,23 @@ export const pages: Record<string, SitePage> = {
   },
   faq: {
     slug: "faq",
-    title: "FAQ for Lash Serum and Mascara Wholesale Buyers | Venus beautiful",
+    title: "FAQ for Eye Makeup Wholesale and Private Label Buyers | Venus beautiful",
     description:
-      "Frequently asked questions for lash serum, mascara, private label, wholesale, light customization, OEM, MOQ, samples, and packaging.",
-    h1: "FAQ for lash serum and mascara buyers",
+      "Frequently asked questions for lash serum, mascara, eyeliner, private label, wholesale, OEM, MOQ, samples, payment, shipping, and packaging.",
+    h1: "FAQ for eye makeup wholesale and private label buyers",
     eyebrow: "Buyer FAQ",
     summary:
-      "These answers help beauty buyers prepare a clear inquiry for lash serum, mascara, private label packaging, wholesale supply, or OEM orders.",
+      "Find practical order information for lash serum, mascara, eyeliner, private label packaging, wholesale supply, OEM service, samples, payment, and shipping.",
     primaryCta: "Ask a question on WhatsApp",
     secondaryCta: "Send inquiry details",
-    badges: ["Lash serum", "Mascara", "Private label", "Wholesale"],
+    badges: ["Lash serum", "Mascara", "Eyeliner", "Private label"],
     sections: [
       {
         title: "Fastest way to get useful answers",
         body:
           "A clear inquiry helps us avoid vague replies. Share the product, quantity, country, and customization needs at the start.",
         bullets: [
-          "Product: lash serum, mascara, or both",
+          "Product: lash serum, mascara, eyeliner, or a combined eye makeup order",
           "Quantity range",
           "Private label, wholesale, or OEM order type",
           "Packaging requirements and launch timing",
@@ -567,12 +641,23 @@ export const pages: Record<string, SitePage> = {
           "Check packaging text before printing",
         ],
       },
+      {
+        title: "Order terms at a glance",
+        body:
+          "MOQ, sample cost, payment, production time, and shipping are confirmed on each quotation because product and customization requirements vary.",
+        bullets: [
+          "Typical first-order MOQ starts around 100 pieces",
+          "Customized samples usually require 10-15 days",
+          "Bulk production commonly takes about 15-30 days",
+          "Express, air, and sea shipping options are available",
+        ],
+      },
     ],
     faqs: [
       {
         question: "What products are the main focus?",
         answer:
-          "The English site focuses first on lash serum and mascara, with private label, wholesale, light customization, and OEM orders.",
+          "We currently present lash serum, mascara, and liquid eyeliner, with wholesale, private label, light customization, and OEM order support.",
       },
       {
         question: "Do you offer private label?",
@@ -585,27 +670,47 @@ export const pages: Record<string, SitePage> = {
           "Yes. OEM orders can be evaluated after you share target product, order size, packaging requirements, and market requirements.",
       },
       {
-        question: "Can you keep my inquiry details clear?",
+        question: "How can I get a sample?",
         answer:
-          "Yes. Use the form or WhatsApp button and include product, quantity, country, and customization needs so the first reply can stay focused.",
+          "Ready samples without a customized logo may be available without a product charge, while the buyer pays freight. Customized samples may include printing or setup charges. We confirm the exact sample policy before shipment.",
+      },
+      {
+        question: "How long does a customized sample take?",
+        answer:
+          "Customized samples usually take about 10-15 days after the product, logo, packaging, and sample requirements are confirmed.",
+      },
+      {
+        question: "Can you help with packaging and logo design?",
+        answer:
+          "Yes. We can review logo placement, Pantone color references, tube or bottle appearance, outer box layout, and packaging specifications. New mold work requires a sample or technical drawing.",
+      },
+      {
+        question: "What are the payment terms?",
+        answer:
+          "The current standard terms are 30% deposit and 70% balance before shipment by T/T. Small orders may require full payment by T/T or PayPal. Final terms are stated on the quotation.",
+      },
+      {
+        question: "How can orders be shipped?",
+        answer:
+          "Small orders can usually ship by DHL, FedEx, UPS, or another express service, often taking about 3-7 business days after dispatch. Larger orders can ship by air or sea according to cost and timing requirements.",
       },
     ],
-    related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "contact"],
+    related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
   },
   about: {
     slug: "about",
     title: "About Chuangyuan and Venus beautiful | Eye Makeup Supplier",
     description:
-      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. and Venus beautiful, a Shenzhen supplier for lash serum, mascara, and eye makeup private label orders.",
+      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., its cosmetic packaging capabilities, and Venus beautiful eye makeup supply.",
     h1: "About Chuangyuan and Venus beautiful",
     eyebrow: "Company profile",
     summary:
-      "Venus beautiful is the export brand for Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., focused first on lash serum, mascara, wholesale supply, light customization, and OEM orders.",
+      "Venus beautiful is the export brand of Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. We support eye makeup supply and cosmetic packaging requirements for wholesale, private label, and OEM orders.",
     heroImage: "/images/business-license-landscape.jpg",
     heroAlt: "Business license for Chuangyuan Cosmetics Manufacturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",
-    badges: ["Shenzhen, China", "Beauty supply", "Eye makeup", "Import and export"],
+    badges: ["Shenzhen, China", "5,000+ m² facility", "22 injection molding machines", "Export supply"],
     sections: [
       {
         title: "Company information",
@@ -615,13 +720,24 @@ export const pages: Record<string, SitePage> = {
           "Registered in 2025",
           "Located in Longgang District, Shenzhen",
           "Export brand: Venus beautiful",
-          "Main site focus: lash serum and mascara",
+          "Main product focus: lash serum, mascara, and eyeliner",
+        ],
+      },
+      {
+        title: "Cosmetic packaging manufacturing",
+        body:
+          "Our team has more than a decade of experience in cosmetic packaging materials. Manufacturing operations include a facility of more than 5,000 square meters, a team of about 150-200 people, and 22 injection molding machines.",
+        bullets: [
+          "Lip gloss bottles and lipstick tubes",
+          "Eyeliner liquid and eyeliner cream containers",
+          "Mascara bottles and related packaging components",
+          "Product design, molding, production, and sales support",
         ],
       },
       {
         title: "How to request a quotation",
         body:
-          "We supply lash serum, mascara, and eye makeup products for wholesale, private label, light customization, and OEM orders. Send us your product type, quantity, target market, and packaging requirements, and our sales team will reply with catalog, MOQ, sample, and quotation details.",
+          "We supply lash serum, mascara, eyeliner, and related cosmetic packaging for wholesale, private label, light customization, and OEM orders. Send us your product type, quantity, target market, and packaging requirements, and our sales team will reply with catalog, MOQ, sample, and quotation details.",
         bullets: [
           "Request catalog information",
           "Ask about MOQ and samples",
@@ -644,16 +760,16 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What should buyers contact you for?",
         answer:
-          "Buyers should contact us for lash serum, mascara, wholesale supply, light customization, private label packaging, and OEM orders.",
+          "Contact us for lash serum, mascara, eyeliner, cosmetic packaging, wholesale supply, light customization, private label, and OEM orders.",
       },
     ],
-    related: ["contact", "faq", "private-label-lash-serum"],
+    related: ["contact", "faq", "private-label-eyeliner-manufacturer"],
   },
   contact: {
     slug: "contact",
-    title: "Contact Venus beautiful for Lash Serum and Mascara Orders",
+    title: "Contact Venus beautiful for Private Label Eye Makeup Orders",
     description:
-      "Contact Venus beautiful by WhatsApp or email for lash serum, mascara, wholesale, private label, packaging, and OEM inquiries.",
+      "Contact Venus beautiful by WhatsApp or email for lash serum, mascara, eyeliner, wholesale, private label, packaging, and OEM inquiries.",
     h1: "Contact Venus beautiful",
     eyebrow: "Inquiry entry",
     summary:
@@ -667,7 +783,7 @@ export const pages: Record<string, SitePage> = {
         body:
           "A complete first message helps us reply with useful next steps instead of generic questions.",
         bullets: [
-          "Product: lash serum, mascara, or both",
+          "Product: lash serum, mascara, eyeliner, packaging, or a combined order",
           "Quantity and target country",
           "Wholesale, private label, light customization, or OEM",
           "Packaging requirements, logo needs, and timeline",
@@ -689,7 +805,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I send images or packaging requirements?",
         answer:
-          "Yes. Packaging and product photos are useful, especially for mascara tube, lash serum tube, box design, and brand presentation.",
+          "Yes. Packaging and product photos are useful, especially for mascara, eyeliner, lash serum, tube or bottle selection, box design, and brand presentation.",
       },
       {
         question: "Should I ask for catalog or quote first?",
@@ -702,7 +818,7 @@ export const pages: Record<string, SitePage> = {
           "Yes. Many buyers contact suppliers while still shaping the product line. Share the current plan and we can confirm available next steps.",
       },
     ],
-    related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "faq"],
+    related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
   },
 };
 

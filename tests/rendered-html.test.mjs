@@ -28,7 +28,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Venus beautiful \| Private Label Lash Serum and Mascara Supplier<\/title>/i);
+  assert.match(html, /<title>Venus beautiful \| Private Label Eye Makeup Supplier<\/title>/i);
   assert.match(html, /property="og:image"/i);
   assert.match(html, /name="twitter:card" content="summary_large_image"/i);
   assert.match(html, /type="application\/ld\+json"/i);
@@ -36,8 +36,22 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /"@type":"WebPage"/);
   assert.match(html, /Chuangyuan Cosmetics Manufacturing \(Shenzhen\) Co\., Ltd\./);
   assert.match(html, /Wholesale and private label eye makeup support/);
+  assert.match(html, /private-label-eyeliner-manufacturer/i);
+  assert.match(html, /5,000\+ m² facility/i);
   assert.match(html, /src="\/images\/lash-serum-hero\.jpeg"/);
   assert.doesNotMatch(html, /\/_vinext\/image|Initial UTM|Current page|CTA:/i);
+});
+
+test("server-renders the private label eyeliner page and buyer FAQs", async () => {
+  const response = await render("/private-label-eyeliner-manufacturer");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Private label eyeliner manufacturer for beauty brands and wholesalers/i);
+  assert.match(html, /Black and brown color options/i);
+  assert.match(html, /src="\/images\/eyeliner-hero\.jpg"/i);
+  assert.match(html, /https:\/\/wa\.me\/8618144490882/i);
+  assert.match(html, /"@type":"FAQPage"/);
 });
 
 test("server-renders commercial page schemas and clean internal links", async () => {
