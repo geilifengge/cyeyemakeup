@@ -36,6 +36,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /"@type":"WebPage"/);
   assert.match(html, /Chuangyuan Cosmetics Manufacturing \(Shenzhen\) Co\., Ltd\./);
   assert.match(html, /Wholesale and private label eye makeup support/);
+  assert.match(html, /Private label lash serum, mascara, and eyeliner/i);
   assert.match(html, /private-label-eyeliner-manufacturer/i);
   assert.match(html, /5,000\+ m² facility/i);
   assert.match(html, /src="\/images\/lash-serum-hero\.jpeg"/);

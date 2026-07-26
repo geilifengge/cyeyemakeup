@@ -76,7 +76,7 @@ export default function Home() {
         <section className="home-hero">
           <div className="hero-copy">
             <p className="eyebrow">Private label eye makeup supplier</p>
-            <h1>Lash serum, mascara, and eyeliner supply for beauty brands</h1>
+            <h1>Private label lash serum, mascara, and eyeliner</h1>
             <p>
               Venus beautiful supplies lash serum, mascara, liquid eyeliner, and related cosmetic packaging for beauty
               brands, wholesalers, importers, and ecommerce sellers that need wholesale, private label, light
