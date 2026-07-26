@@ -514,13 +514,14 @@ summary {
   margin: clamp(44px, 7vw, 88px) auto;
   padding: clamp(30px, 4vw, 52px);
   align-items: start;
-  background: var(--blue);
-  color: #fff;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
 }
 
 .inquiry-panel .panel-kicker,
 .inquiry-panel p {
-  color: #cde8e4;
+  color: var(--muted);
 }
 
 .inquiry-panel h2 {
@@ -536,14 +537,14 @@ summary {
 }
 
 .inquiry-panel .button.primary {
-  background: #fff;
-  color: var(--blue);
-  border-color: #fff;
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
 }
 
 .inquiry-panel .button.secondary {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.62);
+  color: var(--blue);
+  border-color: var(--blue);
 }
 
 .mini-form {
@@ -551,15 +552,15 @@ summary {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 0;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  background: var(--soft);
   padding: 16px;
 }
 
 .mini-form label {
   display: grid;
   gap: 8px;
-  color: #e3f3f1;
+  color: var(--ink);
   font-size: 13px;
   font-weight: 800;
 }
@@ -567,9 +568,9 @@ summary {
 .mini-form input,
 .mini-form textarea {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
   font: inherit;
   min-height: 44px;
   padding: 11px 12px;
@@ -583,7 +584,7 @@ summary {
 
 .mini-form input::placeholder,
 .mini-form textarea::placeholder {
-  color: #c5d9da;
+  color: #71808d;
 }
 
 .mini-form .wide {

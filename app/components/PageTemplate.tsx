@@ -75,8 +75,9 @@ export function PageTemplate({ page }: PageTemplateProps) {
             </p>
             <ul>
               <li>Registered Shenzhen cosmetics company information</li>
-              <li>Product focus: lash serum, mascara, eyeliner, and cosmetic packaging</li>
-              <li>Service options: wholesale, private label, light customization, and OEM support</li>
+              <li>15 years of factory production experience for eye makeup products</li>
+              <li>Product focus: eyeliner, mascara, lash serum, eyebrow serum, and cosmetic packaging</li>
+              <li>Service options: ready stock, mixed small orders, private label customization, and OEM support</li>
             </ul>
           </div>
           <div className="proof-card license-card">

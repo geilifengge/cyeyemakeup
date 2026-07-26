@@ -845,50 +845,50 @@ export const pages: Record<string, SitePage> = {
   },
   about: {
     slug: "about",
-    title: "About Chuangyuan and Venus beautiful | Eye Makeup Supplier",
+    title: "About Chuangyuan and Venus beautiful | Eye Makeup Manufacturer",
     description:
-      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., its cosmetic packaging capabilities, and Venus beautiful eye makeup supply.",
-    h1: "About Chuangyuan and Venus beautiful",
+      "Learn about Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd., an eye makeup manufacturer with 15 years of factory production experience.",
+    h1: "Eye makeup manufacturing by Chuangyuan and Venus beautiful",
     eyebrow: "Company profile",
     summary:
-      "Venus beautiful is the export brand of Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. We support eye makeup supply and cosmetic packaging requirements for wholesale, private label, and OEM orders.",
+      "Venus beautiful is the export brand of Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. We manufacture eyeliner, mascara, lash serum, and eyebrow serum for ready stock, mixed small orders, private label, and OEM requirements.",
     heroImage: "/images/business-license-landscape.jpg",
     heroAlt: "Business license for Chuangyuan Cosmetics Manufacturing Shenzhen",
     primaryCta: "Contact Venus beautiful",
     secondaryCta: "Request company details",
-    badges: ["Shenzhen, China", "5,000+ m² facility", "22 injection molding machines", "Export supply"],
+    badges: ["15 years production experience", "Shenzhen, China", "Private label", "Export supply"],
     sections: [
       {
-        title: "Company information",
+        title: "Eye makeup manufacturing experience",
         body:
-          "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd. is registered in Shenzhen, Guangdong, China. The business scope includes cosmetics, personal care products, hair accessories, daily chemical products, packaging-related goods, and import/export activity.",
+          "We are a professional manufacturer specializing in eye makeup products, with 15 years of factory production experience. Our main product range covers eyeliner, mascara, lash serum, and eyebrow serum.",
         bullets: [
-          "Registered in 2025",
-          "Located in Longgang District, Shenzhen",
-          "Export brand: Venus beautiful",
-          "Main product focus: lash serum, mascara, and eyeliner",
+          "Eye makeup product manufacturing",
+          "Ready stock and mixed small orders",
+          "Private label customization",
+          "OEM requirements evaluated by product and quantity",
         ],
       },
       {
-        title: "Cosmetic packaging manufacturing",
+        title: "Quality and market support",
         body:
-          "Our team has more than a decade of experience in cosmetic packaging materials. Manufacturing operations include a facility of more than 5,000 square meters, a team of about 150-200 people, and 22 injection molding machines.",
+          "We mainly serve European and American markets and also support buyers in other export markets. Product quality, formula safety, and delivery stability are controlled throughout order preparation and production.",
         bullets: [
-          "Lip gloss bottles and lipstick tubes",
-          "Eyeliner liquid and eyeliner cream containers",
+          "Certificate and qualification documents available for review",
+          "Product and sample confirmation before bulk production",
+          "Formula and packaging requirements checked by order",
+          "Production and delivery timing confirmed on each quotation",
+        ],
+      },
+      {
+        title: "Product and packaging capabilities",
+        body:
+          "In addition to finished eye makeup products, our manufacturing operations include a facility of more than 5,000 square meters and 22 injection molding machines for color cosmetic packaging components.",
+        bullets: [
           "Mascara bottles and related packaging components",
-          "Product design, molding, production, and sales support",
-        ],
-      },
-      {
-        title: "How to request a quotation",
-        body:
-          "We supply lash serum, mascara, eyeliner, and related cosmetic packaging for wholesale, private label, light customization, and OEM orders. Send us your product type, quantity, target market, and packaging requirements, and our sales team will reply with catalog, MOQ, sample, and quotation details.",
-        bullets: [
-          "Request catalog information",
-          "Ask about MOQ and samples",
-          "Request private label packaging details",
-          "Prepare wholesale or OEM order requirements",
+          "Liquid eyeliner and eyeliner cream containers",
+          "Lip gloss bottles and lipstick tubes",
+          "Component selection, molding, decoration, samples, and bulk production",
         ],
       },
     ],
@@ -904,9 +904,19 @@ export const pages: Record<string, SitePage> = {
           "The company is based in Shenzhen, Guangdong, China.",
       },
       {
-        question: "What should buyers contact you for?",
+        question: "Which products do you manufacture?",
         answer:
-          "Contact us for lash serum, mascara, eyeliner, cosmetic packaging, wholesale supply, light customization, private label, and OEM orders.",
+          "We manufacture eyeliner, mascara, lash serum, eyebrow serum, and related color cosmetic packaging components.",
+      },
+      {
+        question: "Which order types do you support?",
+        answer:
+          "We support ready stock, mixed small orders, private label customization, and OEM requirements. MOQ, samples, production time, and packaging options are confirmed for each order.",
+      },
+      {
+        question: "Can buyers review certificates and qualification documents?",
+        answer:
+          "Yes. Available certificate, qualification, formula, and product documents can be reviewed according to the selected product and destination market requirements.",
       },
     ],
     related: ["contact", "faq", "private-label-eyeliner-manufacturer"],

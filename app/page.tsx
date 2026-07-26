@@ -113,8 +113,8 @@ export default function Home() {
             <span>Registered Shenzhen supplier</span>
           </div>
           <div>
-            <strong>10+ years</strong>
-            <span>Cosmetic packaging industry experience</span>
+            <strong>15 years</strong>
+            <span>Factory production experience</span>
           </div>
           <div>
             <strong>5,000+ m²</strong>
@@ -130,12 +130,11 @@ export default function Home() {
           <p className="eyebrow">Supplier capabilities</p>
           <h2>Wholesale and private label eye makeup support from one supplier team</h2>
           <p>
-            We supply lash serum, mascara, and liquid eyeliner for brands, wholesalers, importers, salons, and ecommerce
-            sellers. As a cosmetic packaging manufacturer, we also produce mascara bottles, liquid eyeliner containers,
-            lip gloss bottles, and lipstick tubes. Service options include ready wholesale supply, private label
-            changes, tube or bottle and box specifications, logo requirements, sample checks, and OEM support. Share
-            your product, quantity, country, launch timing, and packaging requirements so we can prepare a practical
-            quotation.
+            We manufacture eyeliner, mascara, lash serum, and eyebrow serum for brands, wholesalers, importers, salons,
+            and ecommerce sellers. Our team has 15 years of factory production experience and mainly serves European
+            and American markets. We support ready stock, mixed small orders, private label customization, and OEM
+            requirements. As a cosmetic packaging manufacturer, we also produce mascara bottles, liquid eyeliner
+            containers, lip gloss bottles, and lipstick tubes.
           </p>
         </section>
 
@@ -178,16 +177,17 @@ export default function Home() {
         <section className="supplier-proof home-proof">
           <div>
             <p className="eyebrow">Company profile</p>
-            <h2>Shenzhen supplier with cosmetic packaging manufacturing experience</h2>
+            <h2>Eye makeup manufacturer with 15 years of factory production experience</h2>
             <p>
-              Venus beautiful is the export brand of {company.legalName}. Our team supports eye makeup products and
-              cosmetic packaging from product and component selection through samples, logo, box, quotation, and bulk
-              order confirmation.
+              Venus beautiful is the export brand of {company.legalName}. We manufacture eyeliner, mascara, lash serum,
+              and eyebrow serum, with ready stock, mixed small orders, private label customization, and OEM support for
+              buyers in Europe, the Americas, and other export markets.
             </p>
             <ul>
-              <li>Product focus: lash serum, mascara, eyeliner, and cosmetic packaging</li>
+              <li>Product focus: eyeliner, mascara, lash serum, eyebrow serum, and cosmetic packaging</li>
+              <li>Quality focus: product consistency, formula safety, and stable delivery</li>
+              <li>Certificate and qualification documents available for order review</li>
               <li>Manufacturing capability: 5,000+ m² facility and 22 injection molding machines</li>
-              <li>Inquiry focus: MOQ, samples, packaging, quote, and lead time</li>
               <li>Contact: {company.whatsappDisplay} and {company.email}</li>
             </ul>
           </div>

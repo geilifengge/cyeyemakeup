@@ -38,6 +38,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /Wholesale and private label eye makeup support/);
   assert.match(html, /Private label lash serum, mascara, and eyeliner/i);
   assert.match(html, /private-label-eyeliner-manufacturer/i);
+  assert.match(html, /15 years.*factory production experience/i);
   assert.match(html, /5,000\+ m² facility/i);
   assert.match(html, /src="\/images\/lash-serum-hero\.jpeg"/);
   assert.doesNotMatch(html, /\/_vinext\/image|Initial UTM|Current page|CTA:/i);
@@ -67,6 +68,19 @@ test("server-renders commercial page schemas and clean internal links", async ()
   assert.match(html, /Business license for Chuangyuan Cosmetics Manufacturing/);
   assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page|positioning/i);
   assert.doesNotMatch(html, /Search Console|keyword research|ranking|search volume|pending deploy/i);
+});
+
+test("server-renders updated company manufacturing profile", async () => {
+  const response = await render("/about");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /15 years of factory production experience/i);
+  assert.match(html, /eyeliner, mascara, lash serum, and eyebrow serum/i);
+  assert.match(html, /ready stock, mixed small orders, private label customization/i);
+  assert.match(html, /European and American markets/i);
+  assert.match(html, /Certificate and qualification documents available for review/i);
+  assert.doesNotMatch(html, /10\+ years/i);
 });
 
 test("server-renders wholesale eyeliner page with direct inquiry path", async () => {

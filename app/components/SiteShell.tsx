@@ -3,7 +3,7 @@ import { company, navItems } from "../site-data";
 
 const whatsappMessage = [
   "Hello Venus beautiful,",
-  "I would like to request lash serum, mascara, or eyeliner product details.",
+  "I would like to request eyeliner, mascara, lash serum, eyebrow serum, or cosmetic packaging details.",
   "Please send catalog, MOQ, sample, packaging, and quote information.",
 ].join("\n");
 
