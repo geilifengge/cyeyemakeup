@@ -42,8 +42,10 @@ const commercialPages = [
   "lash-serum-manufacturer",
   "private-label-mascara-manufacturer",
   "private-label-eyeliner-manufacturer",
+  "cosmetic-packaging-manufacturer",
   "wholesale-lash-serum",
   "wholesale-mascara",
+  "wholesale-eyeliner",
   "custom-lash-serum-packaging",
 ];
 
@@ -129,10 +131,11 @@ export default function Home() {
           <h2>Wholesale and private label eye makeup support from one supplier team</h2>
           <p>
             We supply lash serum, mascara, and liquid eyeliner for brands, wholesalers, importers, salons, and ecommerce
-            sellers. Our cosmetic packaging experience also covers mascara bottles, eyeliner containers, lip gloss
-            bottles, and lipstick tubes. Service options include ready wholesale supply, private label changes, tube or
-            bottle and box specifications, logo requirements, sample checks, and OEM support. Share your product,
-            quantity, country, launch timing, and packaging requirements so we can prepare a practical quotation.
+            sellers. As a cosmetic packaging manufacturer, we also produce mascara bottles, liquid eyeliner containers,
+            lip gloss bottles, and lipstick tubes. Service options include ready wholesale supply, private label
+            changes, tube or bottle and box specifications, logo requirements, sample checks, and OEM support. Share
+            your product, quantity, country, launch timing, and packaging requirements so we can prepare a practical
+            quotation.
           </p>
         </section>
 

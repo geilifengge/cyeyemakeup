@@ -46,6 +46,7 @@ export function SiteFooter() {
         <Link href="/private-label-lash-serum">Lash serum</Link>
         <Link href="/private-label-mascara-manufacturer">Mascara</Link>
         <Link href="/private-label-eyeliner-manufacturer">Eyeliner</Link>
+        <Link href="/cosmetic-packaging-manufacturer">Packaging</Link>
         <Link href="/faq">FAQ</Link>
       </div>
     </footer>

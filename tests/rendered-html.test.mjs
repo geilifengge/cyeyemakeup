@@ -68,3 +68,26 @@ test("server-renders commercial page schemas and clean internal links", async ()
   assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page|positioning/i);
   assert.doesNotMatch(html, /Search Console|keyword research|ranking|search volume|pending deploy/i);
 });
+
+test("server-renders wholesale eyeliner page with direct inquiry path", async () => {
+  const response = await render("/wholesale-eyeliner");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Wholesale eyeliner and bulk liquid eyeliner supply/i);
+  assert.match(html, /Ready wholesale products or private label packaging/i);
+  assert.match(html, /https:\/\/wa\.me\/8618144490882/i);
+  assert.match(html, /"@type":"FAQPage"/);
+});
+
+test("server-renders cosmetic packaging manufacturing scope", async () => {
+  const response = await render("/cosmetic-packaging-manufacturer");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Cosmetic packaging manufacturer for eye makeup and lip products/i);
+  assert.match(html, /22 injection molding machines/i);
+  assert.match(html, /Liquid eyeliner and eyeliner cream containers/i);
+  assert.match(html, /Lip gloss bottles and applicator packaging/i);
+  assert.doesNotMatch(html, /search volume|keyword|SEO strategy/i);
+});

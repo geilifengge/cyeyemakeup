@@ -17,7 +17,7 @@ export const navItems = [
   { href: "/private-label-mascara-manufacturer", label: "Mascara" },
   { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
   { href: "/wholesale-lash-serum", label: "Wholesale" },
-  { href: "/custom-lash-serum-packaging", label: "Packaging" },
+  { href: "/cosmetic-packaging-manufacturer", label: "Packaging" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
@@ -332,7 +332,153 @@ export const pages: Record<string, SitePage> = {
           "Send your color, quantity, country, logo and packaging needs, and whether you need wholesale, private label, or OEM service.",
       },
     ],
-    related: ["private-label-mascara-manufacturer", "custom-lash-serum-packaging", "contact"],
+    related: ["wholesale-eyeliner", "private-label-mascara-manufacturer", "cosmetic-packaging-manufacturer"],
+  },
+  "wholesale-eyeliner": {
+    slug: "wholesale-eyeliner",
+    title: "Wholesale Eyeliner and Bulk Liquid Eyeliner Supplier | Venus beautiful",
+    description:
+      "Wholesale eyeliner supplier for distributors, beauty brands, and importers. Request bulk liquid eyeliner, colors, packaging, MOQ, samples, and private label options.",
+    h1: "Wholesale eyeliner and bulk liquid eyeliner supply",
+    eyebrow: "Wholesale eyeliner",
+    summary:
+      "Venus beautiful supplies pen-style liquid eyeliner for wholesale and bulk orders. Send your color, quantity, destination country, packaging needs, and whether you need ready products or private label service.",
+    heroImage: "/images/eyeliner-colors.jpg",
+    heroAlt: "Black and brown liquid eyeliner products for wholesale and bulk orders",
+    primaryCta: "Get wholesale eyeliner quote",
+    secondaryCta: "Request eyeliner catalog",
+    badges: ["Wholesale eyeliner", "Bulk orders", "Black and brown", "Private label option"],
+    sections: [
+      {
+        title: "Wholesale eyeliner options",
+        body:
+          "We supply liquid eyeliner for distributors, importers, beauty brands, and ecommerce sellers. Product availability, packaging, MOQ, and lead time are confirmed for each order.",
+        bullets: [
+          "Pen-style liquid eyeliner with a fine applicator tip",
+          "Black and brown color options shown in the current range",
+          "Ready wholesale products or private label packaging",
+          "Single-product or combined eye makeup orders",
+        ],
+      },
+      {
+        title: "Bulk order information",
+        body:
+          "A practical bulk eyeliner quotation starts with the product format and quantity. Packaging and printing choices can change both MOQ and production timing.",
+        bullets: [
+          "Expected quantity for each color",
+          "Destination country and preferred shipping method",
+          "Ready packaging, logo printing, or custom outer box",
+          "Required sample and delivery timing",
+        ],
+      },
+      {
+        title: "Wholesale or private label",
+        body:
+          "Choose wholesale supply when speed and product availability matter most. Choose private label when the order needs your logo, tube appearance, box layout, or coordinated brand presentation.",
+        bullets: [
+          "Wholesale for resale and catalog expansion",
+          "Private label for your own brand presentation",
+          "Sample review before customized bulk printing",
+          "OEM requirements evaluated from your specifications",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I buy liquid eyeliner in bulk?",
+        answer:
+          "Yes. Send the required quantity, color, country, and packaging preference so we can confirm current product options, MOQ, samples, and quotation details.",
+      },
+      {
+        question: "Can wholesale eyeliner include my logo?",
+        answer:
+          "Yes. Logo printing and outer box options can be added through private label service. Available methods and MOQ depend on the selected tube and packaging.",
+      },
+      {
+        question: "Can I order black and brown eyeliner together?",
+        answer:
+          "The current range shows black and brown options. Mixed-color order details depend on current availability and the quantity required for each color.",
+      },
+      {
+        question: "Can eyeliner ship with mascara or lash serum?",
+        answer:
+          "Yes. We can prepare a combined eye makeup quotation when you send the quantity and packaging requirements for each product.",
+      },
+    ],
+    related: ["private-label-eyeliner-manufacturer", "wholesale-mascara", "contact"],
+  },
+  "cosmetic-packaging-manufacturer": {
+    slug: "cosmetic-packaging-manufacturer",
+    title: "Cosmetic Packaging Manufacturer and Supplier | Venus beautiful",
+    description:
+      "Cosmetic packaging manufacturer and supplier for mascara bottles, eyeliner containers, lip gloss bottles, and lipstick tubes. Ask about custom components, samples, molds, and bulk orders.",
+    h1: "Cosmetic packaging manufacturer for eye makeup and lip products",
+    eyebrow: "Cosmetic packaging manufacturer",
+    summary:
+      "Chuangyuan manufactures cosmetic packaging for mascara, eyeliner, lip gloss, and lipstick products. We support component selection, color and finish requirements, logo decoration, mold evaluation, samples, and bulk production.",
+    heroImage: "/images/mascara-hero.jpg",
+    heroAlt: "Mascara tube, brush, and box representing cosmetic packaging manufacturing",
+    primaryCta: "Request packaging options",
+    secondaryCta: "Send component requirements",
+    badges: ["5,000+ m² facility", "22 injection molding machines", "Custom components", "OEM and ODM"],
+    sections: [
+      {
+        title: "Packaging products we manufacture",
+        body:
+          "Our packaging experience focuses on color cosmetic components. Buyers can request existing component options or send a reference sample or technical drawing for evaluation.",
+        bullets: [
+          "Mascara bottles, caps, wipers, and brush combinations",
+          "Liquid eyeliner and eyeliner cream containers",
+          "Lip gloss bottles and applicator packaging",
+          "Lipstick tubes and related color cosmetic components",
+        ],
+      },
+      {
+        title: "Custom cosmetic packaging support",
+        body:
+          "We support packaging projects from component selection through decoration and bulk production. The available process depends on structure, material, finish, quantity, and whether a new mold is required.",
+        bullets: [
+          "Component color, surface finish, and material direction",
+          "Logo printing and brand decoration requirements",
+          "Existing mold selection or new mold evaluation",
+          "Sample confirmation before bulk production",
+        ],
+      },
+      {
+        title: "Information needed for a packaging quote",
+        body:
+          "Send as much product and component detail as you have. A physical sample, drawing, reference photo, or target capacity makes the first review more accurate.",
+        bullets: [
+          "Packaging type and intended cosmetic product",
+          "Capacity, dimensions, material, and component structure",
+          "Color, finish, logo, and decoration requirements",
+          "Order quantity, destination country, and target timeline",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Are you a cosmetic packaging manufacturer or a trading company?",
+        answer:
+          "Chuangyuan has cosmetic packaging manufacturing operations in Shenzhen, including a facility of more than 5,000 square meters and 22 injection molding machines.",
+      },
+      {
+        question: "Can you make custom mascara tubes?",
+        answer:
+          "Yes. Mascara packaging requests can cover the bottle, cap, wiper, brush, color, finish, and logo decoration. Send a reference sample or specification for review.",
+      },
+      {
+        question: "Can you supply liquid eyeliner containers?",
+        answer:
+          "Yes. We manufacture packaging for liquid eyeliner and eyeliner cream. Available structures, applicators, colors, and finishes are confirmed from your requirements.",
+      },
+      {
+        question: "Can you develop a new cosmetic packaging mold?",
+        answer:
+          "New mold projects can be evaluated from a physical sample, technical drawing, dimensions, material requirements, and estimated order quantity.",
+      },
+    ],
+    related: ["custom-lash-serum-packaging", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
   },
   "wholesale-lash-serum": {
     slug: "wholesale-lash-serum",
