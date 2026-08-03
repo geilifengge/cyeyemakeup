@@ -54,6 +54,18 @@ test("server-renders the private label eyeliner page and buyer FAQs", async () =
   assert.match(html, /src="\/images\/eyeliner-hero\.jpg"/i);
   assert.match(html, /https:\/\/wa\.me\/8618144490882/i);
   assert.match(html, /"@type":"FAQPage"/);
+  assert.match(html, /private-label-eyeliner-cost-moq-samples/i);
+});
+
+test("server-renders the eyeliner cost, MOQ, samples, and lead-time guide", async () => {
+  const response = await render("/private-label-eyeliner-cost-moq-samples");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Private label eyeliner cost, MOQ, samples, and lead time/i);
+  assert.match(html, /How much does private label eyeliner cost\?/i);
+  assert.match(html, /"@type":"FAQPage"/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/private-label-eyeliner-cost-moq-samples"/i);
 });
 
 test("server-renders commercial page schemas and clean internal links", async () => {

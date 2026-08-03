@@ -197,7 +197,7 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-mascara-manufacturer",
     title: "Private Label Mascara Manufacturer | Venus beautiful",
     description:
-      "Private label mascara supplier for beauty brands and wholesale buyers. We supply mascara options for tube, brush, color, packaging, MOQ, and OEM orders.",
+      "Private label mascara manufacturer for beauty brands and wholesale buyers. Compare formula direction, brush, tube, packaging, MOQ, samples, and OEM order options.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
@@ -220,14 +220,14 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Who should order",
+        title: "Formula, brush, and packaging brief",
         body:
-          "For beauty brands, wholesalers, importers, and ecommerce sellers looking for mascara supply, private label packaging, or OEM production.",
+          "A useful mascara brief connects the desired wear result with the applicator and the retail presentation. This lets us check suitable product direction before discussing the final component and printing choices.",
         bullets: [
-          "New brands launching eye makeup products",
-          "Wholesalers adding mascara to an eye makeup catalog",
-          "Sellers comparing bulk or private label options",
-          "Teams that need tube and box customization",
+          "Waterproof, washable, lengthening, volumizing, or curling direction",
+          "Brush shape, applicator feel, tube capacity, and cap preference",
+          "Black, brown, or another requested color direction",
+          "Logo, label, outer box, and target retail positioning",
         ],
       },
       {
@@ -239,6 +239,17 @@ export const pages: Record<string, SitePage> = {
           "Tube color, cap style, and brush specification",
           "Expected quantity and launch timing",
           "Logo, label, and outer box needs",
+        ],
+      },
+      {
+        title: "MOQ, samples, and production planning",
+        body:
+          "Private label mascara cost and timing change with the product direction, order quantity, packaging, printing, and destination. We confirm these details on a quote rather than publishing a price that may not match your chosen specification.",
+        bullets: [
+          "Ask for the MOQ for ready wholesale, logo printing, and custom packaging separately",
+          "Confirm whether the sample uses the same tube, brush, and box as the planned bulk order",
+          "Share the destination country early so label and shipping questions can be reviewed",
+          "Confirm production and delivery timing after the packaging and quantity are agreed",
         ],
       },
     ],
@@ -258,8 +269,13 @@ export const pages: Record<string, SitePage> = {
         answer:
           "They can be discussed together as an eye makeup or lash care line, especially if you need matching packaging or a catalog-style quote.",
       },
+      {
+        question: "What affects a private label mascara quote?",
+        answer:
+          "The main drivers are product direction, order quantity, selected tube and brush, logo or box printing, sample requirements, and shipping destination. Send those details for a quote matched to your project.",
+      },
     ],
-    related: ["wholesale-mascara", "private-label-eyeliner-manufacturer", "private-label-lash-serum"],
+    related: ["wholesale-mascara", "private-label-eyeliner-manufacturer", "private-label-lash-serum", "private-label-eyeliner-cost-moq-samples"],
   },
   "private-label-eyeliner-manufacturer": {
     slug: "private-label-eyeliner-manufacturer",
@@ -309,6 +325,17 @@ export const pages: Record<string, SitePage> = {
           "Required sample timing and launch plan",
         ],
       },
+      {
+        title: "Cost, MOQ, samples, and lead time",
+        body:
+          "Eyeliner quotations are built from the order scope rather than one public price. Quantity, product format, selected component, printing, outer box, sample work, and destination all affect the final commercial plan.",
+        bullets: [
+          "Ask for separate options for ready wholesale, logo printing, and private label packaging",
+          "Confirm sample cost, freight, and whether the sample reflects the planned bulk presentation",
+          "Share a required launch date so production and shipping timing can be checked together",
+          "Use the eyeliner cost and MOQ guide when you are preparing a first quote request",
+        ],
+      },
     ],
     faqs: [
       {
@@ -331,8 +358,13 @@ export const pages: Record<string, SitePage> = {
         answer:
           "Send your color, quantity, country, logo and packaging needs, and whether you need wholesale, private label, or OEM service.",
       },
+      {
+        question: "What affects private label eyeliner cost?",
+        answer:
+          "The main cost drivers are quantity, selected pen and packaging, logo or box printing, sample requirements, product direction, and shipping destination. We quote against the final requirement list so the result is practical for your order.",
+      },
     ],
-    related: ["wholesale-eyeliner", "private-label-mascara-manufacturer", "cosmetic-packaging-manufacturer"],
+    related: ["wholesale-eyeliner", "private-label-mascara-manufacturer", "cosmetic-packaging-manufacturer", "private-label-eyeliner-cost-moq-samples"],
   },
   "wholesale-eyeliner": {
     slug: "wholesale-eyeliner",
@@ -624,7 +656,7 @@ export const pages: Record<string, SitePage> = {
     h1: "Custom lash serum packaging for private label beauty brands",
     eyebrow: "Packaging and light customization",
     summary:
-      "Packaging often decides whether a lash serum product feels ready for retail. Share your tube style, color, logo, and box requirements so we can confirm available options.",
+      "Packaging often decides whether a lash serum product feels ready for retail. Share your tube style, color, logo, box requirements, order quantity, and target market so we can confirm available options.",
     heroImage: "/images/lash-serum-white.jpg",
     heroAlt: "White lash serum tube and box for private label packaging buyers",
     primaryCta: "Ask packaging options",
@@ -643,9 +675,9 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "What affects MOQ",
+        title: "What affects MOQ and packaging cost",
         body:
-          "Customization level affects MOQ. Simple logo or packaging choices are usually easier than unique molds or deep formula changes.",
+          "Customization level affects MOQ and packaging cost. Simple logo or stock component choices are usually easier to quote than unique molds, special printing, or deep formula changes.",
         bullets: [
           "Stock packaging versus custom packaging",
           "Printing method and color count",
@@ -654,14 +686,25 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
-        title: "Packaging requirements",
+        title: "Packaging requirements and sample check",
         body:
-          "A complete packaging request does not need to be perfect. A few product photos and a quantity range are enough for an initial quotation.",
+          "A complete packaging request does not need to be perfect. A few reference photos and a quantity range are enough for an initial quotation; a sample check then helps confirm the product, tube, printing, and box before bulk production.",
         bullets: [
           "Brand logo file if available",
           "Tube and box sample images",
           "Target retail price or channel",
           "Expected order quantity and timeline",
+        ],
+      },
+      {
+        title: "Prepare a retail-ready packaging brief",
+        body:
+          "Good packaging decisions connect your buyer, retail channel, and product claim direction. We can review the practical production details after you share the intended market and the information you already have.",
+        bullets: [
+          "Target market and intended sales channel",
+          "Required product name, label language, and claim direction for review",
+          "Tube, cap, outer box, and finish references",
+          "Whether you need ready wholesale goods, light customization, or OEM support",
         ],
       },
     ],
@@ -681,8 +724,97 @@ export const pages: Record<string, SitePage> = {
         answer:
           "Yes. A product or packaging photo is one of the best ways to speed up quotation.",
       },
+      {
+        question: "What should I send for a lash serum packaging quote?",
+        answer:
+          "Send your quantity, target country, logo file if available, tube and box references, preferred finish, and required timeline. We will confirm the available packaging route, samples, MOQ, and quote details.",
+      },
     ],
     related: ["private-label-lash-serum", "lash-serum-moq-samples-lead-time", "contact"],
+  },
+  "private-label-eyeliner-cost-moq-samples": {
+    slug: "private-label-eyeliner-cost-moq-samples",
+    title: "Private Label Eyeliner Cost, MOQ, Samples and Lead Time | Venus beautiful",
+    description:
+      "Buyer guide to private label eyeliner cost, MOQ, samples, packaging, logo printing, production timing, and the details needed for an accurate OEM quote.",
+    h1: "Private label eyeliner cost, MOQ, samples, and lead time",
+    eyebrow: "Eyeliner quote guide",
+    summary:
+      "Private label eyeliner cost depends on the exact product and order plan. This guide explains the details that affect a quote, so buyers can request MOQ, samples, packaging, and lead-time information with fewer unknowns.",
+    heroImage: "/images/eyeliner-hero.jpg",
+    heroAlt: "Liquid eyeliner pen and packaging for private label cost and MOQ planning",
+    primaryCta: "Request eyeliner quote details",
+    secondaryCta: "Send eyeliner requirements",
+    badges: ["Cost drivers", "MOQ", "Samples", "Lead time"],
+    sections: [
+      {
+        title: "What affects private label eyeliner cost",
+        body:
+          "There is no useful single eyeliner price for every buyer. A ready product order, a logo-printing project, and a custom packaging or OEM project use different components, quantities, and production steps.",
+        bullets: [
+          "Order quantity and the number of colors or variants",
+          "Liquid eyeliner pen, applicator, tube, cap, and selected packaging",
+          "Logo printing, label work, outer box, and requested surface finish",
+          "Sample work, customization level, destination, and shipping plan",
+        ],
+      },
+      {
+        title: "Choose the right order route first",
+        body:
+          "Choosing the service route early makes the MOQ and quotation discussion more accurate. We can compare the practical options once we know whether speed, branding, or deeper customization is the main priority.",
+        bullets: [
+          "Ready wholesale supply for buyers focused on current availability",
+          "Private label service for logo, packaging, and retail presentation",
+          "OEM support for projects with more specific product or packaging requirements",
+          "Combined eyeliner, mascara, or lash serum requests when a coordinated line is needed",
+        ],
+      },
+      {
+        title: "Samples and production timing",
+        body:
+          "Samples are useful for checking the product, applicator, packaging feel, and brand presentation before bulk production. Final timing is confirmed after the quantity, packaging, printing, and shipping method are agreed.",
+        bullets: [
+          "Confirm whether the sample represents the planned bulk product and packaging",
+          "Review logo, label wording, and outer box before bulk printing",
+          "Share the destination country and desired launch date early",
+          "Confirm production time and shipping time separately on the quotation",
+        ],
+      },
+      {
+        title: "Send a quote-ready request",
+        body:
+          "You do not need every detail to start. The information below is enough for our team to identify the missing items and prepare a more useful first response.",
+        bullets: [
+          "Black, brown, or another requested eyeliner color",
+          "Expected quantity and target market",
+          "Logo file, packaging reference, or product image if available",
+          "Required samples, customization level, and launch timeline",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does private label eyeliner cost?",
+        answer:
+          "Cost depends on quantity, selected pen and packaging, printing, sample work, product direction, and shipping destination. Send those details for a quote matched to your project instead of relying on a generic online price.",
+      },
+      {
+        question: "What is the MOQ for private label eyeliner?",
+        answer:
+          "MOQ depends on whether you need ready wholesale supply, logo printing, or a more customized private label or OEM order. We confirm the applicable MOQ after reviewing the selected product and packaging.",
+      },
+      {
+        question: "Can I order eyeliner samples before bulk production?",
+        answer:
+          "Yes. Ready samples and customized samples can be discussed before a bulk order. Sample cost, freight, available customization, and timing are confirmed for each request.",
+      },
+      {
+        question: "What is the lead time for private label eyeliner?",
+        answer:
+          "Lead time is confirmed after quantity, components, logo or box printing, sample approval, and shipping plan are clear. Share your launch date so production and delivery timing can be checked together.",
+      },
+    ],
+    related: ["private-label-eyeliner-manufacturer", "wholesale-eyeliner", "private-label-mascara-manufacturer", "cosmetic-packaging-manufacturer"],
   },
   "lash-serum-moq-samples-lead-time": {
     slug: "lash-serum-moq-samples-lead-time",

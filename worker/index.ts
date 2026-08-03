@@ -29,6 +29,14 @@ const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
+    // Keep one public URL for every page. The www hostname is configured for
+    // reachability, but search engines and buyers should always land on the
+    // canonical apex domain.
+    if (url.hostname === "www.cyeyemakeup.com") {
+      url.hostname = "cyeyemakeup.com";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {

@@ -47,6 +47,7 @@ const commercialPages = [
   "wholesale-mascara",
   "wholesale-eyeliner",
   "custom-lash-serum-packaging",
+  "private-label-eyeliner-cost-moq-samples",
 ];
 
 const productImages = [
