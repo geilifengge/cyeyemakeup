@@ -19,6 +19,22 @@ interface ExecutionContext {
   passThroughOnException(): void;
 }
 
+const securityHeaders = {
+  "Content-Security-Policy": "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me mailto:",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Strict-Transport-Security": "max-age=31536000",
+  "X-Content-Type-Options": "nosniff",
+} as const;
+
+function withSecurityHeaders(response: Response) {
+  const secured = new Response(response.body, response);
+  for (const [name, value] of Object.entries(securityHeaders)) {
+    secured.headers.set(name, value);
+  }
+  return secured;
+}
+
 // Image security config. SVG sources with .svg extension auto-skip the
 // optimization endpoint on the client side (served directly, no proxy).
 // To route SVGs through the optimizer (with security headers), set
@@ -55,7 +71,12 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    const secured = withSecurityHeaders(response);
+    if (url.pathname === "/llms.txt") {
+      secured.headers.set("Content-Type", "text/plain; charset=utf-8");
+    }
+    return secured;
   },
 };
 

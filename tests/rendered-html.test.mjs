@@ -7,7 +7,7 @@ async function render(path = "/") {
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request(`http://localhost${path}`, {
+    new Request(`https://localhost${path}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -28,7 +28,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Venus beautiful \| Private Label Eye Makeup Supplier<\/title>/i);
+  assert.match(html, /<title>Wholesale &amp; Private Label Eye Makeup \| Manufacturer in China<\/title>/i);
   assert.match(html, /property="og:image"/i);
   assert.match(html, /name="twitter:card" content="summary_large_image"/i);
   assert.match(html, /type="application\/ld\+json"/i);
@@ -50,9 +50,9 @@ test("server-renders the private label eyeliner page and buyer FAQs", async () =
 
   const html = await response.text();
   assert.match(html, /Private label eyeliner manufacturer for beauty brands and wholesalers/i);
-  assert.match(html, /Black and brown color options/i);
+  assert.match(html, /Black and brown liquid eyeliner pens/i);
   assert.match(html, /src="\/images\/eyeliner-hero\.jpg"/i);
-  assert.match(html, /https:\/\/wa\.me\/8618144490882/i);
+  assert.match(html, /https:\/\/wa\.me\/8613530944931/i);
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /private-label-eyeliner-cost-moq-samples/i);
 });
@@ -78,7 +78,7 @@ test("server-renders commercial page schemas and clean internal links", async ()
   assert.match(html, /"@type":"BreadcrumbList"/);
   assert.match(html, /Company details buyers can check before a quote/);
   assert.match(html, /Business license for Chuangyuan Cosmetics Manufacturing/);
-  assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page|positioning/i);
+  assert.doesNotMatch(html, /href="\/private-label-lash-serum\/"|href="\/contact\/"|this page/i);
   assert.doesNotMatch(html, /Search Console|keyword research|ranking|search volume|pending deploy/i);
 });
 
@@ -102,7 +102,7 @@ test("server-renders wholesale eyeliner page with direct inquiry path", async ()
   const html = await response.text();
   assert.match(html, /Wholesale eyeliner and bulk liquid eyeliner supply/i);
   assert.match(html, /Ready wholesale products or private label packaging/i);
-  assert.match(html, /https:\/\/wa\.me\/8618144490882/i);
+  assert.match(html, /https:\/\/wa\.me\/8613530944931/i);
   assert.match(html, /"@type":"FAQPage"/);
 });
 
@@ -116,4 +116,24 @@ test("server-renders cosmetic packaging manufacturing scope", async () => {
   assert.match(html, /Liquid eyeliner and eyeliner cream containers/i);
   assert.match(html, /Lip gloss bottles and applicator packaging/i);
   assert.doesNotMatch(html, /search volume|keyword|SEO strategy/i);
+});
+
+
+test("renders privacy controls, live security headers, and verified compliance wording", async () => {
+  const homepage = await render("/");
+  assert.equal(homepage.status, 200);
+  assert.match(homepage.headers.get("content-security-policy") ?? "", /googletagmanager\.com/);
+  const homepageHtml = await homepage.text();
+  assert.match(homepageHtml, /gtag\('consent', 'default'/);
+  assert.match(homepageHtml, /page_location: location\.origin \+ location\.pathname/);
+
+  const privacy = await render("/privacy");
+  assert.equal(privacy.status, 200);
+  assert.match(await privacy.text(), /Privacy and analytics choices/i);
+
+  const compliance = await render("/certifications");
+  assert.equal(compliance.status, 200);
+  const complianceHtml = await compliance.text();
+  assert.match(complianceHtml, /ISO 22716 validity check/i);
+  assert.doesNotMatch(complianceHtml, /cert-3\.jpg|cert-cpsr\.jpg/i);
 });

@@ -14,7 +14,7 @@ function getInitialLandingPage() {
   const key = "cy_initial_landing_page";
   const existing = window.localStorage.getItem(key);
   if (existing) return existing;
-  const current = window.location.href;
+  const current = window.location.pathname || "/";
   window.localStorage.setItem(key, current);
   return current;
 }
@@ -34,7 +34,7 @@ function getInitialUtm() {
 }
 
 function buildMessage(topic: string, cta: string, extra?: string) {
-  const currentPage = typeof window === "undefined" ? "" : window.location.href;
+  const currentPage = typeof window === "undefined" ? "" : window.location.pathname || "/";
   const initialLanding = getInitialLandingPage();
   const initialUtm = getInitialUtm();
   const sourceNote = [
@@ -100,7 +100,7 @@ export function InquiryActions({
       "Country:",
       "Private label / wholesale / OEM needs:",
       "",
-      `I reached you from ${window.location.href}`,
+      `I reached you from ${window.location.pathname || "/"}`,
     ].join("\n");
     event.currentTarget.href = buildEmailHref(subject, body);
   }

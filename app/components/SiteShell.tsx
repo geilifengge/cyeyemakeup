@@ -50,6 +50,7 @@ export function SiteFooter() {
         <Link href="/private-label-eyeliner-manufacturer">Eyeliner</Link>
         <Link href="/cosmetic-packaging-manufacturer">Packaging</Link>
         <Link href="/faq">FAQ</Link>
+        <Link href="/privacy">Privacy</Link>
       </div>
     </footer>
   );

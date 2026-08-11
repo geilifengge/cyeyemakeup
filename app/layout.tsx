@@ -48,15 +48,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-40SQ9J25KV" />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
+var analyticsConsent = 'denied';
+try { analyticsConsent = localStorage.getItem('cy_ga_consent_v2') === 'granted' ? 'granted' : 'denied'; } catch (e) {}
+gtag('consent', 'default', {
+  analytics_storage: analyticsConsent,
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  wait_for_update: 500
+});
 gtag('js', new Date());
-gtag('config', 'G-40SQ9J25KV');`,
+gtag('config', 'G-40SQ9J25KV', {
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false,
+  page_location: location.origin + location.pathname
+});`,
           }}
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-40SQ9J25KV" />
         <OrganizationJsonLd />
       </head>
       <body>

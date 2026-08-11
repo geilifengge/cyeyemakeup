@@ -120,7 +120,6 @@ export function PageJsonLd({ page }: { page: SitePage }) {
             isPartOf: { "@id": `${baseUrl}/#website` },
             about: { "@id": `${baseUrl}/#organization` },
             mainEntity: { "@id": faqId },
-            dateModified: "2026-08-11",
             inLanguage: "en",
           },
           {

@@ -323,7 +323,7 @@ export const pages: Record<string, SitePage> = {
         body:
           "We prepare private label mascara around four formula directions, each matched to a different wear result and brush type. Pick a direction first, then we confirm the tube, brush, and packaging for it.",
         bullets: [
-          "4D volumizing direction: black, thickening, curled, non-caking, and smudge-resistant with easy removal",
+          "4D volumizing development direction in black; thickening, curl, non-caking, smudge resistance, and removal performance are confirmed against the approved formula sample and available test evidence",
           "Volumizing plus lengthening direction: adds lash-conditioning focus to volume and length, available in black and brown",
           "Lengthening fiber direction: a natural, slender look with fiber extension and lash-conditioning focus",
           "Transparent keratin direction: clear shaping and curling with conditioning, suitable as a brow or lash primer-style product",
@@ -424,7 +424,7 @@ export const pages: Record<string, SitePage> = {
         bullets: [
           "Black and brown liquid eyeliner pens with fine applicator tips",
           "Lengthening-conditioning black direction: adds a lash-care positioning angle to the classic black pen",
-          "Smudge-resistant glue-style eyeliner direction in black, brown, and grey: developed through three product generations for water resistance, durability, and no-smudge wear",
+          "Glue-style eyeliner development direction in black, brown, and grey; water resistance, durability, and smudge-resistance claims are used only after the selected formula passes agreed sample or test criteria",
           "Tube, cap, logo, and outer box options for every direction",
           "Wholesale, private label, and OEM order support",
         ],
@@ -1354,21 +1354,21 @@ export const pages: Record<string, SitePage> = {
     slug: "certifications",
     title: "Compliance Support for Private Label Eye Makeup | Venus beautiful",
     description:
-      "Compliance support for private label lash serum, mascara, and eyeliner orders. Our manufacturing facility partner holds ISO 22716 cosmetic GMP (SGS-certified) and Sedex SMETA audit records; CPNP, MSDS, and additional documents are available per order and destination market.",
+      "Compliance support for private label lash serum, mascara, and eyeliner orders: current ISO 22716, Sedex SMETA, CPNP, MSDS, and market-specific documents are checked for the selected formula, production facility, and destination before order confirmation.",
     h1: "Compliance support for private label eye makeup orders",
     eyebrow: "Compliance",
     summary:
-      "Our lash serum, mascara, and eyeliner formulas are produced by our manufacturing facility partner, which holds ISO 22716 cosmetic GMP certification (SGS-issued) and Sedex SMETA audit records. We can provide CPNP notification support, MSDS documents, and other compliance materials by order and destination market. Share your market and we confirm which documents apply.",
+      "We qualify the manufacturing facility and the formula-specific document set for each order. Share your destination market and we will confirm which current ISO 22716, Sedex SMETA, CPNP, MSDS, testing, and registration documents can be verified before production.",
     heroImage: "/images/business-license-landscape.jpg",
     heroAlt: "Business license and compliance documents for Chuangyuan Cosmetics Manufacturing",
     primaryCta: "Request compliance documents",
     secondaryCta: "Send market requirements",
-    badges: ["ISO 22716 GMP facility", "Sedex SMETA audited", "CPNP support", "MSDS available"],
+    badges: ["ISO 22716 validity check", "Facility audit review", "CPNP support", "Formula-specific MSDS"],
     sections: [
       {
         title: "Manufacturing facility compliance",
         body:
-          "Our lash serum and eye makeup formulas are produced by a dedicated manufacturing facility partner. The facility holds cosmetic GMP certification to ISO 22716 (issued by SGS), and has completed Sedex SMETA ethical trade audits. These credentials belong to the manufacturing facility; copies are shared for order due diligence on request.",
+          "Our lash serum and eye makeup formulas are produced through a manufacturing facility partner. Facility credentials are not presented as permanent company credentials: the current ISO 22716 scope, issuer, holder, validity dates, and applicable audit records are rechecked during supplier and order qualification.",
         bullets: [
           "ISO 22716: cosmetic Good Manufacturing Practices guidelines — covers hygiene, production controls, and quality management in cosmetic manufacturing",
           "Sedex SMETA: ethical trade audit covering labour, health and safety, environment, and business practices",
@@ -1403,7 +1403,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What compliance documents are available?",
         answer:
-          "Our manufacturing facility partner holds ISO 22716 cosmetic GMP certification (SGS-issued) and Sedex SMETA audit records. For specific orders and markets we can also support CPNP EU notification, MSDS documentation, SGS testing reports, and US cosmetic facility/product listing. The exact document set depends on the selected formula and destination country; we confirm the applicable list during quotation.",
+          "The available document set is verified for the selected formula, facility, and destination market. It may include a currently valid ISO 22716 certificate, applicable facility audit records, CPNP notification support, formula-specific MSDS or test reports, and US cosmetic listings. We confirm the holder, scope, validity, and order relevance during quotation.",
       },
       {
         question: "Can you support EU market entry?",
@@ -1411,9 +1411,9 @@ export const pages: Record<string, SitePage> = {
           "Yes. For EU destinations the key step is CPNP notification — a mandatory registration that products must complete before going on the EU market. CPNP is not a product approval; it is a notification system. We can review ingredient lists and label wording to support the notification process. Share your target EU countries and the selected formula direction and we will confirm what is needed.",
       },
       {
-        question: "Does the ISO 22716 certificate belong to Venus beautiful or Chuangyuan?",
+        question: "How do you verify ISO 22716 for an order?",
         answer:
-          "The ISO 22716 cosmetic GMP certificate is held by our manufacturing facility partner. We share it as part of order due diligence so buyers can review the production credentials of the facility making their formulas.",
+          "ISO 22716 evidence must name the facility that will manufacture the order and be within its validity period. We do not treat an archived certificate as proof of current status; a current copy and its scope are requested from the selected facility during order qualification.",
       },
       {
         question: "Do formulas carry drug or medical claims?",
@@ -1426,20 +1426,7 @@ export const pages: Record<string, SitePage> = {
           "Yes. Send your product interest and destination market and we will confirm which certificates, test reports, and compliance documents can be shared for review before the order.",
       },
     ],
-    gallery: [
-      {
-        title: "Reference compliance documents from our manufacturing facility partner",
-        intro:
-          "The documents below are held by our manufacturing facility partner and are shared for buyer due diligence. Each document is identified by its correct type below.",
-        images: [
-          { src: "/images/supplier/cert-3.jpg", alt: "ISO 22716 cosmetic Good Manufacturing Practices certificate issued by SGS — held by the manufacturing facility partner" },
-          { src: "/images/supplier/cert-sedex-smeta.jpg", alt: "Sedex SMETA ethical trade audit programme — audit report available on request from the facility" },
-          { src: "/images/supplier/cert-cpsr.jpg", alt: "EU CPNP cosmetic product notification record for a mascara formula — this is a product notification, not a safety assessment report" },
-          { src: "/images/supplier/cert-4.jpg", alt: "MSDS material safety data sheet for mascara — issued by PONY Testing International Group" },
-          { src: "/images/supplier/cert-2.jpg", alt: "Class 3 cosmetics trademark registration for the manufacturing partner brand — trademark credential, not a production or safety certification" },
-        ],
-      },
-    ],
+    gallery: [],
     related: ["private-label-lash-serum", "about", "faq", "contact"],
   },
 };
