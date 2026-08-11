@@ -120,6 +120,7 @@ export function PageJsonLd({ page }: { page: SitePage }) {
             isPartOf: { "@id": `${baseUrl}/#website` },
             about: { "@id": `${baseUrl}/#organization` },
             mainEntity: { "@id": faqId },
+            dateModified: "2026-08-11",
             inLanguage: "en",
           },
           {
@@ -152,6 +153,14 @@ export function PageJsonLd({ page }: { page: SitePage }) {
               },
             })),
           },
+          ...(page.gallery ?? []).flatMap((gallery) =>
+            gallery.images.map((image) => ({
+              "@type": "ImageObject",
+              contentUrl: absoluteUrl(image.src),
+              caption: image.alt,
+              about: { "@id": `${baseUrl}/#organization` },
+            }))
+          ),
         ],
       }}
     />

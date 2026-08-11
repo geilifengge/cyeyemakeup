@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, MouseEvent, useState } from "react";
-import { company } from "../site-data";
+import { buildEmailHref, company } from "../site-data";
 
 type InquiryActionsProps = {
   topic: string;
@@ -72,19 +72,17 @@ export function InquiryActions({
 
   const primaryHref = `https://wa.me/${company.whatsappNumber}`;
   const secondaryHref = (() => {
-    const subject = encodeURIComponent(`${secondaryLabel} - ${topic}`);
-    const body = encodeURIComponent(
-      [
-        `Hello Venus beautiful,`,
-        "",
-        `I am interested in ${topic}.`,
-        "Product:",
-        "Quantity:",
-        "Country:",
-        "Private label / wholesale / OEM needs:",
-      ].join("\n"),
-    );
-    return `mailto:${company.email}?subject=${subject}&body=${body}`;
+    const subject = `${secondaryLabel} - ${topic}`;
+    const body = [
+      `Hello Venus beautiful,`,
+      "",
+      `I am interested in ${topic}.`,
+      "Product:",
+      "Quantity:",
+      "Country:",
+      "Private label / wholesale / OEM needs:",
+    ].join("\n");
+    return buildEmailHref(subject, body);
   })();
 
   function onPrimaryClick(event: MouseEvent<HTMLAnchorElement>) {
@@ -92,21 +90,19 @@ export function InquiryActions({
   }
 
   function onEmailClick(event: MouseEvent<HTMLAnchorElement>) {
-    const subject = encodeURIComponent(`${secondaryLabel} - ${topic}`);
-    const body = encodeURIComponent(
-      [
-        "Hello Venus beautiful,",
-        "",
-        `I am interested in ${topic}.`,
-        "Product:",
-        "Quantity:",
-        "Country:",
-        "Private label / wholesale / OEM needs:",
-        "",
-        `I reached you from ${window.location.href}`,
-      ].join("\n"),
-    );
-    event.currentTarget.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
+    const subject = `${secondaryLabel} - ${topic}`;
+    const body = [
+      "Hello Venus beautiful,",
+      "",
+      `I am interested in ${topic}.`,
+      "Product:",
+      "Quantity:",
+      "Country:",
+      "Private label / wholesale / OEM needs:",
+      "",
+      `I reached you from ${window.location.href}`,
+    ].join("\n");
+    event.currentTarget.href = buildEmailHref(subject, body);
   }
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { Analytics } from "./components/Analytics";
 import { OrganizationJsonLd } from "./seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cyeyemakeup.com"),
   title: {
-    default: "Venus beautiful | Private Label Eye Makeup Supplier",
+    default: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     template: "%s",
   },
   description:
-    "Private label lash serum, mascara, and eyeliner supplier for wholesale, light customization, packaging, and OEM eye makeup orders.",
+    "Shenzhen manufacturer with 15 years of experience: lash serum, mascara, and eyeliner for wholesale and private label. Flexible MOQ, samples, and catalog via WhatsApp.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -17,9 +18,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Venus beautiful",
-    title: "Venus beautiful | Private Label Eye Makeup Supplier",
+    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
+      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
     url: "https://cyeyemakeup.com/",
     images: [
       {
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venus beautiful | Private Label Eye Makeup Supplier",
+    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
+      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
     images: ["https://cyeyemakeup.com/images/lash-serum-white.jpg"],
   },
 };
@@ -47,9 +48,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-40SQ9J25KV" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-40SQ9J25KV');`,
+          }}
+        />
         <OrganizationJsonLd />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

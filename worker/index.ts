@@ -37,6 +37,13 @@ const worker = {
       return Response.redirect(url.toString(), 301);
     }
 
+    // Force https so Google does not index the http variant as a duplicate
+    // ("Alternate page with proper canonical tag" in GSC).
+    if (url.protocol === "http:" && !url.pathname.startsWith("/.well-known/")) {
+      url.protocol = "https:";
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname === "/_vinext/image") {
       const allowedWidths = [...DEFAULT_DEVICE_SIZES, ...DEFAULT_IMAGE_SIZES];
       return handleImageOptimization(request, {

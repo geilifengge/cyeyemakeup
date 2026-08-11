@@ -45,7 +45,9 @@ export function PageTemplate({ page }: PageTemplateProps) {
             <div className="contact-card">
               <strong>{company.brand}</strong>
               <span>{company.whatsappDisplay}</span>
-              <span>{company.email}</span>
+              {company.emails.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
           )}
         </section>
@@ -63,6 +65,25 @@ export function PageTemplate({ page }: PageTemplateProps) {
             </article>
           ))}
         </section>
+
+        {page.gallery && page.gallery.length > 0 ? (
+          <section className="gallery-section">
+            {page.gallery.map((gallery) => (
+              <div key={gallery.title} className="gallery-block">
+                <p className="eyebrow">{gallery.title}</p>
+                <p>{gallery.intro}</p>
+                <div className="image-grid">
+                  {gallery.images.map((image) => (
+                    <figure key={image.src} className="product-thumb">
+                      <img src={image.src} alt={image.alt} loading="lazy" />
+                      <figcaption>{image.alt}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+        ) : null}
 
         <section className="supplier-proof">
           <div>

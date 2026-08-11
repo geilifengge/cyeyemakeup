@@ -6,18 +6,18 @@ import { JsonLd } from "./seo";
 import { baseUrl, buildWhatsappHref, company, getPage } from "./site-data";
 
 export const metadata: Metadata = {
-  title: "Venus beautiful | Private Label Eye Makeup Supplier",
+  title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
   description:
-    "Private label lash serum, mascara, and eyeliner supplier for beauty brands, wholesalers, and importers. Wholesale, packaging, samples, and OEM support from Shenzhen, China.",
+    "Shenzhen manufacturer with 15 years of experience: lash serum, mascara, and eyeliner for wholesale and private label. Flexible MOQ, samples, and catalog via WhatsApp.",
   alternates: {
     canonical: `${baseUrl}/`,
   },
   openGraph: {
     type: "website",
     siteName: "Venus beautiful",
-    title: "Venus beautiful | Private Label Eye Makeup Supplier",
+    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
+      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
     url: `${baseUrl}/`,
     images: [
       {
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venus beautiful | Private Label Eye Makeup Supplier",
+    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner supply for beauty brands, wholesalers, importers, and private label buyers.",
+      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
     images: [`${baseUrl}/images/lash-serum-white.jpg`],
   },
 };
@@ -66,11 +66,12 @@ export default function Home() {
           "@type": "WebPage",
           "@id": `${baseUrl}/#webpage`,
           url: `${baseUrl}/`,
-          name: "Venus beautiful | Private Label Eye Makeup Supplier",
+          name: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
           description:
             "Venus beautiful supplies private label lash serum, mascara, eyeliner, and cosmetic packaging for wholesale and OEM buyers.",
           isPartOf: { "@id": `${baseUrl}/#website` },
           about: { "@id": `${baseUrl}/#organization` },
+          dateModified: "2026-08-11",
           inLanguage: "en",
         }}
       />
@@ -142,6 +143,37 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="supplier-capabilities">
+          <p className="eyebrow">Service options</p>
+          <h2>What each order option includes</h2>
+          <p>
+            Compare ready stock, light customization, private label, and OEM before sending your inquiry so you get
+            the right catalog, MOQ, and quote from the first message.
+          </p>
+          <div className="page-card-grid">
+            <div className="page-card">
+              <span>Ready stock</span>
+              <strong>In-stock products for fast dispatch</strong>
+              <p>Buy finished products with standard packaging and flexible quantities, ideal to test your market.</p>
+            </div>
+            <div className="page-card">
+              <span>Light customization</span>
+              <strong>Your logo on existing products</strong>
+              <p>Add logo, tube color, or box to available formulas and packaging with a reduced MOQ.</p>
+            </div>
+            <div className="page-card">
+              <span>Private label</span>
+              <strong>Packaging, box, and presentation with your brand</strong>
+              <p>Customize tube, box, label, and brand presentation on confirmed formula directions.</p>
+            </div>
+            <div className="page-card">
+              <span>OEM</span>
+              <strong>Development to your specification</strong>
+              <p>We review formula, packaging, claims, and documents for your destination market before bulk production.</p>
+            </div>
+          </div>
+        </section>
+
         <section className="section-heading">
           <p className="eyebrow">Products and services</p>
           <h2>Choose the product category or service option you need</h2>
@@ -192,7 +224,7 @@ export default function Home() {
               <li>Quality focus: product consistency, formula safety, and stable delivery</li>
               <li>Certificate and qualification documents available for order review</li>
               <li>Manufacturing capability: 5,000+ m² facility and 22 injection molding machines</li>
-              <li>Contact: {company.whatsappDisplay} and {company.email}</li>
+              <li>Contact: {company.whatsappDisplay} and {company.emails.join(", ")}</li>
             </ul>
           </div>
           <div className="proof-card license-card">

@@ -4,9 +4,16 @@ export const company = {
   brand: "Venus beautiful",
   legalName: "Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
   shortName: "Chuangyuan",
-  whatsappDisplay: "+86 181 4449 0882",
-  whatsappNumber: "8618144490882",
-  email: "sunnyzhou16888@gmail.com",
+  whatsappDisplay: "+86 135 3094 4931",
+  whatsappNumber: "8613530944931",
+  email: "Bella@cyeyemakeup.com",
+  emails: [
+    "Bella@cyeyemakeup.com",
+    "Lily@cyeyemakeup.com",
+    "Leo@cyeyemakeup.com",
+    "Emma@cyeyemakeup.com",
+    "Fengge@cyeyemakeup.com",
+  ],
   location: "Shenzhen, Guangdong, China",
   address:
     "Phase 2 2F-030, South China International Leather and Leather Raw and Auxiliary Materials Logistics Zone, Pinghu Street, Longgang District, Shenzhen, Guangdong, China",
@@ -18,9 +25,18 @@ export const navItems = [
   { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
   { href: "/wholesale-lash-serum", label: "Wholesale" },
   { href: "/cosmetic-packaging-manufacturer", label: "Packaging" },
+  { href: "/certifications", label: "Certifications" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
+
+export function buildEmailHref(subject: string, body: string) {
+  const params = new URLSearchParams();
+  if (company.emails.length > 1) params.set("cc", company.emails.slice(1).join(","));
+  params.set("subject", subject);
+  params.set("body", body);
+  return `mailto:${company.emails[0]}?${params.toString()}`;
+}
 
 export function buildWhatsappHref(topic: string) {
   const message = [
@@ -54,6 +70,11 @@ export type SitePage = {
     answer: string;
   }[];
   related: string[];
+  gallery?: {
+    title: string;
+    intro: string;
+    images: { src: string; alt: string }[];
+  }[];
 };
 
 export const pages: Record<string, SitePage> = {
@@ -81,6 +102,28 @@ export const pages: Record<string, SitePage> = {
           "Tube color and packaging style options",
           "Ingredient direction such as vegan, herbal, or peptide-positioned formulas when available",
           "Sample and quotation check before bulk order",
+        ],
+      },
+      {
+        title: "Formula direction options",
+        body:
+          "We offer several formula directions for private label lash serum. Each direction pairs an ingredient approach with a target user experience, so you can position the product for your market. Public wording is reviewed against the cosmetic rules of your destination market before printing.",
+        bullets: [
+          "Best-seller direction: a balanced formula positioned for everyday lash care and appearance improvement; final results language is confirmed per market and formula documentation",
+          "Fast-routine direction: a formula direction positioned for active routines; any on-pack claims are confirmed with test support for your market",
+          "Gentle peptide direction: a polypeptide-based formula option suitable for a conditioning-focused positioning; claims are confirmed with eye tolerance and irritation data per market",
+          "Botanical and peptide ingredient directions available on request; vegan and organic positioning requires ingredient and certification documentation before use on-pack",
+        ],
+      },
+      {
+        title: "Lash serum specifications at a glance",
+        body:
+          "Standard specifications help buyers compare options quickly. Custom capacities, applicators, and packaging are available for private label and OEM orders.",
+        bullets: [
+          "Standard capacity: 3 ml or 6 ml per tube; custom 1.5 ml, 5 ml, 8 ml, and 10 ml options available",
+          "Precision brush applicator for targeted application along the lash line",
+          "Tube, cap, outer box, and logo printing customization",
+          "Shelf life: typically 2-3 years unopened and 6-12 months after opening, depending on the formula",
         ],
       },
       {
@@ -121,6 +164,51 @@ export const pages: Record<string, SitePage> = {
         question: "What is the best first step?",
         answer:
           "Send your country, order quantity, preferred packaging style, and whether you need ready wholesale goods, light customization, or OEM support.",
+      },
+      {
+        question: "What is the MOQ for private label lash serum?",
+        answer:
+          "MOQ depends on packaging, customization level, and the number of references. For light private label orders we work with reduced quantities; send your target quantity and we confirm the applicable minimum.",
+      },
+      {
+        question: "How long do samples and bulk production take?",
+        answer:
+          "Samples are prepared after confirming packaging and logo; bulk production usually takes around 15 days depending on quantity and customization. We confirm the exact lead time with your order before production.",
+      },
+      {
+        question: "How is lash serum applied?",
+        answer:
+          "Lash serum is normally applied to the base of the upper lashes 1 to 2 times per day with the precision brush applicator, on clean lashes. We can provide suggested application guidance text for your packaging, but final wording must match the cosmetic rules of your destination market.",
+      },
+      {
+        question: "How long before users notice an appearance improvement?",
+        answer:
+          "The visible appearance improvement varies by formula direction, individual use pattern, and destination market claims rules. We do not guarantee fixed timeframes on-pack; the specific wording used on your label is confirmed with the actual formula documents and the cosmetic claims regulations for your market before printing.",
+      },
+      {
+        question: "Can I request vegan, organic, or herbal formula directions?",
+        answer:
+          "Botanical and peptide ingredient directions can be reviewed as part of the formula brief. Vegan and organic positioning requires documented ingredient sourcing and relevant certification; we confirm what documentation is available for the selected formula before production.",
+      },
+      {
+        question: "What is the shelf life of lash serum?",
+        answer:
+          "Typically 2-3 years unopened and 6-12 months after opening, depending on the specific formula. We confirm the exact shelf life on the quotation and review label text with you before printing.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Lash serum tube and applicator options",
+        intro:
+          "Reference images of tube structures and applicator brushes available for lash serum private label orders. Final components are confirmed with samples before bulk production.",
+        images: [
+          { src: "/images/supplier/tube-01-square-injection-ysp4465a.jpg", alt: "Square injection molded lash serum tube option" },
+          { src: "/images/supplier/tube-02-aluminium-jra0128.jpg", alt: "Aluminium lash serum and mascara tube option" },
+          { src: "/images/supplier/tube-03-double-ended-jrea0343.jpg", alt: "Double ended lash serum tube option" },
+          { src: "/images/supplier/tube-04-mini-jrmp0092.jpg", alt: "Mini lash serum tube for trial sizes" },
+          { src: "/images/supplier/tube-14-dropper-bottle.png", alt: "Dropper bottle option for serum formats" },
+          { src: "/images/supplier/brush-05-slender-nylon-mascara.jpg", alt: "Slender nylon applicator brush for lash serum" },
+        ],
       },
     ],
     related: ["lash-serum-manufacturer", "wholesale-lash-serum", "custom-lash-serum-packaging"],
@@ -195,9 +283,9 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-mascara-manufacturer": {
     slug: "private-label-mascara-manufacturer",
-    title: "Private Label Mascara Manufacturer | Venus beautiful",
+    title: "Private Label Mascara Manufacturer | Factory with Samples",
     description:
-      "Private label mascara manufacturer for beauty brands and wholesale buyers. Compare formula direction, brush, tube, packaging, MOQ, samples, and OEM order options.",
+      "Shenzhen mascara manufacturer for private label and wholesale: custom brush, tube, and logo, flexible MOQ, and samples before your order.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
@@ -228,6 +316,28 @@ export const pages: Record<string, SitePage> = {
           "Brush shape, applicator feel, tube capacity, and cap preference",
           "Black, brown, or another requested color direction",
           "Logo, label, outer box, and target retail positioning",
+        ],
+      },
+      {
+        title: "Mascara formula direction options",
+        body:
+          "We prepare private label mascara around four formula directions, each matched to a different wear result and brush type. Pick a direction first, then we confirm the tube, brush, and packaging for it.",
+        bullets: [
+          "4D volumizing direction: black, thickening, curled, non-caking, and smudge-resistant with easy removal",
+          "Volumizing plus lengthening direction: adds lash-conditioning focus to volume and length, available in black and brown",
+          "Lengthening fiber direction: a natural, slender look with fiber extension and lash-conditioning focus",
+          "Transparent keratin direction: clear shaping and curling with conditioning, suitable as a brow or lash primer-style product",
+        ],
+      },
+      {
+        title: "Applicator brush options",
+        body:
+          "The brush shape decides how the formula deposits on lashes. We can match a brush to your formula direction and send applicator samples with tube samples.",
+        bullets: [
+          "Slender nylon brush, generally used for mascara or eyebrow gel",
+          "Gourd-shaped mascara brush for volume-focused results",
+          "Crescent-shaped silicone brush for definition and curl",
+          "Silicone or nylon brushes for combing and separation",
         ],
       },
       {
@@ -275,6 +385,21 @@ export const pages: Record<string, SitePage> = {
           "The main drivers are product direction, order quantity, selected tube and brush, logo or box printing, sample requirements, and shipping destination. Send those details for a quote matched to your project.",
       },
     ],
+    gallery: [
+      {
+        title: "Mascara applicator brush reference",
+        intro:
+          "Brush shape decides how the formula deposits on lashes. These reference images show applicator options we can match to your mascara direction and sample with tubes.",
+        images: [
+          { src: "/images/supplier/brush-09-gourd-mascara.jpg", alt: "Gourd shaped mascara brush for volume results" },
+          { src: "/images/supplier/brush-08-crescent-silicone.jpg", alt: "Crescent shaped silicone mascara brush for definition" },
+          { src: "/images/supplier/brush-06-silicone.jpg", alt: "Silicone mascara brush for combing and separation" },
+          { src: "/images/supplier/brush-07-nylon.jpg", alt: "Nylon mascara brush option" },
+          { src: "/images/supplier/brush-05-slender-nylon-mascara.jpg", alt: "Slender nylon brush for mascara or brow gel" },
+          { src: "/images/supplier/brush-01-eyeliner.jpg", alt: "Fine applicator brush for liner style products" },
+        ],
+      },
+    ],
     related: ["wholesale-mascara", "private-label-eyeliner-manufacturer", "private-label-lash-serum", "private-label-eyeliner-cost-moq-samples"],
   },
   "private-label-eyeliner-manufacturer": {
@@ -295,11 +420,12 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Eyeliner product options",
         body:
-          "The current eyeliner range includes pen-style liquid eyeliner with a fine applicator tip. Product and packaging options are confirmed by order quantity and target market.",
+          "The current eyeliner range includes pen-style liquid eyeliner with a fine applicator tip, plus extended options for lash-conditioning and smudge-resistant positioning. Product and packaging options are confirmed by order quantity and target market.",
         bullets: [
-          "Black and brown color options",
-          "Fine-tip liquid eyeliner pen format",
-          "Tube, cap, logo, and outer box options",
+          "Black and brown liquid eyeliner pens with fine applicator tips",
+          "Lengthening-conditioning black direction: adds a lash-care positioning angle to the classic black pen",
+          "Smudge-resistant glue-style eyeliner direction in black, brown, and grey: developed through three product generations for water resistance, durability, and no-smudge wear",
+          "Tube, cap, logo, and outer box options for every direction",
           "Wholesale, private label, and OEM order support",
         ],
       },
@@ -362,6 +488,19 @@ export const pages: Record<string, SitePage> = {
         question: "What affects private label eyeliner cost?",
         answer:
           "The main cost drivers are quantity, selected pen and packaging, logo or box printing, sample requirements, product direction, and shipping destination. We quote against the final requirement list so the result is practical for your order.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Eyeliner pen structure reference",
+        intro:
+          "Reference images of liquid and glue-style eyeliner pen structures available for wholesale and private label orders. Colors, caps, and logo printing are confirmed per order.",
+        images: [
+          { src: "/images/supplier/tube-11-liquid-eyeliner-mrp0028a.png", alt: "Liquid eyeliner pen structure for private label" },
+          { src: "/images/supplier/tube-12-square-eyeliner-msp0959.jpg", alt: "Square eyeliner pen structure option" },
+          { src: "/images/supplier/tube-10-glue-eyeliner-mrp0956.jpg", alt: "Glue style smudge resistant eyeliner pen" },
+          { src: "/images/supplier/tube-13-double-ended-eyeliner-mrp0950a.jpg", alt: "Double ended eyeliner pen option" },
+        ],
       },
     ],
     related: ["wholesale-eyeliner", "private-label-mascara-manufacturer", "cosmetic-packaging-manufacturer", "private-label-eyeliner-cost-moq-samples"],
@@ -466,6 +605,41 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
+        title: "Tube and component catalog",
+        body:
+          "Our available component catalog covers eye makeup and lip packaging structures. Buyers can select an existing mold or send a reference sample or drawing for a new mold evaluation.",
+        bullets: [
+          "Square injection-molded mascara tubes and square serum tubes",
+          "Aluminium tubes suitable for lash serum and mascara combinations",
+          "Double-ended tubes and mini tubes for travel or sample formats",
+          "Brow gel tubes, glue eyeliner pens, liquid eyeliner pens, and square eyeliner pens",
+          "Dropper bottles and blush compact tubes",
+        ],
+      },
+      {
+        title: "Applicator brush catalog",
+        body:
+          "Applicator choice changes the product experience. We keep brush and applicator options on file and can match them to your formula direction and tube structure.",
+        bullets: [
+          "Slender nylon brushes for mascara and eyebrow gel",
+          "Short nylon brushes for eyebrow products",
+          "Gourd-shaped mascara brushes and crescent-shaped silicone brushes",
+          "Silicone brushes, nylon brushes, and dual-use brow and eyeliner brushes",
+          "Eyeliner brushes and lip gloss brushes",
+        ],
+      },
+      {
+        title: "Decoration and logo processes",
+        body:
+          "Surface decoration decides shelf presence. We confirm the process against the selected material and quantity before production.",
+        bullets: [
+          "Silkscreen, UV printing, hot stamping, and laser carving for logos",
+          "Painting and spraying: glossy UV coating, gradient, glitter, water-drop, and metal finishes",
+          "Electroplating, 3D printing, debossing and embossing, and water transfer printing",
+          "Custom paper box layouts and packaging text review",
+        ],
+      },
+      {
         title: "Custom cosmetic packaging support",
         body:
           "We support packaging projects from component selection through decoration and bulk production. The available process depends on structure, material, finish, quantity, and whether a new mold is required.",
@@ -508,6 +682,37 @@ export const pages: Record<string, SitePage> = {
         question: "Can you develop a new cosmetic packaging mold?",
         answer:
           "New mold projects can be evaluated from a physical sample, technical drawing, dimensions, material requirements, and estimated order quantity.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Tube and component catalog",
+        intro:
+          "Reference images of packaging structures on file. Buyers can select an existing structure or send a reference sample or drawing for a new mold evaluation.",
+        images: [
+          { src: "/images/supplier/tube-01-square-injection-ysp4465a.jpg", alt: "Square injection molded cosmetic tube" },
+          { src: "/images/supplier/tube-02-aluminium-jra0128.jpg", alt: "Aluminium cosmetic tube for serum and mascara" },
+          { src: "/images/supplier/tube-03-double-ended-jrea0343.jpg", alt: "Double ended cosmetic tube structure" },
+          { src: "/images/supplier/tube-05-square-jsa0813.jpg", alt: "Square cosmetic tube structure option" },
+          { src: "/images/supplier/tube-07-brow-gel.png", alt: "Brow gel tube structure option" },
+          { src: "/images/supplier/tube-14-dropper-bottle.png", alt: "Dropper bottle structure for serum formats" },
+          { src: "/images/supplier/tube-15-blush-krp0746.jpg", alt: "Blush compact tube structure option" },
+          { src: "/images/supplier/tube-16-blush-knp1229.jpg", alt: "Second blush tube structure option" },
+          { src: "/images/supplier/tube-04-mini-jrmp0092.jpg", alt: "Mini cosmetic tube for trial formats" },
+        ],
+      },
+      {
+        title: "Decoration and logo processes",
+        intro:
+          "Surface decoration options confirmed against the selected material and quantity before production.",
+        images: [
+          { src: "/images/supplier/process-03-hot-stamping.jpg", alt: "Hot stamping logo process on cosmetic tube" },
+          { src: "/images/supplier/process-04-laser-carving.jpg", alt: "Laser carving logo process" },
+          { src: "/images/supplier/process-05-silkscreen-uv.jpg", alt: "Silkscreen and UV printing logo process" },
+          { src: "/images/supplier/logo-05-glossy-uv-coating.jpg", alt: "Glossy UV coating surface finish" },
+          { src: "/images/supplier/logo-06-gradient-spraying.jpg", alt: "Gradient spraying surface finish" },
+          { src: "/images/supplier/logo-07-ice-crack-electroplating.jpg", alt: "Ice crack electroplating surface finish" },
+        ],
       },
     ],
     related: ["custom-lash-serum-packaging", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
@@ -650,9 +855,9 @@ export const pages: Record<string, SitePage> = {
   },
   "custom-lash-serum-packaging": {
     slug: "custom-lash-serum-packaging",
-    title: "Custom Lash Serum Packaging and Tube Options | Venus beautiful",
+    title: "Custom Lash Serum Packaging | Manufacturer with Low MOQ",
     description:
-      "Custom lash serum packaging support for tube color, logo, box, ingredient direction, and private label presentation for beauty brand orders.",
+      "Shenzhen factory for custom lash serum packaging: tube color, logo, box, and ingredient direction for your brand. Samples and quote via WhatsApp.",
     h1: "Custom lash serum packaging for private label beauty brands",
     eyebrow: "Packaging and light customization",
     summary:
@@ -672,6 +877,28 @@ export const pages: Record<string, SitePage> = {
           "Tube color and cap options",
           "Outer box sample and layout confirmation",
           "Ingredient direction and label wording questions",
+        ],
+      },
+      {
+        title: "Tube styles available for lash serum",
+        body:
+          "Lash serum packaging starts with the tube structure. We keep several tube families on file so buyers can compare shapes before requesting samples.",
+        bullets: [
+          "Square injection-molded tubes and square serum tubes",
+          "Aluminium tubes with lash serum and mascara combinations",
+          "Double-ended tubes and mini tubes for travel or trial sizes",
+          "Dropper bottles for serum formats that need pipette dosing",
+        ],
+      },
+      {
+        title: "Applicator and logo decoration options",
+        body:
+          "The applicator and the logo decoration finish together define how the product feels in hand and on the shelf. Both can be sampled before bulk production.",
+        bullets: [
+          "Precision brushes, silicone brushes, and nylon brushes for serum application",
+          "Logo methods: silkscreen, UV printing, hot stamping, laser carving, and deboss or emboss",
+          "Surface finishes: glossy UV coating, gradient spraying, glitter, metal, and electroplating effects",
+          "Custom paper box layout and packaging text review before printing",
         ],
       },
       {
@@ -728,6 +955,21 @@ export const pages: Record<string, SitePage> = {
         question: "What should I send for a lash serum packaging quote?",
         answer:
           "Send your quantity, target country, logo file if available, tube and box references, preferred finish, and required timeline. We will confirm the available packaging route, samples, MOQ, and quote details.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Tube styles and logo decoration reference",
+        intro:
+          "Reference images of lash serum tube structures and logo decoration finishes available for private label packaging orders.",
+        images: [
+          { src: "/images/supplier/tube-01-square-injection-ysp4465a.jpg", alt: "Square injection molded lash serum tube" },
+          { src: "/images/supplier/tube-02-aluminium-jra0128.jpg", alt: "Aluminium lash serum tube option" },
+          { src: "/images/supplier/tube-06-square-jsp1070.jpg", alt: "Square lash serum tube structure" },
+          { src: "/images/supplier/logo-01-al-carving.jpg", alt: "Aluminium shell carving logo finish" },
+          { src: "/images/supplier/logo-03-diamond-deco.jpg", alt: "Diamond decoration finish on tube" },
+          { src: "/images/supplier/logo-08-leather-carving.jpg", alt: "Leather texture with carving logo finish" },
+        ],
       },
     ],
     related: ["private-label-lash-serum", "lash-serum-moq-samples-lead-time", "contact"],
@@ -1004,7 +1246,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Quality and market support",
         body:
-          "We mainly serve European and American markets and also support buyers in other export markets. Product quality, formula safety, and delivery stability are controlled throughout order preparation and production.",
+          "We mainly serve European and American markets and also support buyers in other export markets. Private label and OEM orders have been supplied to buyers in the United States, Canada, the United Kingdom, Germany, France, Austria, the Netherlands, Poland, Russia, and Asian markets including the Philippines, Thailand, Singapore, Vietnam, and Australia. Product quality, formula safety, and delivery stability are controlled throughout order preparation and production.",
         bullets: [
           "Certificate and qualification documents available for review",
           "Product and sample confirmation before bulk production",
@@ -1083,7 +1325,7 @@ export const pages: Record<string, SitePage> = {
           "Use WhatsApp for the fastest response. Email is available when you need to send files, packaging photos, specifications, or a detailed order request.",
         bullets: [
           `WhatsApp: ${company.whatsappDisplay}`,
-          `Email: ${company.email}`,
+          `Email: ${company.emails.join(", ")}`,
           `Location: ${company.location}`,
           "Company: Chuangyuan Cosmetics Manufacturing (Shenzhen) Co., Ltd.",
         ],
@@ -1107,6 +1349,98 @@ export const pages: Record<string, SitePage> = {
       },
     ],
     related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
+  },
+  certifications: {
+    slug: "certifications",
+    title: "Compliance Support for Private Label Eye Makeup | Venus beautiful",
+    description:
+      "Compliance support for private label lash serum, mascara, and eyeliner orders. Our manufacturing facility partner holds ISO 22716 cosmetic GMP (SGS-certified) and Sedex SMETA audit records; CPNP, MSDS, and additional documents are available per order and destination market.",
+    h1: "Compliance support for private label eye makeup orders",
+    eyebrow: "Compliance",
+    summary:
+      "Our lash serum, mascara, and eyeliner formulas are produced by our manufacturing facility partner, which holds ISO 22716 cosmetic GMP certification (SGS-issued) and Sedex SMETA audit records. We can provide CPNP notification support, MSDS documents, and other compliance materials by order and destination market. Share your market and we confirm which documents apply.",
+    heroImage: "/images/business-license-landscape.jpg",
+    heroAlt: "Business license and compliance documents for Chuangyuan Cosmetics Manufacturing",
+    primaryCta: "Request compliance documents",
+    secondaryCta: "Send market requirements",
+    badges: ["ISO 22716 GMP facility", "Sedex SMETA audited", "CPNP support", "MSDS available"],
+    sections: [
+      {
+        title: "Manufacturing facility compliance",
+        body:
+          "Our lash serum and eye makeup formulas are produced by a dedicated manufacturing facility partner. The facility holds cosmetic GMP certification to ISO 22716 (issued by SGS), and has completed Sedex SMETA ethical trade audits. These credentials belong to the manufacturing facility; copies are shared for order due diligence on request.",
+        bullets: [
+          "ISO 22716: cosmetic Good Manufacturing Practices guidelines — covers hygiene, production controls, and quality management in cosmetic manufacturing",
+          "Sedex SMETA: ethical trade audit covering labour, health and safety, environment, and business practices",
+          "SGS product testing reports available for selected formula directions and markets",
+          "Document review arranged per order; originals shared during qualification on request",
+        ],
+      },
+      {
+        title: "Market compliance documents we can support",
+        body:
+          "Different destination markets require different documents before a cosmetic product can be sold. We work through the document requirements with buyers before bulk production.",
+        bullets: [
+          "CPNP: EU cosmetic product notification — a mandatory registration step for products placed on the EU market, not a product approval",
+          "MSDS: material safety data sheets for shipping, market entry, and formula review",
+          "FDA cosmetic facility and product listing support for US market review — cosmetics do not require FDA pre-approval",
+          "Additional market-specific documents reviewed on request by destination country and sales channel",
+        ],
+      },
+      {
+        title: "How compliance documents are handled per order",
+        body:
+          "Compliance documents are matched to the formula direction, packaging, and destination country of each order. We confirm the applicable document set before production.",
+        bullets: [
+          "Confirm destination country and sales channel first",
+          "Match the formula direction and ingredient list to market rules",
+          "Review label and claims wording before printing — wording must be supported by available formula documents",
+          "Prepare and share the document set with your team before shipment",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What compliance documents are available?",
+        answer:
+          "Our manufacturing facility partner holds ISO 22716 cosmetic GMP certification (SGS-issued) and Sedex SMETA audit records. For specific orders and markets we can also support CPNP EU notification, MSDS documentation, SGS testing reports, and US cosmetic facility/product listing. The exact document set depends on the selected formula and destination country; we confirm the applicable list during quotation.",
+      },
+      {
+        question: "Can you support EU market entry?",
+        answer:
+          "Yes. For EU destinations the key step is CPNP notification — a mandatory registration that products must complete before going on the EU market. CPNP is not a product approval; it is a notification system. We can review ingredient lists and label wording to support the notification process. Share your target EU countries and the selected formula direction and we will confirm what is needed.",
+      },
+      {
+        question: "Does the ISO 22716 certificate belong to Venus beautiful or Chuangyuan?",
+        answer:
+          "The ISO 22716 cosmetic GMP certificate is held by our manufacturing facility partner. We share it as part of order due diligence so buyers can review the production credentials of the facility making their formulas.",
+      },
+      {
+        question: "Do formulas carry drug or medical claims?",
+        answer:
+          "No. Our lash serum and eye makeup products are positioned as cosmetics. Claims on your packaging must follow the cosmetic claims rules for your destination market and be supported by the formula documents. We review wording with you before printing.",
+      },
+      {
+        question: "Can I see documents before placing an order?",
+        answer:
+          "Yes. Send your product interest and destination market and we will confirm which certificates, test reports, and compliance documents can be shared for review before the order.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Reference compliance documents from our manufacturing facility partner",
+        intro:
+          "The documents below are held by our manufacturing facility partner and are shared for buyer due diligence. Each document is identified by its correct type below.",
+        images: [
+          { src: "/images/supplier/cert-3.jpg", alt: "ISO 22716 cosmetic Good Manufacturing Practices certificate issued by SGS — held by the manufacturing facility partner" },
+          { src: "/images/supplier/cert-sedex-smeta.jpg", alt: "Sedex SMETA ethical trade audit programme — audit report available on request from the facility" },
+          { src: "/images/supplier/cert-cpsr.jpg", alt: "EU CPNP cosmetic product notification record for a mascara formula — this is a product notification, not a safety assessment report" },
+          { src: "/images/supplier/cert-4.jpg", alt: "MSDS material safety data sheet for mascara — issued by PONY Testing International Group" },
+          { src: "/images/supplier/cert-2.jpg", alt: "Class 3 cosmetics trademark registration for the manufacturing partner brand — trademark credential, not a production or safety certification" },
+        ],
+      },
+    ],
+    related: ["private-label-lash-serum", "about", "faq", "contact"],
   },
 };
 

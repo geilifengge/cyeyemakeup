@@ -40,7 +40,9 @@ export function SiteFooter() {
       </div>
       <div>
         <p>WhatsApp: {company.whatsappDisplay}</p>
-        <p>Email: {company.email}</p>
+        {company.emails.map((item) => (
+          <p key={item}>Email: {item}</p>
+        ))}
       </div>
       <div>
         <Link href="/private-label-lash-serum">Lash serum</Link>

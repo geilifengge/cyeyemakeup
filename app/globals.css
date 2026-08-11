@@ -413,6 +413,48 @@ main {
   background: #fff;
 }
 
+.gallery-section {
+  padding: 0 clamp(20px, 5vw, 72px) clamp(48px, 7vw, 88px);
+}
+
+.gallery-block {
+  margin-bottom: 48px;
+}
+
+.gallery-block:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-block > p {
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.gallery-block .image-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.gallery-block .product-thumb {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+}
+
+.gallery-block .product-thumb img {
+  position: relative;
+  inset: auto;
+  height: 220px;
+}
+
+.gallery-block figcaption {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  background: #fff;
+}
+
 .process-section {
   display: grid;
   grid-template-columns: minmax(240px, 0.62fr) minmax(0, 1.38fr);
