@@ -285,104 +285,130 @@ export const pages: Record<string, SitePage> = {
     slug: "private-label-mascara-manufacturer",
     title: "Private Label Mascara Manufacturer | Factory with Samples",
     description:
-      "Shenzhen mascara manufacturer for private label and wholesale: custom brush, tube, and logo, flexible MOQ, and samples before your order.",
+      "Private label mascara manufacturer for volumizing, fiber, black, brown, and clear formulas. Customize brushes, tubes, logos, and boxes with design support.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
-      "Venus beautiful supplies mascara for eye makeup buyers that need wholesale orders, private label packaging, and OEM support. Start with your mascara type, quantity, packaging idea, and target market.",
+      "Venus beautiful helps beauty brands, wholesalers, and importers develop mascara products with coordinated formula, brush, tube, logo, and outer-box options. Start with your target lash effect, quantity, packaging direction, market, and launch schedule.",
     heroImage: "/images/mascara-hero.jpg",
     heroAlt: "Venus beautiful mascara tube, brush, and box for private label orders",
     primaryCta: "Ask for mascara options",
     secondaryCta: "Get eye makeup catalog",
-    badges: ["Mascara supply", "Private label", "Wholesale orders", "Packaging options"],
+    badges: ["MOQ from 500 units", "Samples in 10-15 days", "Free design support", "OEM options"],
     sections: [
       {
-        title: "Mascara project options",
+        title: "Choose the mascara result first",
         body:
-          "Mascara buyers usually compare brush style, tube appearance, waterproof or washable direction, color, and packaging. We can help clarify which options fit your order size.",
+          "Private label mascara development starts with the wear result and product position your brand needs. The final formula, claims, applicator, and packaging are confirmed through the selected sample and available supporting documents.",
         bullets: [
-          "Private label mascara with brand packaging",
-          "Wholesale mascara order support",
-          "Tube, brush, and box specification confirmation",
-          "Color and product direction questions",
+          "Volumizing direction for a fuller lash look",
+          "Volumizing plus lengthening direction in black or brown",
+          "Fiber lengthening direction for a natural, slender look",
+          "Clear keratin direction for shaping, curling, or primer-style positioning",
         ],
       },
       {
-        title: "Formula, brush, and packaging brief",
+        title: "Match the formula with the applicator",
         body:
-          "A useful mascara brief connects the desired wear result with the applicator and the retail presentation. This lets us check suitable product direction before discussing the final component and printing choices.",
+          "The brush, wiper, tube, and formula work as one system. We review applicator options during sampling so the selected combination supports the intended application and lash result.",
         bullets: [
-          "Waterproof, washable, lengthening, volumizing, or curling direction",
-          "Brush shape, applicator feel, tube capacity, and cap preference",
-          "Black, brown, or another requested color direction",
-          "Logo, label, outer box, and target retail positioning",
+          "Slender nylon brushes for controlled application or brow-gel style products",
+          "Gourd-shaped brushes for volume-focused positioning",
+          "Crescent-shaped silicone brushes for definition and curl",
+          "Silicone or nylon brushes for combing, separation, and deposit control",
         ],
       },
       {
-        title: "Mascara formula direction options",
+        title: "Customize the tube, logo, and outer box",
         body:
-          "We prepare private label mascara around four formula directions, each matched to a different wear result and brush type. Pick a direction first, then we confirm the tube, brush, and packaging for it.",
+          "Packaging can be coordinated around your target positioning and budget. Free design support is available for private label and OEM orders, including logo-placement mockups, tube artwork, and outer-box layouts for review before production.",
         bullets: [
-          "4D volumizing development direction in black; thickening, curl, non-caking, smudge resistance, and removal performance are confirmed against the approved formula sample and available test evidence",
-          "Volumizing plus lengthening direction: adds lash-conditioning focus to volume and length, available in black and brown",
-          "Lengthening fiber direction: a natural, slender look with fiber extension and lash-conditioning focus",
-          "Transparent keratin direction: clear shaping and curling with conditioning, suitable as a brow or lash primer-style product",
+          "Tube shape, finish, and color selected from available component options",
+          "Logo placement and printing method matched to the tube material",
+          "Standard or custom outer-box direction",
+          "Artwork review before the final bulk specification is approved",
         ],
       },
       {
-        title: "Applicator brush options",
+        title: "MOQ for standard and customized mascara",
         body:
-          "The brush shape decides how the formula deposits on lashes. We can match a brush to your formula direction and send applicator samples with tube samples.",
+          "MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging. The applicable minimum can change when you add logo printing, custom boxes, special components, formula development, or other OEM requirements.",
         bullets: [
-          "Slender nylon brush, generally used for mascara or eyebrow gel",
-          "Gourd-shaped mascara brush for volume-focused results",
-          "Crescent-shaped silicone brush for definition and curl",
-          "Silicone or nylon brushes for combing and separation",
+          "500-unit starting MOQ applies only to selected standard no-logo options",
+          "Logo printing and custom packaging are quoted for the chosen component",
+          "Custom formula or component programs may require a higher minimum",
+          "Send the target quantity to compare the available order routes",
         ],
       },
       {
-        title: "What to prepare",
+        title: "Samples and production planning",
         body:
-          "Mascara quotes depend heavily on packaging and product direction. Product photos, tube samples, or a short order request help speed up quotation.",
+          "Sample development normally takes 10-15 days after the product brief and customization requirements are confirmed. After the sample, final specification, and artwork are approved, bulk production is completed by our manufacturing partner and normally takes 20-40 days.",
         bullets: [
-          "Mascara type such as waterproof, lengthening, or volumizing",
-          "Tube color, cap style, and brush specification",
-          "Expected quantity and launch timing",
-          "Logo, label, and outer box needs",
+          "Review formula performance, brush feel, tube compatibility, and artwork",
+          "Approve the final specification before bulk production",
+          "Production timing begins after sample and artwork approval",
+          "Shipping time is quoted separately for the destination and delivery method",
         ],
       },
       {
-        title: "MOQ, samples, and production planning",
+        title: "Documents and compliance support",
         body:
-          "Private label mascara cost and timing change with the product direction, order quantity, packaging, printing, and destination. We confirm these details on a quote rather than publishing a price that may not match your chosen specification.",
+          "Documentation depends on the selected formula, packaging, target market, and manufacturing route. Ask which documents are available for the exact product before using certification or performance claims on retail packaging.",
         bullets: [
-          "Ask for the MOQ for ready wholesale, logo printing, and custom packaging separately",
-          "Confirm whether the sample uses the same tube, brush, and box as the planned bulk order",
-          "Share the destination country early so label and shipping questions can be reviewed",
-          "Confirm production and delivery timing after the packaging and quantity are agreed",
+          "Product safety documents and MSDS where available",
+          "Ingredient, formula, testing, or manufacturing evidence for the selected route",
+          "Target-market labeling and notification requirements reviewed before ordering",
+          "Claims such as waterproof, vegan, or conditioning confirmed against available evidence",
+        ],
+      },
+      {
+        title: "What to send for an accurate mascara quote",
+        body:
+          "A clear buyer brief reduces back-and-forth and helps us compare standard, private label, and OEM routes. Reference images are useful when you already have a tube or retail position in mind.",
+        bullets: [
+          "Target lash effect, formula direction, and color",
+          "Brush preference, tube finish, logo, and outer-box requirements",
+          "Order quantity, destination country, and target market",
+          "Required sample date, planned launch date, and compliance needs",
         ],
       },
     ],
     faqs: [
       {
+        question: "What is the MOQ for private label mascara?",
+        answer:
+          "MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging. Logo printing, custom boxes, special components, formula development, and other OEM requirements may have different minimum quantities.",
+      },
+      {
         question: "Can I order mascara with my own logo?",
         answer:
-          "Private label service can include logo, tube appearance, outer box, and product direction. Final options depend on order quantity and available packaging choices.",
+          "Yes. Private label options can include your logo, tube appearance, label, and outer box. The available printing method and MOQ depend on the selected component and packaging specification.",
       },
       {
-        question: "Can you supply wholesale mascara?",
+        question: "Can the mascara brush be customized?",
         answer:
-          "Yes, wholesale mascara supply is supported. Send quantity, product type, and target country so we can prepare a more practical quote.",
+          "Available directions can include silicone, nylon, crescent-shaped, gourd-shaped, and slender precision brushes. The final brush is tested with the formula, wiper, and tube because these components affect application.",
       },
       {
-        question: "Should mascara and lash serum be on one order?",
+        question: "Can I order samples before bulk production?",
         answer:
-          "They can be discussed together as an eye makeup or lash care line, especially if you need matching packaging or a catalog-style quote.",
+          "Yes. Samples can be used to review formula direction, color, brush performance, tube compatibility, logo placement, and outer-box presentation. Sample development normally takes 10-15 days after the brief is confirmed.",
       },
       {
-        question: "What affects a private label mascara quote?",
+        question: "Do you provide packaging design support?",
         answer:
-          "The main drivers are product direction, order quantity, selected tube and brush, logo or box printing, sample requirements, and shipping destination. Send those details for a quote matched to your project.",
+          "Yes. Free design support is available for private label and OEM orders. Logo-placement mockups, tube artwork, and outer-box layouts can be prepared for review before production.",
+      },
+      {
+        question: "How long does mascara production take?",
+        answer:
+          "After the sample, final specification, and artwork are approved, bulk production by our manufacturing partner normally takes 20-40 days. Shipping time is additional and depends on the destination and delivery method.",
+      },
+      {
+        question: "What is the difference between wholesale, private label, and OEM mascara?",
+        answer:
+          "Wholesale usually starts from available product and packaging options. Private label adds the buyer's branding through a logo, label, tube, or box. OEM is a deeper route that can include formula, applicator, packaging, testing, and target-market document requirements.",
       },
     ],
     gallery: [

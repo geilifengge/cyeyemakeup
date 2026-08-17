@@ -57,6 +57,21 @@ test("server-renders the private label eyeliner page and buyer FAQs", async () =
   assert.match(html, /private-label-eyeliner-cost-moq-samples/i);
 });
 
+test("server-renders the optimized private label mascara page", async () => {
+  const response = await render("/private-label-mascara-manufacturer");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Private label mascara manufacturer for wholesale and OEM orders/i);
+  assert.match(html, /MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging/i);
+  assert.match(html, /Sample development normally takes 10-15 days/i);
+  assert.match(html, /bulk production by our manufacturing partner normally takes 20-40 days/i);
+  assert.match(html, /Free design support is available/i);
+  assert.match(html, /"@type":"FAQPage"/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/private-label-mascara-manufacturer"/i);
+  assert.doesNotMatch(html, /17\.5|CP0456|CP0149|CP0036|CP0037|Transmo/i);
+});
+
 test("server-renders the eyeliner cost, MOQ, samples, and lead-time guide", async () => {
   const response = await render("/private-label-eyeliner-cost-moq-samples");
   assert.equal(response.status, 200);
