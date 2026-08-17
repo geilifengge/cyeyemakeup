@@ -835,9 +835,9 @@ export const pages: Record<string, SitePage> = {
   },
   "wholesale-mascara": {
     slug: "wholesale-mascara",
-    title: "Wholesale Mascara Supplier for Beauty Buyers | Venus beautiful",
+    title: "Wholesale Mascara Supplier | MOQ from 500 Units",
     description:
-      "Wholesale mascara supplier for distributors, brands, and ecommerce sellers. Request bulk mascara, packaging, brush style, MOQ, and private label details.",
+      "Wholesale mascara supplier for brands and distributors. Selected formulas with available black or white tubes start from 500 units; samples in 10-15 days.",
     h1: "Wholesale mascara supply for beauty brands and distributors",
     eyebrow: "Wholesale mascara",
     summary:
@@ -846,12 +846,12 @@ export const pages: Record<string, SitePage> = {
     heroAlt: "Venus beautiful mascara product and packaging for wholesale supplier inquiries",
     primaryCta: "Get mascara quote",
     secondaryCta: "Request product list",
-    badges: ["Bulk mascara", "Wholesale", "Private label", "Eye makeup"],
+    badges: ["Wholesale from 500", "Black/white tubes", "Samples in 10-15 days", "Private label"],
     sections: [
       {
         title: "Wholesale mascara buying details",
         body:
-          "Mascara orders depend on type, brush, tube, packaging, and market requirements. Clear product specifications help us prepare a faster quote.",
+          "This page is for buyers comparing wholesale mascara, bulk mascara, or light private label options using available products and components. Orders depend on formula, brush, tube, packaging, and market requirements.",
         bullets: [
           "Waterproof, lengthening, volumizing, or natural-looking product direction",
           "Tube and brush specification confirmation",
@@ -868,6 +868,28 @@ export const pages: Record<string, SitePage> = {
           "Tube, brush, logo, and outer box support",
           "Product claims and packaging text can be reviewed before printing",
           "The quote can match your target market and order plan",
+        ],
+      },
+      {
+        title: "MOQ by mascara tube color",
+        body:
+          "For selected mascara formulas, available standard black or white tubes can start from 500 units. Other colors can start from 500 units only when the component supplier can combine production with an active order; without a suitable combined run, the normal custom-color tube MOQ is 10,000 units.",
+        bullets: [
+          "Available standard black or white tubes: starting MOQ 500 units",
+          "Other colors with combined production: 500 units or more",
+          "Other colors without a combined run: normal MOQ 10,000 units",
+          "Logo printing, boxes, and special components are confirmed on the quotation",
+        ],
+      },
+      {
+        title: "Samples and production timing",
+        body:
+          "Sample development normally takes 10-15 days after the product and customization brief is confirmed. After the sample, final specification, and artwork are approved, bulk production by our manufacturing partner normally takes 20-40 days.",
+        bullets: [
+          "Use samples to review formula, brush, tube, and brand presentation",
+          "Production starts after final sample, specification, and artwork approval",
+          "Shipping time is quoted separately for the destination and delivery method",
+          "Share the required sample and launch dates before quotation",
         ],
       },
       {
@@ -891,7 +913,12 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can mascara packaging be customized?",
         answer:
-          "Packaging options can include tube color, logo, label, and outer box. Available options depend on quantity and packaging stock.",
+          "Yes. Available standard black or white tubes can start from 500 units. Other colors can start from 500 units only when combined production is available; otherwise the normal custom-color tube MOQ is 10,000 units. Logo, label, box, and printing are confirmed on the quotation.",
+      },
+      {
+        question: "How long do wholesale mascara samples and production take?",
+        answer:
+          "Sample development normally takes 10-15 days. After the sample, final specification, and artwork are approved, bulk production by our manufacturing partner normally takes 20-40 days. Shipping time is additional.",
       },
       {
         question: "Can I combine mascara and lash serum in one inquiry?",
@@ -1215,9 +1242,10 @@ export const pages: Record<string, SitePage> = {
         body:
           "MOQ, sample cost, payment, production time, and shipping are confirmed on each quotation because product and customization requirements vary.",
         bullets: [
-          "Typical first-order MOQ starts around 100 pieces",
           "Customized samples usually require 10-15 days",
-          "Bulk production commonly takes about 15-30 days",
+          "Selected mascara formulas with available black or white tubes start from 500 units",
+          "Mascara bulk production normally takes 20-40 days after approval",
+          "Other product MOQs and production times are confirmed on the quotation",
           "Express, air, and sea shipping options are available",
         ],
       },

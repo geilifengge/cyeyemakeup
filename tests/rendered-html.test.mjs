@@ -96,6 +96,19 @@ test("server-renders conditional tube color MOQ rules", async () => {
   assert.match(html, /normal custom-color tube MOQ is 10,000 units/i);
 });
 
+test("server-renders wholesale mascara with synchronized MOQ and lead times", async () => {
+  const response = await render("/wholesale-mascara");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Wholesale Mascara Supplier \| MOQ from 500 Units/i);
+  assert.match(html, /Available standard black or white tubes: starting MOQ 500 units/i);
+  assert.match(html, /normal custom-color tube MOQ is 10,000 units/i);
+  assert.match(html, /Sample development normally takes 10-15 days/i);
+  assert.match(html, /bulk production by our manufacturing partner normally takes 20-40 days/i);
+  assert.match(html, /"@type":"FAQPage"/);
+  assert.doesNotMatch(html, /CP0033|CP0035|TRANSMO|\bBIMA\b|bimatoprost|cloprosten/i);
+});
+
 test("server-renders the eyeliner cost, MOQ, samples, and lead-time guide", async () => {
   const response = await render("/private-label-eyeliner-cost-moq-samples");
   assert.equal(response.status, 200);
