@@ -851,7 +851,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Wholesale mascara buying details",
         body:
-          "This page is for buyers comparing wholesale mascara, bulk mascara, or light private label options using available products and components. Orders depend on formula, brush, tube, packaging, and market requirements.",
+          "Wholesale mascara options include bulk supply and light private label using available formulas and components. Each order is confirmed by formula, brush, tube, packaging, quantity, and market requirements.",
         bullets: [
           "Waterproof, lengthening, volumizing, or natural-looking product direction",
           "Tube and brush specification confirmation",
@@ -1429,15 +1429,15 @@ export const pages: Record<string, SitePage> = {
   },
   certifications: {
     slug: "certifications",
-    title: "Compliance Support for Private Label Eye Makeup | Venus beautiful",
+    title: "Eye Makeup Compliance Support | Venus beautiful",
     description:
-      "Compliance support for private label lash serum, mascara, and eyeliner orders: current ISO 22716, Sedex SMETA, CPNP, MSDS, and market-specific documents are checked for the selected formula, production facility, and destination before order confirmation.",
+      "Verify ISO 22716, facility audits, CPNP, MSDS, and market documents for the selected private-label formula and production partner.",
     h1: "Compliance support for private label eye makeup orders",
     eyebrow: "Compliance",
     summary:
       "We qualify the manufacturing facility and the formula-specific document set for each order. Share your destination market and we will confirm which current ISO 22716, Sedex SMETA, CPNP, MSDS, testing, and registration documents can be verified before production.",
-    heroImage: "/images/business-license-landscape.jpg",
-    heroAlt: "Business license and compliance documents for Chuangyuan Cosmetics Manufacturing",
+    heroImage: "/images/certifications-overview.jpg",
+    heroAlt: "Compliance and manufacturing-partner documents available for project verification",
     primaryCta: "Request compliance documents",
     secondaryCta: "Send market requirements",
     badges: ["ISO 22716 validity check", "Facility audit review", "CPNP support", "Formula-specific MSDS"],

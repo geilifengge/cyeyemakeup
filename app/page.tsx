@@ -71,7 +71,7 @@ export default function Home() {
             "Venus beautiful supplies private label lash serum, mascara, eyeliner, and cosmetic packaging for wholesale and OEM buyers.",
           isPartOf: { "@id": `${baseUrl}/#website` },
           about: { "@id": `${baseUrl}/#organization` },
-          dateModified: "2026-08-11",
+          dateModified: "2026-08-17",
           inLanguage: "en",
         }}
       />

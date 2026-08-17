@@ -39,7 +39,13 @@ export function PageTemplate({ page }: PageTemplateProps) {
           </div>
           {page.heroImage ? (
             <div className="sub-hero-image">
-              <img src={page.heroImage} alt={page.heroAlt || page.h1} loading="lazy" />
+              <img
+                src={page.heroImage}
+                alt={page.heroAlt || page.h1}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
             </div>
           ) : (
             <div className="contact-card">

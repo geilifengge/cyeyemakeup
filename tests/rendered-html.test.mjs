@@ -178,6 +178,7 @@ test("renders privacy controls, live security headers, and verified compliance w
   const homepageHtml = await homepage.text();
   assert.match(homepageHtml, /gtag\('consent', 'default'/);
   assert.match(homepageHtml, /page_location: location\.origin \+ location\.pathname/);
+  assert.match(homepageHtml, /"logo":"https:\/\/cyeyemakeup\.com\/images\/logo\.png"/);
 
   const privacy = await render("/privacy");
   assert.equal(privacy.status, 200);
@@ -187,5 +188,7 @@ test("renders privacy controls, live security headers, and verified compliance w
   assert.equal(compliance.status, 200);
   const complianceHtml = await compliance.text();
   assert.match(complianceHtml, /ISO 22716 validity check/i);
+  assert.match(complianceHtml, /src="\/images\/certifications-overview\.jpg"/i);
+  assert.match(complianceHtml, /loading="eager"[^>]+fetchPriority="high"/i);
   assert.doesNotMatch(complianceHtml, /cert-3\.jpg|cert-cpsr\.jpg/i);
 });

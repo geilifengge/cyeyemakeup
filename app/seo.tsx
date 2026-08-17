@@ -33,8 +33,6 @@ export function buildPageMetadata(page: SitePage): Metadata {
       images: [
         {
           url: image,
-          width: 1200,
-          height: 630,
           alt: imageAlt,
         },
       ],
@@ -69,6 +67,7 @@ export function OrganizationJsonLd() {
             legalName: company.legalName,
             alternateName: company.shortName,
             url: baseUrl,
+            logo: absoluteUrl("/images/logo.png"),
             email: company.email,
             telephone: company.whatsappDisplay,
             address: {
