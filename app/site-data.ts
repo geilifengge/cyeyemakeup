@@ -116,6 +116,17 @@ export const pages: Record<string, SitePage> = {
         ],
       },
       {
+        title: "Formula matching and custom development",
+        body:
+          "Different internal formula references represent different ingredient and performance directions. We can evaluate your target brief, benchmark sample, ingredient preferences, or customer-provided formula and develop the closest feasible direction for sampling. The final formula is confirmed only after technical review, sample testing, and target-market compliance checks.",
+        bullets: [
+          "Share the target texture, appearance, application feel, and product position",
+          "Provide an ingredient list, formula brief, or benchmark sample when available",
+          "Identify required and excluded ingredients plus the destination market",
+          "Approve the final sample and formula-specific document set before production",
+        ],
+      },
+      {
         title: "Lash serum specifications at a glance",
         body:
           "Standard specifications help buyers compare options quickly. Custom capacities, applicators, and packaging are available for private label and OEM orders.",
@@ -173,7 +184,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "How long do samples and bulk production take?",
         answer:
-          "Samples are prepared after confirming packaging and logo; bulk production usually takes around 15 days depending on quantity and customization. We confirm the exact lead time with your order before production.",
+          "Sample development normally takes 10-15 days after the formula, packaging, and logo brief is confirmed. Bulk production timing is confirmed for the approved formula and component route; special colors, custom components, or unavailable combined production can extend the schedule.",
       },
       {
         question: "How is lash serum applied?",
@@ -189,6 +200,11 @@ export const pages: Record<string, SitePage> = {
         question: "Can I request vegan, organic, or herbal formula directions?",
         answer:
           "Botanical and peptide ingredient directions can be reviewed as part of the formula brief. Vegan and organic positioning requires documented ingredient sourcing and relevant certification; we confirm what documentation is available for the selected formula before production.",
+      },
+      {
+        question: "Can you work from my formula or a benchmark product?",
+        answer:
+          "Yes. We can evaluate a customer-provided formula, ingredient list, technical brief, or benchmark sample and develop the closest feasible direction. An exact match is not promised because raw materials, process, testing, intellectual-property limits, and destination-market rules may require adjustments. The approved sample and final formula documents control production.",
       },
       {
         question: "What is the shelf life of lash serum?",
@@ -294,17 +310,18 @@ export const pages: Record<string, SitePage> = {
     heroAlt: "Venus beautiful mascara tube, brush, and box for private label orders",
     primaryCta: "Ask for mascara options",
     secondaryCta: "Get eye makeup catalog",
-    badges: ["MOQ from 500 units", "Samples in 10-15 days", "Free design support", "OEM options"],
+    badges: ["Black/white tubes from 500", "Samples in 10-15 days", "Free design support", "OEM options"],
     sections: [
       {
         title: "Choose the mascara result first",
         body:
-          "Private label mascara development starts with the wear result and product position your brand needs. The final formula, claims, applicator, and packaging are confirmed through the selected sample and available supporting documents.",
+          "Private label mascara development starts with the wear result and product position your brand needs. Different internal formula references represent different performance directions. We can evaluate your brief, benchmark sample, or customer-provided formula and develop the closest feasible direction for sampling.",
         bullets: [
           "Volumizing direction for a fuller lash look",
           "Volumizing plus lengthening direction in black or brown",
           "Fiber lengthening direction for a natural, slender look",
           "Clear keratin direction for shaping, curling, or primer-style positioning",
+          "Customer formula or benchmark matching subject to technical, sample, and compliance review",
         ],
       },
       {
@@ -332,12 +349,12 @@ export const pages: Record<string, SitePage> = {
       {
         title: "MOQ for standard and customized mascara",
         body:
-          "MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging. The applicable minimum can change when you add logo printing, custom boxes, special components, formula development, or other OEM requirements.",
+          "MOQ starts from 500 units for selected mascara formulas using available standard black or white tubes. Other tube colors can start from 500 units only when the component supplier can combine production with an active order; without a suitable combined run, the normal custom-color tube MOQ is 10,000 units.",
         bullets: [
-          "500-unit starting MOQ applies only to selected standard no-logo options",
-          "Logo printing and custom packaging are quoted for the chosen component",
-          "Custom formula or component programs may require a higher minimum",
-          "Send the target quantity to compare the available order routes",
+          "Standard black or white tube options: starting MOQ 500 units",
+          "Other colors: 500 units or more only when combined production is available",
+          "Other colors without a combined run: normal tube MOQ 10,000 units",
+          "Logo printing, custom boxes, special components, and formula work are quoted separately",
         ],
       },
       {
@@ -378,7 +395,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "What is the MOQ for private label mascara?",
         answer:
-          "MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging. Logo printing, custom boxes, special components, formula development, and other OEM requirements may have different minimum quantities.",
+          "MOQ starts from 500 units for selected mascara formulas using available standard black or white tubes. Other tube colors can start from 500 units only when the supplier can combine production with an active order. If no suitable combined run is available, the normal custom-color tube MOQ is 10,000 units. Logo printing, boxes, special components, and formula work are quoted separately.",
       },
       {
         question: "Can I order mascara with my own logo?",
@@ -389,6 +406,11 @@ export const pages: Record<string, SitePage> = {
         question: "Can the mascara brush be customized?",
         answer:
           "Available directions can include silicone, nylon, crescent-shaped, gourd-shaped, and slender precision brushes. The final brush is tested with the formula, wiper, and tube because these components affect application.",
+      },
+      {
+        question: "Can you match a customer-provided mascara formula?",
+        answer:
+          "We can evaluate a customer formula, technical brief, or benchmark sample and develop the closest feasible direction. The final result depends on raw-material availability, process, component compatibility, testing, intellectual-property limits, and destination-market requirements. Bulk production follows the approved sample and final specification.",
       },
       {
         question: "Can I order samples before bulk production?",
@@ -930,12 +952,13 @@ export const pages: Record<string, SitePage> = {
       {
         title: "What affects MOQ and packaging cost",
         body:
-          "Customization level affects MOQ and packaging cost. Simple logo or stock component choices are usually easier to quote than unique molds, special printing, or deep formula changes.",
+          "Tube color and component availability have a direct effect on MOQ. Available standard black or white tubes can start from 500 units. Other colors can start from 500 units only when the component supplier can combine production with an active order; without a suitable combined run, the normal custom-color tube MOQ is 10,000 units.",
         bullets: [
-          "Stock packaging versus custom packaging",
+          "Available standard black or white tubes: starting MOQ 500 units",
+          "Other colors with combined production: 500 units or more",
+          "Other colors without a combined run: normal MOQ 10,000 units",
           "Printing method and color count",
           "Formula and ingredient requirements",
-          "Sample confirmation before bulk order",
         ],
       },
       {
@@ -965,7 +988,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I customize the tube and box?",
         answer:
-          "Yes, tube and box customization is part of the private label service. Available details depend on quantity and packaging option availability.",
+          "Yes. Available standard black or white tubes can start from 500 units. Other tube colors can start from 500 units only when combined production is available; otherwise the normal custom-color tube MOQ is 10,000 units. Box, printing, finish, and formula requirements are quoted separately.",
       },
       {
         question: "Can I request vegan or herbal product direction?",

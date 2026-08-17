@@ -63,13 +63,37 @@ test("server-renders the optimized private label mascara page", async () => {
 
   const html = await response.text();
   assert.match(html, /Private label mascara manufacturer for wholesale and OEM orders/i);
-  assert.match(html, /MOQ starts from 500 units for selected mascara formulas with standard no-logo packaging/i);
+  assert.match(html, /MOQ starts from 500 units for selected mascara formulas using available standard black or white tubes/i);
+  assert.match(html, /normal custom-color tube MOQ is 10,000 units/i);
+  assert.match(html, /develop the closest feasible direction for sampling/i);
   assert.match(html, /Sample development normally takes 10-15 days/i);
   assert.match(html, /bulk production by our manufacturing partner normally takes 20-40 days/i);
   assert.match(html, /Free design support is available/i);
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/private-label-mascara-manufacturer"/i);
   assert.doesNotMatch(html, /17\.5|CP0456|CP0149|CP0036|CP0037|Transmo/i);
+});
+
+test("server-renders formula matching with formula-specific compliance controls", async () => {
+  const response = await render("/private-label-lash-serum");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Formula matching and custom development/i);
+  assert.match(html, /customer-provided formula and develop the closest feasible direction/i);
+  assert.match(html, /An exact match is not promised/i);
+  assert.match(html, /formula-specific document set before production/i);
+  assert.doesNotMatch(html, /CP0033|CP0035|bimatoprost|BIMA|cloprosten/i);
+});
+
+test("server-renders conditional tube color MOQ rules", async () => {
+  const response = await render("/custom-lash-serum-packaging");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Available standard black or white tubes can start from 500 units/i);
+  assert.match(html, /combined production is available/i);
+  assert.match(html, /normal custom-color tube MOQ is 10,000 units/i);
 });
 
 test("server-renders the eyeliner cost, MOQ, samples, and lead-time guide", async () => {
