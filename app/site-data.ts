@@ -231,7 +231,7 @@ export const pages: Record<string, SitePage> = {
   },
   "lash-serum-manufacturer": {
     slug: "lash-serum-manufacturer",
-    title: "Lash Serum Manufacturer for Wholesale and OEM Orders | Venus beautiful",
+    title: "Lash Serum Manufacturer for Wholesale & OEM",
     description:
       "Shenzhen lash serum supplier for manufacturing, packaging, samples, private label, and OEM orders.",
     h1: "Lash serum manufacturer for wholesale, private label, and OEM orders",
@@ -555,7 +555,7 @@ export const pages: Record<string, SitePage> = {
   },
   "wholesale-eyeliner": {
     slug: "wholesale-eyeliner",
-    title: "Wholesale Eyeliner and Bulk Liquid Eyeliner Supplier | Venus beautiful",
+    title: "Wholesale Liquid Eyeliner Supplier | Venus beautiful",
     description:
       "Wholesale eyeliner supplier for distributors, beauty brands, and importers. Request bulk liquid eyeliner, colors, packaging, MOQ, samples, and private label options.",
     h1: "Wholesale eyeliner and bulk liquid eyeliner supply",
@@ -630,7 +630,7 @@ export const pages: Record<string, SitePage> = {
     slug: "cosmetic-packaging-manufacturer",
     title: "Cosmetic Packaging Manufacturer and Supplier | Venus beautiful",
     description:
-      "Cosmetic packaging manufacturer and supplier for mascara bottles, eyeliner containers, lip gloss bottles, and lipstick tubes. Ask about custom components, samples, molds, and bulk orders.",
+      "Cosmetic packaging manufacturer for mascara, eyeliner, lip gloss, and lipstick components. Ask about samples, molds, customization, and bulk orders.",
     h1: "Cosmetic packaging manufacturer for eye makeup and lip products",
     eyebrow: "Cosmetic packaging manufacturer",
     summary:
@@ -1052,7 +1052,7 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-eyeliner-cost-moq-samples": {
     slug: "private-label-eyeliner-cost-moq-samples",
-    title: "Private Label Eyeliner Cost, MOQ, Samples and Lead Time | Venus beautiful",
+    title: "Private Label Eyeliner Cost, MOQ & Lead Time",
     description:
       "Buyer guide to private label eyeliner cost, MOQ, samples, packaging, logo printing, production timing, and the details needed for an accurate OEM quote.",
     h1: "Private label eyeliner cost, MOQ, samples, and lead time",
@@ -1204,7 +1204,7 @@ export const pages: Record<string, SitePage> = {
   },
   faq: {
     slug: "faq",
-    title: "FAQ for Eye Makeup Wholesale and Private Label Buyers | Venus beautiful",
+    title: "Eye Makeup Wholesale & Private Label FAQ",
     description:
       "Frequently asked questions for lash serum, mascara, eyeliner, private label, wholesale, OEM, MOQ, samples, payment, shipping, and packaging.",
     h1: "FAQ for eye makeup wholesale and private label buyers",
