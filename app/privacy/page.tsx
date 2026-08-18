@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy and Analytics Choices | Venus beautiful",
   description: "How Venus beautiful handles analytics consent, inquiry data, and privacy choices.",
   alternates: { canonical: "/privacy" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function PrivacyPage() {
@@ -32,4 +32,3 @@ export default function PrivacyPage() {
     </>
   );
 }
-

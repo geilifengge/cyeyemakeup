@@ -182,7 +182,10 @@ test("renders privacy controls, live security headers, and verified compliance w
 
   const privacy = await render("/privacy");
   assert.equal(privacy.status, 200);
-  assert.match(await privacy.text(), /Privacy and analytics choices/i);
+  const privacyHtml = await privacy.text();
+  assert.match(privacyHtml, /Privacy and analytics choices/i);
+  assert.match(privacyHtml, /<meta name="robots" content="index, follow"/i);
+  assert.doesNotMatch(privacyHtml, /<meta name="robots" content="[^"]*noindex/i);
 
   const compliance = await render("/certifications");
   assert.equal(compliance.status, 200);
