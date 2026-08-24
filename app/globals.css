@@ -12,6 +12,9 @@
   --coral: #c9674a;
   --gold: #b88a3e;
   --shadow: 0 20px 55px rgba(26, 47, 64, 0.14);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
 }
 
 
@@ -209,6 +212,7 @@ nav a:hover,
 
 .header-contact {
   border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
   padding: 10px 16px;
   font-weight: 700;
 }
@@ -302,6 +306,7 @@ main {
   justify-content: center;
   padding: 13px 20px;
   border: 1px solid var(--blue);
+  border-radius: var(--radius-sm);
   font-weight: 800;
   line-height: 1.2;
 }
@@ -329,6 +334,7 @@ main {
 
 .badge-row span {
   border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
   background: var(--soft);
   padding: 8px 11px;
   color: #3f4952;
@@ -367,6 +373,7 @@ main {
 .section-heading,
 .supplier-capabilities,
 .supplier-proof,
+.quick-answer,
 .image-band,
 .process-section,
 .faq-section,
@@ -429,6 +436,48 @@ main {
   background: #fff;
 }
 
+.quick-answer {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+  background: var(--soft);
+}
+
+.quick-answer h2 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+.decision-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.decision-points div {
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.decision-points dt {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.decision-points dd {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
 .supplier-proof.home-proof {
   background: var(--soft);
 }
@@ -448,6 +497,7 @@ main {
   min-height: 360px;
   overflow: hidden;
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   background: var(--mist);
 }
 
@@ -472,13 +522,14 @@ main {
 .page-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
+  gap: 14px;
   padding: 0 clamp(20px, 5vw, 72px) clamp(48px, 7vw, 88px);
 }
 
 .page-card {
   min-height: 260px;
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   padding: 28px;
   background: #fff;
 }
@@ -527,6 +578,7 @@ main {
   position: relative;
   min-height: 280px;
   overflow: hidden;
+  border-radius: var(--radius-md);
   background: #fff;
 }
 
@@ -595,6 +647,7 @@ main {
   flex-direction: column;
   gap: 14px;
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   padding: 22px;
   background: var(--soft);
   counter-increment: process;
@@ -627,6 +680,7 @@ main {
 
 .info-block {
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   padding: 28px;
   background: #fff;
 }
@@ -654,6 +708,7 @@ main {
 
 details {
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   background: #fff;
   padding: 20px;
 }
@@ -674,6 +729,7 @@ summary {
   padding: clamp(30px, 4vw, 52px);
   align-items: start;
   border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
   background: #fff;
   color: var(--ink);
 }
@@ -712,6 +768,7 @@ summary {
   gap: 12px;
   margin-top: 0;
   border: 1px solid var(--line);
+  border-radius: var(--radius-md);
   background: var(--soft);
   padding: 16px;
 }
@@ -725,9 +782,11 @@ summary {
 }
 
 .mini-form input,
-.mini-form textarea {
+.mini-form textarea,
+.mini-form select {
   width: 100%;
   border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
   background: #fff;
   color: var(--ink);
   font: inherit;
@@ -758,6 +817,7 @@ summary {
 
 .related-links a {
   border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
   padding: 12px 14px;
   color: var(--blue);
   font-weight: 800;
@@ -810,6 +870,7 @@ summary {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: var(--radius-md);
   background: #168c56;
   color: #fff;
   padding: 10px 14px;
@@ -858,6 +919,7 @@ summary {
   .image-band,
   .supplier-proof,
   .process-section,
+  .quick-answer,
   .faq-section {
     grid-template-columns: 1fr;
   }
@@ -880,6 +942,10 @@ summary {
   }
 
   .mini-form {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-points {
     grid-template-columns: 1fr;
   }
 

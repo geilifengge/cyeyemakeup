@@ -21,7 +21,7 @@ export const company = {
 
 export const navItems = [
   { href: "/private-label-lash-serum", label: "Lash Serum" },
-  { href: "/private-label-mascara-manufacturer", label: "Mascara" },
+  { href: "/private-label-mascara-manufacturer", label: "Mascara Supplier" },
   { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
   { href: "/wholesale-lash-serum", label: "Wholesale" },
   { href: "/cosmetic-packaging-manufacturer", label: "Packaging" },
@@ -60,6 +60,11 @@ export type SitePage = {
   primaryCta: string;
   secondaryCta: string;
   badges: string[];
+  quickAnswer?: string;
+  decisionPoints?: {
+    label: string;
+    value: string;
+  }[];
   sections: {
     title: string;
     body: string;
@@ -299,18 +304,26 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-mascara-manufacturer": {
     slug: "private-label-mascara-manufacturer",
-    title: "Private Label Mascara Manufacturer | Factory with Samples",
+    title: "Mascara Manufacturer & Supplier | Private Label MOQ 500",
     description:
-      "Private label mascara manufacturer for volumizing, fiber, black, brown, and clear formulas. Customize brushes, tubes, logos, and boxes with design support.",
+      "Private label mascara manufacturer and supplier. Selected formulas start at 500 units, with samples, brush and packaging options, and OEM quotes.",
     h1: "Private label mascara manufacturer for wholesale and OEM orders",
     eyebrow: "Mascara private label",
     summary:
-      "Venus beautiful helps beauty brands, wholesalers, and importers develop mascara products with coordinated formula, brush, tube, logo, and outer-box options. Start with your target lash effect, quantity, packaging direction, market, and launch schedule.",
+      "Venus beautiful is a mascara manufacturer and supplier for beauty brands, wholesalers, and importers. We coordinate formula, brush, tube, logo, outer box, samples, and production planning from one buyer brief.",
     heroImage: "/images/mascara-hero.jpg",
     heroAlt: "Venus beautiful mascara tube, brush, and box for private label orders",
     primaryCta: "Ask for mascara options",
     secondaryCta: "Get eye makeup catalog",
     badges: ["Black/white tubes from 500", "Samples in 10-15 days", "Free design support", "OEM options"],
+    quickAnswer:
+      "We manufacture and supply private label mascara from 500 units for selected formulas with available black or white tubes.",
+    decisionPoints: [
+      { label: "Starting MOQ", value: "500 units for selected formulas using available standard black or white tubes." },
+      { label: "Samples", value: "Normally 10-15 days after the product brief and customization requirements are confirmed." },
+      { label: "Bulk production", value: "Normally 20-40 days after the sample, final specification, and artwork are approved." },
+      { label: "Customization", value: "Formula direction, brush, tube, logo, label, and outer box are reviewed as one system." },
+    ],
     sections: [
       {
         title: "Choose the mascara result first",
@@ -403,24 +416,14 @@ export const pages: Record<string, SitePage> = {
           "Yes. Private label options can include your logo, tube appearance, label, and outer box. The available printing method and MOQ depend on the selected component and packaging specification.",
       },
       {
-        question: "Can the mascara brush be customized?",
-        answer:
-          "Available directions can include silicone, nylon, crescent-shaped, gourd-shaped, and slender precision brushes. The final brush is tested with the formula, wiper, and tube because these components affect application.",
-      },
-      {
         question: "Can you match a customer-provided mascara formula?",
         answer:
-          "We can evaluate a customer formula, technical brief, or benchmark sample and develop the closest feasible direction. The final result depends on raw-material availability, process, component compatibility, testing, intellectual-property limits, and destination-market requirements. Bulk production follows the approved sample and final specification.",
+          "We can evaluate a customer formula, technical brief, or benchmark sample and develop the closest feasible direction. Formula, brush, wiper, and tube compatibility are reviewed together. The final result depends on raw-material availability, process, testing, intellectual-property limits, and destination-market requirements.",
       },
       {
         question: "Can I order samples before bulk production?",
         answer:
           "Yes. Samples can be used to review formula direction, color, brush performance, tube compatibility, logo placement, and outer-box presentation. Sample development normally takes 10-15 days after the brief is confirmed.",
-      },
-      {
-        question: "Do you provide packaging design support?",
-        answer:
-          "Yes. Free design support is available for private label and OEM orders. Logo-placement mockups, tube artwork, and outer-box layouts can be prepared for review before production.",
       },
       {
         question: "How long does mascara production take?",

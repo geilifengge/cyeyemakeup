@@ -63,12 +63,19 @@ test("server-renders the optimized private label mascara page", async () => {
 
   const html = await response.text();
   assert.match(html, /Private label mascara manufacturer for wholesale and OEM orders/i);
+  assert.match(html, /Mascara Manufacturer &amp; Supplier \| Private Label MOQ 500/i);
+  assert.match(html, /Direct answer/i);
+  assert.match(html, /Starting MOQ/i);
   assert.match(html, /MOQ starts from 500 units for selected mascara formulas using available standard black or white tubes/i);
   assert.match(html, /normal custom-color tube MOQ is 10,000 units/i);
   assert.match(html, /develop the closest feasible direction for sampling/i);
   assert.match(html, /Sample development normally takes 10-15 days/i);
   assert.match(html, /bulk production by our manufacturing partner normally takes 20-40 days/i);
   assert.match(html, /Free design support is available/i);
+  assert.match(html, /How did you find us\? \(optional\)/i);
+  assert.match(html, /ChatGPT/i);
+  assert.match(html, /Perplexity/i);
+  assert.match(html, /href="#inquiry"/i);
   assert.match(html, /"@type":"FAQPage"/);
   assert.match(html, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/private-label-mascara-manufacturer"/i);
   assert.doesNotMatch(html, /17\.5|CP0456|CP0149|CP0036|CP0037|Transmo/i);

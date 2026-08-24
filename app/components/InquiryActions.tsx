@@ -1,64 +1,14 @@
 "use client";
 
 import { FormEvent, MouseEvent, useState } from "react";
-import { buildEmailHref, company } from "../site-data";
+import { buildEmailHref, buildWhatsappHref } from "../site-data";
+import { buildAttributedWhatsappHref } from "./WhatsappInquiryLink";
 
 type InquiryActionsProps = {
   topic: string;
   primaryLabel: string;
   secondaryLabel: string;
 };
-
-function getInitialLandingPage() {
-  if (typeof window === "undefined") return "";
-  const key = "cy_initial_landing_page";
-  const existing = window.localStorage.getItem(key);
-  if (existing) return existing;
-  const current = window.location.pathname || "/";
-  window.localStorage.setItem(key, current);
-  return current;
-}
-
-function getInitialUtm() {
-  if (typeof window === "undefined") return "";
-  const key = "cy_initial_utm";
-  const existing = window.localStorage.getItem(key);
-  if (existing) return existing;
-  const params = new URLSearchParams(window.location.search);
-  const utm = Array.from(params.entries())
-    .filter(([name]) => name.startsWith("utm_"))
-    .map(([name, value]) => `${name}=${value}`)
-    .join("&");
-  window.localStorage.setItem(key, utm || "none");
-  return utm || "none";
-}
-
-function buildMessage(topic: string, cta: string, extra?: string) {
-  const currentPage = typeof window === "undefined" ? "" : window.location.pathname || "/";
-  const initialLanding = getInitialLandingPage();
-  const initialUtm = getInitialUtm();
-  const sourceNote = [
-    `button: ${cta}`,
-    currentPage ? `current: ${currentPage}` : "",
-    initialLanding ? `first visit: ${initialLanding}` : "",
-    initialUtm && initialUtm !== "none" ? `source tag: ${initialUtm}` : "",
-  ]
-    .filter(Boolean)
-    .join(" | ");
-
-  return [
-    "Hello Venus beautiful,",
-    `I would like to receive details for ${topic}.`,
-    extra || "Please send catalog, MOQ, sample, packaging, and quote information.",
-    sourceNote ? `[Request page: ${sourceNote}]` : "",
-  ]
-    .filter(Boolean)
-    .join("\n");
-}
-
-function whatsappUrl(message: string) {
-  return `https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(message)}`;
-}
 
 export function InquiryActions({
   topic,
@@ -69,8 +19,9 @@ export function InquiryActions({
   const [quantity, setQuantity] = useState("");
   const [country, setCountry] = useState("");
   const [needs, setNeeds] = useState("");
+  const [discoverySource, setDiscoverySource] = useState("");
 
-  const primaryHref = `https://wa.me/${company.whatsappNumber}`;
+  const primaryHref = buildWhatsappHref(topic);
   const secondaryHref = (() => {
     const subject = `${secondaryLabel} - ${topic}`;
     const body = [
@@ -81,12 +32,13 @@ export function InquiryActions({
       "Quantity:",
       "Country:",
       "Private label / wholesale / OEM needs:",
+      "How did you find us? Google / ChatGPT / Perplexity / Other:",
     ].join("\n");
     return buildEmailHref(subject, body);
   })();
 
   function onPrimaryClick(event: MouseEvent<HTMLAnchorElement>) {
-    event.currentTarget.href = whatsappUrl(buildMessage(topic, primaryLabel));
+    event.currentTarget.href = buildAttributedWhatsappHref(topic, primaryLabel);
   }
 
   function onEmailClick(event: MouseEvent<HTMLAnchorElement>) {
@@ -99,6 +51,7 @@ export function InquiryActions({
       "Quantity:",
       "Country:",
       "Private label / wholesale / OEM needs:",
+      "How did you find us? Google / ChatGPT / Perplexity / Other:",
       "",
       `I reached you from ${window.location.pathname || "/"}`,
     ].join("\n");
@@ -112,10 +65,11 @@ export function InquiryActions({
       quantity ? `Quantity: ${quantity}` : "",
       country ? `Country: ${country}` : "",
       needs ? `Needs: ${needs}` : "",
+      discoverySource ? `Found us via: ${discoverySource}` : "",
     ]
       .filter(Boolean)
       .join("; ");
-    window.open(whatsappUrl(buildMessage(topic, "Form inquiry", extra)), "_blank", "noopener,noreferrer");
+    window.open(buildAttributedWhatsappHref(topic, "Form inquiry", extra), "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -168,6 +122,20 @@ export function InquiryActions({
             onChange={(event) => setNeeds(event.target.value)}
             placeholder="Logo, tube color, box, formula direction, OEM, wholesale, timeline"
           />
+        </label>
+        <label className="wide">
+          How did you find us? (optional)
+          <select
+            name="discoverySource"
+            value={discoverySource}
+            onChange={(event) => setDiscoverySource(event.target.value)}
+          >
+            <option value="">Select a source</option>
+            <option value="Google">Google</option>
+            <option value="ChatGPT">ChatGPT</option>
+            <option value="Perplexity">Perplexity</option>
+            <option value="Other">Other</option>
+          </select>
         </label>
         <button className="button primary wide" type="submit">
           Send form details by WhatsApp

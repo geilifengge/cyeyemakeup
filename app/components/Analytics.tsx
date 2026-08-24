@@ -13,6 +13,7 @@ type ConsentChoice = "granted" | "denied";
 
 const consentKey = "cy_ga_consent_v2";
 const landingKey = "cy_initial_landing_path";
+const inquiryDedupeMs = 30 * 60 * 1000;
 
 const copy = {
   en: {
@@ -117,6 +118,16 @@ export function Analytics() {
         currentConsent = null;
       }
       if (currentConsent !== "granted" || typeof window.gtag !== "function") return;
+      if (name.endsWith("_inquiry")) {
+        const dedupeKey = `cy_ga_dedupe:${name}:${safePath()}:${label}`;
+        try {
+          const lastTracked = Number(window.sessionStorage.getItem(dedupeKey) || 0);
+          if (Date.now() - lastTracked < inquiryDedupeMs) return;
+          window.sessionStorage.setItem(dedupeKey, String(Date.now()));
+        } catch {
+          // Continue tracking when session storage is unavailable.
+        }
+      }
       window.gtag("event", name, {
         cta_label: label.slice(0, 100),
         page_path: safePath(),

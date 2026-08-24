@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { company, navItems } from "../site-data";
-
-const whatsappMessage = [
-  "Hello Venus beautiful,",
-  "I would like to request eyeliner, mascara, lash serum, eyebrow serum, or cosmetic packaging details.",
-  "Please send catalog, MOQ, sample, packaging, and quote information.",
-].join("\n");
+import { WhatsappInquiryLink } from "./WhatsappInquiryLink";
 
 export function SiteHeader() {
   return (
@@ -58,13 +53,14 @@ export function SiteFooter() {
 
 export function FloatingWhatsApp() {
   return (
-    <a
+    <WhatsappInquiryLink
       className="floating-whatsapp"
-      href={`https://wa.me/${company.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
-      aria-label="Contact Venus beautiful on WhatsApp"
+      topic="eyeliner, mascara, lash serum, eyebrow serum, or cosmetic packaging"
+      cta="Floating WhatsApp"
+      ariaLabel="Contact Venus beautiful on WhatsApp"
     >
       <span>WhatsApp</span>
       <strong>{company.whatsappDisplay}</strong>
-    </a>
+    </WhatsappInquiryLink>
   );
 }

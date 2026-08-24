@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { InquiryActions } from "./InquiryActions";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./SiteShell";
-import { buildWhatsappHref, company, getPage, SitePage } from "../site-data";
+import { company, getPage, SitePage } from "../site-data";
 import { PageJsonLd } from "../seo";
+import { WhatsappInquiryLink } from "./WhatsappInquiryLink";
 
 type PageTemplateProps = {
   page: SitePage;
@@ -24,10 +25,10 @@ export function PageTemplate({ page }: PageTemplateProps) {
             <h1>{page.h1}</h1>
             <p>{page.summary}</p>
             <div className="cta-row">
-              <a className="button primary" href={buildWhatsappHref(page.h1)}>
+              <WhatsappInquiryLink className="button primary" topic={page.h1} cta={page.primaryCta}>
                 {page.primaryCta}
-              </a>
-              <a className="button secondary" href="/contact">
+              </WhatsappInquiryLink>
+              <a className="button secondary" href="#inquiry">
                 {page.secondaryCta}
               </a>
             </div>
@@ -57,6 +58,25 @@ export function PageTemplate({ page }: PageTemplateProps) {
             </div>
           )}
         </section>
+
+        {page.quickAnswer ? (
+          <section className="quick-answer" aria-labelledby={`${page.slug}-quick-answer`}>
+            <div className="quick-answer-copy">
+              <p className="eyebrow">Direct answer</p>
+              <h2 id={`${page.slug}-quick-answer`}>{page.quickAnswer}</h2>
+            </div>
+            {page.decisionPoints?.length ? (
+              <dl className="decision-points">
+                {page.decisionPoints.map((point) => (
+                  <div key={point.label}>
+                    <dt>{point.label}</dt>
+                    <dd>{point.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            ) : null}
+          </section>
+        ) : null}
 
         <section className="content-grid">
           {page.sections.map((section) => (
