@@ -167,6 +167,7 @@ export function Analytics() {
         cta_label: label.slice(0, 100),
         page_path: safePath(),
         initial_landing_page: initialLanding,
+        measurement_stage: "contact_action",
       });
     };
 
