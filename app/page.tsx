@@ -8,18 +8,18 @@ import { JsonLd } from "./seo";
 import { baseUrl, company, getPage } from "./site-data";
 
 export const metadata: Metadata = {
-  title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
+  title: "Private Label Eye Makeup & Contract Manufacturer | China",
   description:
-    "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label. Request MOQ, samples, packaging options, and a B2B catalog.",
+    "Shenzhen contract manufacturer of lash serum, mascara, eyeliner, and brow gel for wholesale and private label. Request MOQ, samples, packaging, and a B2B catalog.",
   alternates: {
     canonical: `${baseUrl}/`,
   },
   openGraph: {
     type: "website",
     siteName: "Venus beautiful",
-    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
+    title: "Private Label Eye Makeup & Contract Manufacturer | China",
     description:
-      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
+      "Shenzhen contract manufacturer of lash serum, mascara, eyeliner, and brow gel for wholesale and private label, with MOQ, samples, packaging, and B2B supply.",
     url: `${baseUrl}/`,
     images: [
       {
@@ -32,18 +32,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
+    title: "Private Label Eye Makeup & Contract Manufacturer | China",
     description:
-      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
+      "Shenzhen contract manufacturer of lash serum, mascara, eyeliner, and brow gel for wholesale and private label, with MOQ, samples, packaging, and B2B supply.",
     images: [`${baseUrl}/images/lash-serum-white.jpg`],
   },
 };
 
 const commercialPages = [
+  "cosmetics-contract-manufacturer",
   "private-label-lash-serum",
   "lash-serum-manufacturer",
   "private-label-mascara-manufacturer",
   "private-label-eyeliner-manufacturer",
+  "private-label-brow-gel",
   "cosmetic-packaging-manufacturer",
   "wholesale-lash-serum",
   "wholesale-mascara",
@@ -68,12 +70,12 @@ export default function Home() {
           "@type": "WebPage",
           "@id": `${baseUrl}/#webpage`,
           url: `${baseUrl}/`,
-          name: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
+          name: "Private Label Eye Makeup & Contract Manufacturer | China",
           description:
-            "Venus beautiful supplies private label lash serum, mascara, eyeliner, and cosmetic packaging for wholesale and OEM buyers.",
+            "Venus beautiful supplies private label lash serum, mascara, eyeliner, brow gel, and cosmetic packaging for wholesale and OEM buyers.",
           isPartOf: { "@id": `${baseUrl}/#website` },
           about: { "@id": `${baseUrl}/#organization` },
-          dateModified: "2026-09-08",
+          dateModified: "2026-09-10",
           inLanguage: "en",
         }}
       />
@@ -98,10 +100,10 @@ export default function Home() {
       <main>
         <section className="home-hero">
           <div className="hero-copy">
-            <p className="eyebrow">Private label eye makeup supplier</p>
-            <h1>Private label lash serum, mascara, and eyeliner</h1>
+            <p className="eyebrow">Private label eye makeup contract manufacturer</p>
+            <h1>Private label lash serum, mascara, eyeliner, and brow gel</h1>
             <p>
-              Venus beautiful supplies lash serum, mascara, liquid eyeliner, and related cosmetic packaging for beauty
+              Venus beautiful supplies lash serum, mascara, liquid eyeliner, brow gel, and related cosmetic packaging for beauty
               brands, wholesalers, importers, and ecommerce sellers that need wholesale, private label, light
               customization, or OEM orders.
             </p>

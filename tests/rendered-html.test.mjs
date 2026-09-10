@@ -30,18 +30,20 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Wholesale &amp; Private Label Eye Makeup \| Manufacturer in China<\/title>/i);
+  assert.match(html, /<title>Private Label Eye Makeup &amp; Contract Manufacturer \| China<\/title>/i);
   assert.match(html, /property="og:image"/i);
   assert.match(html, /name="twitter:card" content="summary_large_image"/i);
   assert.match(html, /type="application\/ld\+json"/i);
   assert.match(html, /"@type":"Organization"/);
   assert.match(html, /"@type":"WebPage"/);
   assert.match(html, /"@type":"Service"/);
-  assert.match(html, /"dateModified":"2026-09-08"/);
+  assert.match(html, /"dateModified":"2026-09-10"/);
   assert.match(html, /"areaServed":"Worldwide"/);
   assert.match(html, /Chuangyuan Cosmetics Manufacturing \(Shenzhen\) Co\., Ltd\./);
   assert.match(html, /Wholesale and private label eye makeup support/);
-  assert.match(html, /Private label lash serum, mascara, and eyeliner/i);
+  assert.match(html, /Private label lash serum, mascara, eyeliner, and brow gel/i);
+  assert.match(html, /cosmetics-contract-manufacturer/i);
+  assert.match(html, /private-label-brow-gel/i);
   assert.match(html, /private-label-eyeliner-manufacturer/i);
   assert.match(html, /15 years.*factory production experience/i);
   assert.match(html, /5,000\+ m² facility/i);
@@ -84,6 +86,28 @@ test("renders the curated product and packaging catalogs with traceable referenc
   assert.match(packagingHtml, /PK-ET-04/);
   assert.match(packagingHtml, /PK-PE-04/);
   assert.doesNotMatch(packagingHtml, /CY-LS-01/);
+});
+
+test("server-renders the contract manufacturing and brow gel opportunity pages", async () => {
+  const manufacturing = await render("/cosmetics-contract-manufacturer");
+  assert.equal(manufacturing.status, 200);
+  const manufacturingHtml = await manufacturing.text();
+  assert.match(manufacturingHtml, /Cosmetics contract manufacturer for private label eye makeup/i);
+  assert.match(manufacturingHtml, /qualified production facilities/i);
+  assert.match(manufacturingHtml, /Selected mascara formulas with available standard black or white tubes can start from 500 units/i);
+  assert.match(manufacturingHtml, /"dateModified":"2026-09-10"/);
+  assert.match(manufacturingHtml, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/cosmetics-contract-manufacturer"/i);
+
+  const brow = await render("/private-label-brow-gel");
+  assert.equal(brow.status, 200);
+  const browHtml = await brow.text();
+  assert.match(browHtml, /Private label brow gel manufacturer for beauty brands/i);
+  assert.match(browHtml, /CY-BG-01/);
+  assert.match(browHtml, /CY-BG-02/);
+  assert.match(browHtml, /CY-BG-03/);
+  assert.match(browHtml, /listed from 500 pieces/i);
+  assert.match(browHtml, /"@type":"FAQPage"/);
+  assert.match(browHtml, /<link rel="canonical" href="https:\/\/cyeyemakeup\.com\/private-label-brow-gel"/i);
 });
 
 test("redirects only the public HTTP host while allowing local production preview", async () => {

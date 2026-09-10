@@ -19,6 +19,7 @@ export const company = {
 
 export const navItems = [
   { href: "/product-catalog", label: "Catalog" },
+  { href: "/cosmetics-contract-manufacturer", label: "Manufacturing" },
   { href: "/private-label-lash-serum", label: "Lash Serum" },
   { href: "/private-label-mascara-manufacturer", label: "Mascara Supplier" },
   { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
@@ -707,9 +708,10 @@ export const pages: Record<string, SitePage> = {
   },
   "cosmetic-packaging-manufacturer": {
     slug: "cosmetic-packaging-manufacturer",
-    title: "Cosmetic Packaging Manufacturer and Supplier | Venus beautiful",
+    lastModified: "2026-09-10",
+    title: "Cosmetic Packaging Manufacturer & Supplier | Custom Tubes",
     description:
-      "Cosmetic packaging manufacturer for mascara, eyeliner, lip gloss, and lipstick components. Ask about samples, molds, customization, and bulk orders.",
+      "Cosmetic packaging manufacturer and supplier for custom mascara tubes, eyeliner packaging, cosmetic pens, samples, molds, decoration, and bulk orders.",
     h1: "Cosmetic packaging manufacturer for eye makeup and lip products",
     eyebrow: "Cosmetic packaging manufacturer",
     summary:
@@ -842,7 +844,188 @@ export const pages: Record<string, SitePage> = {
         ],
       },
     ],
-    related: ["custom-lash-serum-packaging", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
+    related: ["custom-lash-serum-packaging", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer", "cosmetics-contract-manufacturer"],
+  },
+  "cosmetics-contract-manufacturer": {
+    slug: "cosmetics-contract-manufacturer",
+    lastModified: "2026-09-10",
+    title: "Cosmetics Contract Manufacturer for Eye Makeup | China",
+    description:
+      "Cosmetics contract manufacturer in Shenzhen for private label lash serum, mascara, eyeliner, and brow gel. Compare MOQ, samples, formula, packaging, and OEM routes.",
+    h1: "Cosmetics contract manufacturer for private label eye makeup",
+    eyebrow: "Cosmetics contract manufacturing",
+    summary:
+      "Chuangyuan supports beauty brands, importers, and distributors with contract manufacturing for lash serum, mascara, liquid eyeliner, brow gel, and related packaging. We match the product route, formula, applicator, pack, MOQ, samples, and documents before quotation.",
+    heroImage: "/images/mascara-hero.jpg",
+    heroAlt: "Mascara, brush, tube, and box for cosmetics contract manufacturing",
+    primaryCta: "Request a manufacturing quote",
+    secondaryCta: "Send product brief",
+    badges: ["Contract manufacturing", "Private label", "Small-batch review", "Packaging support"],
+    quickAnswer:
+      "Chuangyuan is a Shenzhen cosmetics manufacturer focused on eye makeup and related packaging. We coordinate formula development and filling with qualified production facilities, manufacture or select the packaging, and confirm the actual production scope and documents for each order.",
+    decisionPoints: [
+      { label: "Product scope", value: "Lash and brow serum, mascara, liquid eyeliner, brow gel, and related tubes, applicators, and boxes." },
+      { label: "Order route", value: "Ready product, light branding, private label, or OEM is selected from formula, packaging, quantity, and launch needs." },
+      { label: "MOQ", value: "Selected mascara formulas with available standard black or white tubes can start from 500 units; other combinations are confirmed by project." },
+      { label: "Samples", value: "Custom mascara samples normally take 10–15 days after the product, formula, brush, tube, and branding brief is confirmed." },
+    ],
+    sections: [
+      {
+        title: "Eye makeup products within our manufacturing scope",
+        body:
+          "We keep the contract manufacturing offer focused on eye makeup categories supported by product records, packaging references, and production experience.",
+        bullets: [
+          "Lash serum and eyebrow serum directions",
+          "Mascara for volume, length, curl, or natural definition",
+          "Liquid eyeliner pens and related formulas",
+          "Clear, sculpting, and glue-style brow gel formats",
+        ],
+      },
+      {
+        title: "Choose the right route before development",
+        body:
+          "A contract manufacturing inquiry can start with an available product or a more specific technical brief. We compare the simplest suitable route before committing to samples, MOQ, or timing.",
+        bullets: [
+          "Ready product for wholesale or a market test",
+          "Light branding with logo, label, or box",
+          "Private label with coordinated product and packaging",
+          "OEM review for formula, component, or performance requirements",
+        ],
+      },
+      {
+        title: "Formula, sample, and compliance review",
+        body:
+          "We can evaluate a customer formula, ingredient list, technical brief, or reference product and develop the closest feasible direction for sampling. An exact copy is not promised, and the formula-specific document set is confirmed for the destination market before production.",
+        bullets: [
+          "Target texture, wear, applicator, and user experience",
+          "Ingredient preferences and excluded ingredients",
+          "Sample approval before bulk production",
+          "Label, claims, and available documents checked for the selected formula and market",
+        ],
+      },
+      {
+        title: "Product and packaging in one quotation",
+        body:
+          "The formula, wiper, brush, tube, decoration, and box must work as one system. Packaging references can be compared by capacity, material, dimensions, and MOQ before a final quote.",
+        bullets: [
+          "Existing component selection or new mold evaluation",
+          "Tube color, logo, printing, finish, and box",
+          "Brush, applicator, wiper, and formula compatibility",
+          "Quantity, destination, shipping plan, and target launch date",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What does a cosmetics contract manufacturer do for an eye makeup brand?",
+        answer:
+          "The manufacturer reviews product direction, formula, components, packaging, samples, specifications, production, and the available document set. The exact scope depends on whether you select a ready product, private label, or OEM route.",
+      },
+      {
+        question: "Can I start with a small batch?",
+        answer:
+          "Some selected mascara formulas with available standard black or white tubes can start from 500 units. Other formulas, custom colors, components, decoration, and boxes have separate minimums that must be confirmed from the chosen combination.",
+      },
+      {
+        question: "Can you manufacture a customer-provided formula?",
+        answer:
+          "We can evaluate a formula, INCI list, technical brief, or reference sample and develop the closest feasible direction. Raw materials, process, testing, intellectual property, packaging compatibility, and market rules may require changes.",
+      },
+      {
+        question: "What should I send for a contract manufacturing quote?",
+        answer:
+          "Send the product category, quantity, target country, formula or reference, desired applicator and packaging, logo or box needs, sample deadline, and launch plan.",
+      },
+    ],
+    related: ["private-label-lash-serum", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer", "private-label-brow-gel", "cosmetic-packaging-manufacturer"],
+  },
+  "private-label-brow-gel": {
+    slug: "private-label-brow-gel",
+    lastModified: "2026-09-10",
+    title: "Private Label Brow Gel Manufacturer | MOQ & Packaging",
+    description:
+      "Private label brow gel manufacturer for clear brow gel, brow glue, and pencil-gel formats. Compare applicators, packaging, MOQ, samples, logo, and formula direction.",
+    h1: "Private label brow gel manufacturer for beauty brands",
+    eyebrow: "Private label brow gel",
+    summary:
+      "Compare clear brow sculpt gel, brow glue gel, and pencil-gel references for a private label line. We confirm formula direction, applicator, tube compatibility, listing MOQ, samples, branding, and destination-market documents before quotation.",
+    heroImage: "/images/catalog-brow-02.jpg",
+    heroAlt: "Clear brow sculpt gel with brush for a private label brow gel project",
+    primaryCta: "Request brow gel options",
+    secondaryCta: "Send brow gel brief",
+    badges: ["Clear brow gel", "Brow glue", "MOQ from 500", "Private label"],
+    quickAnswer:
+      "We offer three traceable brow gel directions: a brow pencil-gel format listed from 1,000 pieces, a clear brow sculpt gel with brush listed from 500 pieces, and a 6 ml brow glue gel listed from 500 pieces. Final MOQ and availability are confirmed for the selected formula and pack.",
+    decisionPoints: [
+      { label: "Formats", value: "Pencil-gel, clear sculpt gel with brush, and 6 ml brow glue gel." },
+      { label: "Reference MOQ", value: "500 pieces for the two brush-gel references and 1,000 pieces for the pencil-gel reference, subject to final confirmation." },
+      { label: "Customization", value: "Formula direction, tube, brush, color, finish, logo, label, and box are reviewed as one product system." },
+      { label: "For a quote", value: "Send reference code, quantity, target country, finish, hold direction, packaging, and launch date." },
+    ],
+    sections: [
+      {
+        title: "Choose a brow gel format",
+        body:
+          "The three initial references cover distinct product and packaging directions. Use the reference code to start the discussion, then confirm the exact formula, applicator, pack, and branding combination.",
+        bullets: [
+          "CY-BG-01: brow pencil-gel format, listed MOQ 1,000 pieces",
+          "CY-BG-02: clear brow sculpt gel with brush, listed MOQ 500 pieces",
+          "CY-BG-03: 6 ml brow glue gel, listed MOQ 500 pieces",
+          "Availability and final commercial terms confirmed before quotation",
+        ],
+      },
+      {
+        title: "Formula and applicator matching",
+        body:
+          "Hold, clarity, texture, pickup, and application depend on the formula, brush, wiper, and tube working together. We review these details before approving a production sample.",
+        bullets: [
+          "Clear, sculpting, or glue-style direction",
+          "Brush length, fiber, pickup, and brow control",
+          "Wiper and tube compatibility with the selected texture",
+          "Claims and ingredient wording reviewed for the target market",
+        ],
+      },
+      {
+        title: "Private label presentation",
+        body:
+          "Branding can use an existing structure or a more customized packaging route. MOQ changes with component availability, color, decoration, and box requirements.",
+        bullets: [
+          "Logo, label, silkscreen, hot stamping, or other compatible decoration",
+          "Tube and cap color, finish, and outer box",
+          "Reference sample or artwork review before bulk production",
+          "Combined eye makeup line planning with mascara, eyeliner, or serum",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the MOQ for private label brow gel?",
+        answer:
+          "The two initial brush-gel references are listed from 500 pieces, while the pencil-gel reference is listed from 1,000 pieces. The final MOQ depends on formula, tube, color, decoration, box, and current availability.",
+      },
+      {
+        question: "Can you make clear brow gel or brow glue?",
+        answer:
+          "Yes. The initial catalog includes a clear brow sculpt direction and a 6 ml brow glue gel direction. Final texture, hold, ingredients, applicator, and claims are confirmed through the project brief and sample.",
+      },
+      {
+        question: "Can I customize the brush and packaging?",
+        answer:
+          "We can review brush, wiper, tube, color, finish, logo, label, and box requirements. Compatibility and MOQ are confirmed for the selected combination before production.",
+      },
+    ],
+    gallery: [
+      {
+        title: "Brow gel reference formats",
+        intro: "Three initial references from the shared supplier product records. Use the code when requesting availability, samples, and a quote.",
+        images: [
+          { src: "/images/catalog-brow-01.png", alt: "CY-BG-01 brow pencil gel format" },
+          { src: "/images/catalog-brow-02.jpg", alt: "CY-BG-02 clear brow sculpt gel with brush" },
+          { src: "/images/catalog-brow-03.jpg", alt: "CY-BG-03 6 ml private label brow glue gel" },
+        ],
+      },
+    ],
+    related: ["cosmetics-contract-manufacturer", "cosmetic-packaging-manufacturer", "private-label-mascara-manufacturer", "private-label-eyeliner-manufacturer"],
   },
   "wholesale-lash-serum": {
     slug: "wholesale-lash-serum",
