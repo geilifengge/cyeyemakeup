@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Shenzhen manufacturer with 15 years of experience: lash serum, mascara, and eyeliner for wholesale and private label. Flexible MOQ, samples, and catalog via WhatsApp.",
+    "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label. Request MOQ, samples, packaging options, and a B2B catalog.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Venus beautiful",
     title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
+      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
     url: "https://cyeyemakeup.com/",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
+      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
     images: ["https://cyeyemakeup.com/images/lash-serum-white.jpg"],
   },
 };
@@ -62,10 +62,17 @@ gtag('consent', 'default', {
   wait_for_update: 500
 });
 gtag('js', new Date());
+var analyticsLocation = new URL(location.origin + location.pathname);
+var campaignParams = new URLSearchParams(location.search);
+['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function(name) {
+  var value = campaignParams.get(name);
+  if (value) analyticsLocation.searchParams.set(name, value.slice(0, 100));
+});
 gtag('config', 'G-40SQ9J25KV', {
   allow_google_signals: false,
   allow_ad_personalization_signals: false,
-  page_location: location.origin + location.pathname
+  send_page_view: analyticsConsent === 'granted',
+  page_location: analyticsLocation.href
 });`,
           }}
         />

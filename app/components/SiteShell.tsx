@@ -18,9 +18,14 @@ export function SiteHeader() {
           </Link>
         ))}
       </nav>
-      <a className="header-contact" href="/contact">
-        Inquiry
-      </a>
+      <WhatsappInquiryLink
+        className="header-contact header-whatsapp"
+        topic="eye makeup catalog, MOQ, samples, or a quotation"
+        cta="Header WhatsApp"
+        ariaLabel="Contact Venus beautiful on WhatsApp"
+      >
+        WhatsApp
+      </WhatsappInquiryLink>
     </header>
   );
 }
@@ -40,6 +45,8 @@ export function SiteFooter() {
         ))}
       </div>
       <div>
+        <Link href="/product-catalog">Product catalog</Link>
+        <Link href="/packaging-catalog">Packaging catalog</Link>
         <Link href="/private-label-lash-serum">Lash serum</Link>
         <Link href="/private-label-mascara-manufacturer">Mascara</Link>
         <Link href="/private-label-eyeliner-manufacturer">Eyeliner</Link>

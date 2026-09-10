@@ -13,12 +13,14 @@ type ConsentChoice = "granted" | "denied";
 
 const consentKey = "cy_ga_consent_v2";
 const landingKey = "cy_initial_landing_path";
+const utmKey = "cy_initial_utm";
 const inquiryDedupeMs = 30 * 60 * 1000;
+const allowedUtmNames = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
 
 const copy = {
   en: {
     title: "Analytics privacy",
-    text: "With your permission, Google Analytics helps us understand which product pages lead to business inquiries. We never send form entries or URL query parameters.",
+    text: "With your permission, Google Analytics helps us understand which product pages lead to business inquiries. We never send form entries. We retain only standard campaign UTM parameters for source attribution.",
     accept: "Allow analytics",
     decline: "Decline",
     settings: "Analytics settings",
@@ -69,6 +71,50 @@ function safePath() {
   return window.location.pathname || "/";
 }
 
+function currentUtm() {
+  const params = new URLSearchParams(window.location.search);
+  const campaign = new URLSearchParams();
+  allowedUtmNames.forEach((name) => {
+    const value = params.get(name);
+    if (value) campaign.set(name, value.slice(0, 100));
+  });
+  return campaign.toString() || "none";
+}
+
+function safeAnalyticsLocation() {
+  const analyticsUrl = new URL(window.location.origin + safePath());
+  let campaign = currentUtm();
+  if (campaign === "none") {
+    try {
+      campaign = window.sessionStorage.getItem(utmKey) || "none";
+    } catch {
+      campaign = "none";
+    }
+  }
+  if (campaign !== "none") {
+    const params = new URLSearchParams(campaign);
+    allowedUtmNames.forEach((name) => {
+      const value = params.get(name);
+      if (value) analyticsUrl.searchParams.set(name, value.slice(0, 100));
+    });
+  }
+  return analyticsUrl.href;
+}
+
+function captureInitialAttribution() {
+  try {
+    if (!window.sessionStorage.getItem(landingKey)) {
+      window.sessionStorage.setItem(landingKey, safePath());
+    }
+    if (!window.sessionStorage.getItem(utmKey)) {
+      window.sessionStorage.setItem(utmKey, currentUtm());
+    }
+    return window.sessionStorage.getItem(landingKey) || safePath();
+  } catch {
+    return safePath();
+  }
+}
+
 function setGoogleConsent(choice: ConsentChoice) {
   window.gtag?.("consent", "update", {
     analytics_storage: choice,
@@ -97,18 +143,7 @@ export function Analytics() {
     });
     if (stored) setGoogleConsent(stored);
 
-    const initialLanding = (() => {
-      if (stored !== "granted") return safePath();
-      try {
-        const existing = window.localStorage.getItem(landingKey);
-        if (existing) return existing;
-        const current = safePath();
-        window.localStorage.setItem(landingKey, current);
-        return current;
-      } catch {
-        return safePath();
-      }
-    })();
+    const initialLanding = captureInitialAttribution();
 
     const track = (name: string, label: string) => {
       let currentConsent: string | null = null;
@@ -119,7 +154,7 @@ export function Analytics() {
       }
       if (currentConsent !== "granted" || typeof window.gtag !== "function") return;
       if (name.endsWith("_inquiry")) {
-        const dedupeKey = `cy_ga_dedupe:${name}:${safePath()}:${label}`;
+        const dedupeKey = `cy_ga_dedupe:${name}`;
         try {
           const lastTracked = Number(window.sessionStorage.getItem(dedupeKey) || 0);
           if (Date.now() - lastTracked < inquiryDedupeMs) return;
@@ -159,15 +194,20 @@ export function Analytics() {
   }, []);
 
   const updateChoice = (next: ConsentChoice) => {
+    const shouldSendPageView = next === "granted" && choice !== "granted";
     try {
       window.localStorage.setItem(consentKey, next);
-      if (next === "granted" && !window.localStorage.getItem(landingKey)) {
-        window.localStorage.setItem(landingKey, safePath());
-      }
     } catch {
       // Consent still applies for this page when persistent storage is unavailable.
     }
     setGoogleConsent(next);
+    if (shouldSendPageView && typeof window.gtag === "function") {
+      window.gtag("event", "page_view", {
+        page_title: document.title,
+        page_location: safeAnalyticsLocation(),
+        page_path: safePath(),
+      });
+    }
     setChoice(next);
     setShowPanel(false);
   };

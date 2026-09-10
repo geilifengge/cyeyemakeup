@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InquiryActions } from "./components/InquiryActions";
+import { ProductCatalog } from "./components/ProductCatalog";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "./components/SiteShell";
+import { WhatsappInquiryLink } from "./components/WhatsappInquiryLink";
 import { JsonLd } from "./seo";
-import { baseUrl, buildWhatsappHref, company, getPage } from "./site-data";
+import { baseUrl, company, getPage } from "./site-data";
 
 export const metadata: Metadata = {
   title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
   description:
-    "Shenzhen manufacturer with 15 years of experience: lash serum, mascara, and eyeliner for wholesale and private label. Flexible MOQ, samples, and catalog via WhatsApp.",
+    "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label. Request MOQ, samples, packaging options, and a B2B catalog.",
   alternates: {
     canonical: `${baseUrl}/`,
   },
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Venus beautiful",
     title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
+      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
     url: `${baseUrl}/`,
     images: [
       {
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wholesale & Private Label Eye Makeup | Manufacturer in China",
     description:
-      "Lash serum, mascara, and eyeliner for wholesale and private label, with flexible MOQ and samples.",
+      "Shenzhen manufacturer of lash serum, mascara, and eyeliner for wholesale and private label, with MOQ, samples, packaging options, and B2B supply.",
     images: [`${baseUrl}/images/lash-serum-white.jpg`],
   },
 };
@@ -71,7 +73,24 @@ export default function Home() {
             "Venus beautiful supplies private label lash serum, mascara, eyeliner, and cosmetic packaging for wholesale and OEM buyers.",
           isPartOf: { "@id": `${baseUrl}/#website` },
           about: { "@id": `${baseUrl}/#organization` },
-          dateModified: "2026-08-17",
+          dateModified: "2026-09-08",
+          inLanguage: "en",
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": `${baseUrl}/#private-label-wholesale-service`,
+          name: "Wholesale and private label eye makeup manufacturing",
+          description:
+            "B2B supply of lash serum, mascara, liquid eyeliner, and related cosmetic packaging for wholesale, private label, light customization, and OEM orders.",
+          provider: { "@id": `${baseUrl}/#organization` },
+          areaServed: "Worldwide",
+          audience: {
+            "@type": "BusinessAudience",
+            audienceType: "Beauty brands, wholesalers, importers, distributors, and ecommerce sellers",
+          },
           inLanguage: "en",
         }}
       />
@@ -87,14 +106,15 @@ export default function Home() {
               customization, or OEM orders.
             </p>
             <div className="cta-row">
-              <a
+              <WhatsappInquiryLink
                 className="button primary"
-                href={buildWhatsappHref("lash serum, mascara, eyeliner, private label eye makeup, or wholesale order")}
+                topic="lash serum, mascara, eyeliner, private label eye makeup, or wholesale order"
+                cta="Request catalog"
               >
                 Request catalog
-              </a>
-              <Link className="button secondary" href="/private-label-lash-serum">
-                View lash serum options
+              </WhatsappInquiryLink>
+              <Link className="button secondary" href="/product-catalog">
+                Browse product references
               </Link>
             </div>
             <div className="badge-row">
@@ -110,6 +130,34 @@ export default function Home() {
               alt="White Venus beautiful lash serum tube and box for eye makeup buyers"
             />
           </div>
+        </section>
+
+        <section className="quick-answer" aria-labelledby="home-quick-answer">
+          <div className="quick-answer-copy">
+            <p className="eyebrow">Direct answer</p>
+            <h2 id="home-quick-answer">
+              Venus beautiful is the export brand of Chuangyuan in Shenzhen, China. We supply lash serum, mascara,
+              liquid eyeliner, and related packaging for wholesale, private label, and OEM buyers worldwide.
+            </h2>
+          </div>
+          <dl className="decision-points">
+            <div>
+              <dt>Products</dt>
+              <dd>Lash serum, eyebrow serum, mascara, liquid eyeliner, and related eye makeup packaging.</dd>
+            </div>
+            <div>
+              <dt>Buyer types</dt>
+              <dd>Beauty brands, wholesalers, importers, distributors, salons, and ecommerce sellers.</dd>
+            </div>
+            <div>
+              <dt>What to send</dt>
+              <dd>Product, quantity, destination, packaging reference, logo needs, sample date, and launch plan.</dd>
+            </div>
+            <div>
+              <dt>First decision</dt>
+              <dd>We compare ready wholesale, light branding, private label, and OEM routes before quoting.</dd>
+            </div>
+          </dl>
         </section>
 
         <section className="trust-strip" aria-label="Supplier details">
@@ -190,6 +238,8 @@ export default function Home() {
             );
           })}
         </section>
+
+        <ProductCatalog locale="en" mode="featured" />
 
         <section className="image-band">
           <div>

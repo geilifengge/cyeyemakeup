@@ -15,6 +15,18 @@ function pageImage(page: SitePage) {
   return page.heroImage || "/images/lash-serum-white.jpg";
 }
 
+const commercialSlugs = new Set([
+  "private-label-lash-serum",
+  "lash-serum-manufacturer",
+  "private-label-mascara-manufacturer",
+  "private-label-eyeliner-manufacturer",
+  "wholesale-lash-serum",
+  "wholesale-mascara",
+  "wholesale-eyeliner",
+  "cosmetic-packaging-manufacturer",
+  "custom-lash-serum-packaging",
+]);
+
 export function buildPageMetadata(page: SitePage): Metadata {
   const url = absoluteUrl(pagePath(page.slug));
   const image = absoluteUrl(pageImage(page));
@@ -68,6 +80,17 @@ export function OrganizationJsonLd() {
             alternateName: company.shortName,
             url: baseUrl,
             logo: absoluteUrl("/images/logo.png"),
+            image: absoluteUrl("/images/business-license-landscape.jpg"),
+            description:
+              "Eye makeup and cosmetic packaging manufacturer and supplier for wholesale, private label, light customization, and OEM buyers.",
+            knowsAbout: [
+              "Private label eye makeup",
+              "Lash serum manufacturing",
+              "Mascara manufacturing",
+              "Liquid eyeliner manufacturing",
+              "Wholesale eye makeup",
+              "Cosmetic packaging",
+            ],
             email: company.email,
             telephone: company.whatsappDisplay,
             address: {
@@ -104,6 +127,8 @@ export function OrganizationJsonLd() {
 export function PageJsonLd({ page }: { page: SitePage }) {
   const url = absoluteUrl(pagePath(page.slug));
   const faqId = `${url}#faq`;
+  const serviceId = `${url}#service`;
+  const isCommercial = commercialSlugs.has(page.slug);
 
   return (
     <JsonLd
@@ -118,7 +143,11 @@ export function PageJsonLd({ page }: { page: SitePage }) {
             description: page.description,
             isPartOf: { "@id": `${baseUrl}/#website` },
             about: { "@id": `${baseUrl}/#organization` },
-            mainEntity: { "@id": faqId },
+            mainEntity: [
+              ...(isCommercial ? [{ "@id": serviceId }] : []),
+              { "@id": faqId },
+            ],
+            ...(page.lastModified ? { dateModified: page.lastModified } : {}),
             inLanguage: "en",
           },
           {
@@ -151,6 +180,25 @@ export function PageJsonLd({ page }: { page: SitePage }) {
               },
             })),
           },
+          ...(isCommercial
+            ? [
+                {
+                  "@type": "Service",
+                  "@id": serviceId,
+                  name: page.h1,
+                  description: page.quickAnswer || page.summary,
+                  url,
+                  provider: { "@id": `${baseUrl}/#organization` },
+                  serviceType: page.eyebrow,
+                  areaServed: "Worldwide",
+                  audience: {
+                    "@type": "BusinessAudience",
+                    audienceType: "Beauty brands, wholesalers, importers, distributors, and ecommerce sellers",
+                  },
+                  inLanguage: "en",
+                },
+              ]
+            : []),
           ...(page.gallery ?? []).flatMap((gallery) =>
             gallery.images.map((image) => ({
               "@type": "ImageObject",

@@ -20,7 +20,7 @@ interface ExecutionContext {
 }
 
 const securityHeaders = {
-  "Content-Security-Policy": "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me mailto:",
+  "Content-Security-Policy": "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me https://formsubmit.co mailto:",
   "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Strict-Transport-Security": "max-age=31536000",
@@ -48,15 +48,16 @@ const worker = {
     // Keep one public URL for every page. The www hostname is configured for
     // reachability, but search engines and buyers should always land on the
     // canonical apex domain.
-    if (url.hostname === "www.cyeyemakeup.com") {
-      url.hostname = "cyeyemakeup.com";
-      return Response.redirect(url.toString(), 301);
-    }
-
     // Force https so Google does not index the http variant as a duplicate
     // ("Alternate page with proper canonical tag" in GSC).
-    if (url.protocol === "http:" && !url.pathname.startsWith("/.well-known/")) {
+    const isPublicHost = url.hostname === "cyeyemakeup.com" || url.hostname === "www.cyeyemakeup.com";
+    if (
+      isPublicHost &&
+      !url.pathname.startsWith("/.well-known/") &&
+      (url.protocol === "http:" || url.hostname === "www.cyeyemakeup.com")
+    ) {
       url.protocol = "https:";
+      url.hostname = "cyeyemakeup.com";
       return Response.redirect(url.toString(), 301);
     }
 

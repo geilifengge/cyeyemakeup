@@ -6,12 +6,9 @@ export const company = {
   shortName: "Chuangyuan",
   whatsappDisplay: "+86 135 3094 4931",
   whatsappNumber: "8613530944931",
-  email: "Bella@cyeyemakeup.com",
+  email: "crystal@cyeyemakeup.com",
   emails: [
-    "Bella@cyeyemakeup.com",
-    "Lily@cyeyemakeup.com",
-    "Leo@cyeyemakeup.com",
-    "Emma@cyeyemakeup.com",
+    "crystal@cyeyemakeup.com",
     "Fengge@cyeyemakeup.com",
   ],
   location: "Shenzhen, Guangdong, China",
@@ -20,6 +17,7 @@ export const company = {
 };
 
 export const navItems = [
+  { href: "/product-catalog", label: "Catalog" },
   { href: "/private-label-lash-serum", label: "Lash Serum" },
   { href: "/private-label-mascara-manufacturer", label: "Mascara Supplier" },
   { href: "/private-label-eyeliner-manufacturer", label: "Eyeliner" },
@@ -50,6 +48,7 @@ export function buildWhatsappHref(topic: string) {
 
 export type SitePage = {
   slug: string;
+  lastModified?: string;
   title: string;
   description: string;
   h1: string;
@@ -304,6 +303,7 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-mascara-manufacturer": {
     slug: "private-label-mascara-manufacturer",
+    lastModified: "2026-09-03",
     title: "Mascara Manufacturer & Supplier | Private Label MOQ 500",
     description:
       "Private label mascara manufacturer and supplier. Selected formulas start at 500 units, with samples, brush and packaging options, and OEM quotes.",
@@ -328,12 +328,12 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Choose the mascara result first",
         body:
-          "Private label mascara development starts with the wear result and product position your brand needs. Different internal formula references represent different performance directions. We can evaluate your brief, benchmark sample, or customer-provided formula and develop the closest feasible direction for sampling.",
+          "Private label mascara development starts with the wear result, retail brief, and target market. Different formula references represent different performance directions. We can evaluate your brief, benchmark sample, or customer-provided formula and develop the closest feasible direction for sampling.",
         bullets: [
           "Volumizing direction for a fuller lash look",
           "Volumizing plus lengthening direction in black or brown",
           "Fiber lengthening direction for a natural, slender look",
-          "Clear keratin direction for shaping, curling, or primer-style positioning",
+          "Clear keratin option for shaping, curling, or use as a lash primer",
           "Customer formula or benchmark matching subject to technical, sample, and compliance review",
         ],
       },
@@ -343,15 +343,26 @@ export const pages: Record<string, SitePage> = {
           "The brush, wiper, tube, and formula work as one system. We review applicator options during sampling so the selected combination supports the intended application and lash result.",
         bullets: [
           "Slender nylon brushes for controlled application or brow-gel style products",
-          "Gourd-shaped brushes for volume-focused positioning",
+          "Gourd-shaped brushes for a fuller, volume-focused lash result",
           "Crescent-shaped silicone brushes for definition and curl",
           "Silicone or nylon brushes for combing, separation, and deposit control",
         ],
       },
       {
+        title: "Confirm formula, wiper, brush, and tube compatibility",
+        body:
+          "A mascara sample should be reviewed as a complete delivery system. Formula viscosity, brush geometry, wiper opening, fill target, and tube closure affect pickup, application, wiping, and the finished pack.",
+        bullets: [
+          "Target fill weight or volume and the required formula texture",
+          "Brush and wiper pairing for pickup, separation, length, or volume",
+          "Tube closure, wiping performance, leakage expectations, and transport conditions",
+          "Reference sample, acceptance criteria, and evidence required for planned claims",
+        ],
+      },
+      {
         title: "Customize the tube, logo, and outer box",
         body:
-          "Packaging can be coordinated around your target positioning and budget. Free design support is available for private label and OEM orders, including logo-placement mockups, tube artwork, and outer-box layouts for review before production.",
+          "Packaging can be coordinated around your target market, retail price tier, and budget. Free design support is available for private label and OEM orders, including logo-placement mockups, tube artwork, and outer-box layouts for review before production.",
         bullets: [
           "Tube shape, finish, and color selected from available component options",
           "Logo placement and printing method matched to the tube material",
@@ -455,9 +466,10 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-eyeliner-manufacturer": {
     slug: "private-label-eyeliner-manufacturer",
-    title: "Private Label Eyeliner Manufacturer and Supplier | Venus beautiful",
+    lastModified: "2026-09-08",
+    title: "Private Label Eyeliner Manufacturer | MOQ & Samples",
     description:
-      "Private label liquid eyeliner supplier for beauty brands, wholesalers, and importers. Ask about black and brown colors, logo, packaging, MOQ, samples, and OEM orders.",
+      "Private label liquid eyeliner manufacturer for beauty brands and wholesalers. Compare colors, applicators, packaging, MOQ, samples, and OEM options.",
     h1: "Private label eyeliner manufacturer for beauty brands and wholesalers",
     eyebrow: "Liquid eyeliner private label",
     summary:
@@ -467,14 +479,34 @@ export const pages: Record<string, SitePage> = {
     primaryCta: "Ask for eyeliner options",
     secondaryCta: "Request eye makeup catalog",
     badges: ["Liquid eyeliner", "Black and brown", "Private label", "OEM support"],
+    quickAnswer:
+      "We manufacture and supply private label liquid eyeliner for beauty brands, wholesalers, and importers, with product, pen, applicator, color, logo, outer box, sample, and MOQ decisions confirmed for each order.",
+    decisionPoints: [
+      {
+        label: "Order route",
+        value: "Choose ready wholesale supply for speed, private label for branded packaging, or OEM review for a more specific brief.",
+      },
+      {
+        label: "Product direction",
+        value: "Confirm liquid eyeliner format, color, applicator, wear direction, and the evidence needed for any performance claim.",
+      },
+      {
+        label: "MOQ and samples",
+        value: "These are confirmed after the pen structure, packaging, printing, product direction, and quantity are reviewed.",
+      },
+      {
+        label: "Quote brief",
+        value: "Send quantity, destination, color, logo, packaging reference, sample needs, and target launch date.",
+      },
+    ],
     sections: [
       {
         title: "Eyeliner product options",
         body:
-          "The current eyeliner range includes pen-style liquid eyeliner with a fine applicator tip, plus extended options for lash-conditioning and smudge-resistant positioning. Product and packaging options are confirmed by order quantity and target market.",
+          "The current eyeliner range includes pen-style liquid eyeliner with a fine applicator tip, plus options for lash-conditioning concepts and smudge-resistant performance. Product and packaging options are confirmed by order quantity, sample criteria, and target market.",
         bullets: [
           "Black and brown liquid eyeliner pens with fine applicator tips",
-          "Lengthening-conditioning black direction: adds a lash-care positioning angle to the classic black pen",
+          "Lengthening-conditioning black option for brands combining liner color with a lash-care concept",
           "Glue-style eyeliner development direction in black, brown, and grey; water resistance, durability, and smudge-resistance claims are used only after the selected formula passes agreed sample or test criteria",
           "Tube, cap, logo, and outer box options for every direction",
           "Wholesale, private label, and OEM order support",
@@ -489,6 +521,28 @@ export const pages: Record<string, SitePage> = {
           "Tube color and surface finish direction",
           "Outer box layout and packaging text",
           "Sample check before bulk printing",
+        ],
+      },
+      {
+        title: "Match the formula with the pen and applicator",
+        body:
+          "Liquid eyeliner performance depends on the formula, reservoir, applicator tip, cap, and closure working together. We use the sample stage to compare color payoff, flow, line control, dry-down, wiping, and packaging fit against the agreed brief.",
+        bullets: [
+          "Fine tip, brush tip, or reference applicator and the intended line width",
+          "Black, brown, or requested color with agreed payoff and dry-down criteria",
+          "Pen structure, cap closure, fill target, leakage expectations, and transport conditions",
+          "Benchmark sample and evidence required for water-resistant or smudge-resistant claims",
+        ],
+      },
+      {
+        title: "Approve the sample before bulk production",
+        body:
+          "The approved sample and specification should define the product and pack that move into bulk production. Logo placement, label wording, outer-box artwork, destination requirements, and shipping timing are checked before the final handoff.",
+        bullets: [
+          "Approve color, flow, applicator feel, dry-down, and finished appearance",
+          "Confirm the pen, cap, logo, label, outer box, and pack-out",
+          "Record agreed acceptance points and any required market documents",
+          "Confirm bulk timing and shipping separately after artwork approval",
         ],
       },
       {
@@ -558,6 +612,7 @@ export const pages: Record<string, SitePage> = {
   },
   "wholesale-eyeliner": {
     slug: "wholesale-eyeliner",
+    lastModified: "2026-09-01",
     title: "Wholesale Liquid Eyeliner Supplier | Venus beautiful",
     description:
       "Wholesale eyeliner supplier for distributors, beauty brands, and importers. Request bulk liquid eyeliner, colors, packaging, MOQ, samples, and private label options.",
@@ -570,6 +625,26 @@ export const pages: Record<string, SitePage> = {
     primaryCta: "Get wholesale eyeliner quote",
     secondaryCta: "Request eyeliner catalog",
     badges: ["Wholesale eyeliner", "Bulk orders", "Black and brown", "Private label option"],
+    quickAnswer:
+      "We supply wholesale and bulk liquid eyeliner for distributors, importers, beauty brands, and ecommerce sellers. Black and brown pen-style options, samples, MOQ, packaging, and private label availability are confirmed against the order request.",
+    decisionPoints: [
+      {
+        label: "Best for",
+        value: "Resale, catalog expansion, market testing, or a combined eye makeup order with mascara or lash serum.",
+      },
+      {
+        label: "Product choice",
+        value: "Confirm liquid eyeliner format, black or brown color, applicator, and required product positioning.",
+      },
+      {
+        label: "Branding level",
+        value: "Choose ready packaging, logo printing, a custom outer box, or a deeper private label project.",
+      },
+      {
+        label: "For a quote",
+        value: "Send quantity per color, destination, packaging preference, sample request, and required delivery timing.",
+      },
+    ],
     sections: [
       {
         title: "Wholesale eyeliner options",
@@ -838,18 +913,39 @@ export const pages: Record<string, SitePage> = {
   },
   "wholesale-mascara": {
     slug: "wholesale-mascara",
+    lastModified: "2026-09-08",
     title: "Wholesale Mascara Supplier | MOQ from 500 Units",
     description:
       "Wholesale mascara supplier for brands and distributors. Selected formulas with available black or white tubes start from 500 units; samples in 10-15 days.",
-    h1: "Wholesale mascara supply for beauty brands and distributors",
+    h1: "Bulk and wholesale mascara supplier for beauty brands",
     eyebrow: "Wholesale mascara",
     summary:
-      "Use this service page if you are comparing wholesale mascara, bulk mascara, or mascara with light private label packaging. Send your product type, quantity, and packaging direction to start.",
+      "Venus beautiful supplies bulk and wholesale mascara for beauty brands, distributors, importers, and ecommerce sellers. Send your product type, quantity, destination, and packaging direction to compare available supply routes.",
     heroImage: "/images/mascara-hero.jpg",
     heroAlt: "Venus beautiful mascara product and packaging for wholesale supplier inquiries",
     primaryCta: "Get mascara quote",
     secondaryCta: "Request product list",
     badges: ["Wholesale from 500", "Black/white tubes", "Samples in 10-15 days", "Private label"],
+    quickAnswer:
+      "From Shenzhen, China, we supply wholesale and bulk mascara for beauty brands and distributors. Selected formulas using available standard black or white tubes can start from 500 units, with samples normally prepared in 10-15 days after the brief is confirmed.",
+    decisionPoints: [
+      {
+        label: "Starting MOQ",
+        value: "500 units for selected formulas using available standard black or white tubes; other structures are confirmed separately.",
+      },
+      {
+        label: "Product system",
+        value: "Formula direction, brush, wiper, tube, logo, and outer box must be reviewed together.",
+      },
+      {
+        label: "Samples",
+        value: "Normally 10-15 days after the product and customization brief is confirmed.",
+      },
+      {
+        label: "Bulk timing",
+        value: "Normally 20-40 days after sample, final specification, and artwork approval; shipping is additional.",
+      },
+    ],
     sections: [
       {
         title: "Wholesale mascara buying details",
@@ -933,6 +1029,7 @@ export const pages: Record<string, SitePage> = {
   },
   "custom-lash-serum-packaging": {
     slug: "custom-lash-serum-packaging",
+    lastModified: "2026-09-01",
     title: "Custom Lash Serum Packaging | Manufacturer with Low MOQ",
     description:
       "Shenzhen factory for custom lash serum packaging: tube color, logo, box, and ingredient direction for your brand. Samples and quote via WhatsApp.",
@@ -945,6 +1042,26 @@ export const pages: Record<string, SitePage> = {
     primaryCta: "Ask packaging options",
     secondaryCta: "Send logo and box requirements",
     badges: ["Tube color", "Logo", "Outer box", "Ingredient direction"],
+    quickAnswer:
+      "We support custom lash serum packaging with tube, applicator, color, logo decoration, and outer-box options. MOQ depends on the available component, custom color, printing method, finish, and whether a new mold or deeper product development is required.",
+    decisionPoints: [
+      {
+        label: "Tube structure",
+        value: "Compare available square, aluminium, double-ended, mini, or dropper formats before requesting samples.",
+      },
+      {
+        label: "Decoration",
+        value: "Logo printing, hot stamping, laser carving, surface finish, and box artwork depend on material and quantity.",
+      },
+      {
+        label: "MOQ",
+        value: "Available standard black or white tubes can start from 500 units; custom colors and structures follow separate conditions.",
+      },
+      {
+        label: "Packaging brief",
+        value: "Send quantity, country, tube or box reference, logo, preferred finish, and required timeline.",
+      },
+    ],
     sections: [
       {
         title: "Custom packaging scope",
@@ -1055,18 +1172,39 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-eyeliner-cost-moq-samples": {
     slug: "private-label-eyeliner-cost-moq-samples",
+    lastModified: "2026-09-08",
     title: "Private Label Eyeliner Cost, MOQ & Lead Time",
     description:
       "Buyer guide to private label eyeliner cost, MOQ, samples, packaging, logo printing, production timing, and the details needed for an accurate OEM quote.",
     h1: "Private label eyeliner cost, MOQ, samples, and lead time",
     eyebrow: "Eyeliner quote guide",
     summary:
-      "Private label eyeliner cost depends on the exact product and order plan. This guide explains the details that affect a quote, so buyers can request MOQ, samples, packaging, and lead-time information with fewer unknowns.",
+      "Private label eyeliner cost depends on quantity, product format, pen and applicator, printing, packaging, sample work, destination, and shipping. Share these details to receive the applicable MOQ and lead-time information.",
     heroImage: "/images/eyeliner-hero.jpg",
     heroAlt: "Liquid eyeliner pen and packaging for private label cost and MOQ planning",
     primaryCta: "Request eyeliner quote details",
     secondaryCta: "Send eyeliner requirements",
     badges: ["Cost drivers", "MOQ", "Samples", "Lead time"],
+    quickAnswer:
+      "Private label eyeliner cost is calculated from quantity, product format, pen and applicator, logo or box printing, sample work, destination, and shipping plan. MOQ and lead time are confirmed after the exact order route and packaging are selected.",
+    decisionPoints: [
+      {
+        label: "Cost basis",
+        value: "Quantity, pen structure, applicator, packaging, printing, sample work, and shipping are quoted as one project scope.",
+      },
+      {
+        label: "MOQ",
+        value: "Depends on whether the request is ready wholesale, logo printing, private label packaging, or a deeper OEM project.",
+      },
+      {
+        label: "Samples",
+        value: "Confirm whether the sample represents the planned bulk product, pen, logo, and outer-box presentation.",
+      },
+      {
+        label: "Lead time",
+        value: "Production and shipping time are confirmed separately after specifications and artwork are approved.",
+      },
+    ],
     sections: [
       {
         title: "What affects private label eyeliner cost",
@@ -1084,7 +1222,7 @@ export const pages: Record<string, SitePage> = {
         body:
           "Choosing the service route early makes the MOQ and quotation discussion more accurate. We can compare the practical options once we know whether speed, branding, or deeper customization is the main priority.",
         bullets: [
-          "Ready wholesale supply for buyers focused on current availability",
+          "Ready wholesale supply using currently available products and components",
           "Private label service for logo, packaging, and retail presentation",
           "OEM support for projects with more specific product or packaging requirements",
           "Combined eyeliner, mascara, or lash serum requests when a coordinated line is needed",

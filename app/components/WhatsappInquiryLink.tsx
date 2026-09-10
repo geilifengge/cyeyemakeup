@@ -9,10 +9,10 @@ const utmKey = "cy_initial_utm";
 function readOrCreate(key: string, createValue: () => string) {
   if (typeof window === "undefined") return "";
   try {
-    const existing = window.localStorage.getItem(key);
+    const existing = window.sessionStorage.getItem(key);
     if (existing) return existing;
     const value = createValue();
-    window.localStorage.setItem(key, value);
+    window.sessionStorage.setItem(key, value);
     return value;
   } catch {
     return createValue();
