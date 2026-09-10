@@ -51,6 +51,7 @@ test("server-renders homepage SEO and buyer trust signals", async () => {
   assert.match(html, /data-cta="Header WhatsApp"/i);
   assert.match(html, /crystal@cyeyemakeup\.com/i);
   assert.match(html, /Fengge@cyeyemakeup\.com/i);
+  assert.match(html, /aaron@cyeyemakeup\.com/i);
   assert.doesNotMatch(html, /Bella@|Leo@|Emma@/i);
   assert.match(html, /CY-LS-01/);
   assert.match(html, /PK-MT-02/);

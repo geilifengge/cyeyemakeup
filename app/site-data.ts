@@ -10,6 +10,7 @@ export const company = {
   emails: [
     "crystal@cyeyemakeup.com",
     "Fengge@cyeyemakeup.com",
+    "aaron@cyeyemakeup.com",
   ],
   location: "Shenzhen, Guangdong, China",
   address:

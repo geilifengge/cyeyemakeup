@@ -10,7 +10,7 @@ type InquiryActionsProps = {
   secondaryLabel: string;
 };
 
-// Enable only after crystal and Fengge have confirmed receipt of a real test submission.
+// Enable only after crystal, Fengge, and Aaron have confirmed receipt of a real test submission.
 const formSubmitEnabled = false;
 const formSubmitEndpoint = "https://formsubmit.co/crystal@cyeyemakeup.com";
 
@@ -123,7 +123,7 @@ export function InquiryActions({
         method={formSubmitEnabled ? "POST" : undefined}
         onSubmit={onSubmit}
       >
-        <input type="hidden" name="_cc" value="Fengge@cyeyemakeup.com" />
+        <input type="hidden" name="_cc" value="Fengge@cyeyemakeup.com,aaron@cyeyemakeup.com" />
         <input type="hidden" name="_subject" value={`Website inquiry — ${topic}`} />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="https://cyeyemakeup.com/thank-you" />
@@ -196,7 +196,7 @@ export function InquiryActions({
           {formSubmitEnabled ? "Send inquiry by email" : "Send form details by WhatsApp"}
         </button>
         <p className="form-route-note wide">
-          Prefer email? Write to <a href="mailto:crystal@cyeyemakeup.com">crystal@cyeyemakeup.com</a> or <a href="mailto:Fengge@cyeyemakeup.com">Fengge@cyeyemakeup.com</a>.
+          Prefer email? Write to <a href="mailto:crystal@cyeyemakeup.com">crystal@cyeyemakeup.com</a>, <a href="mailto:Fengge@cyeyemakeup.com">Fengge@cyeyemakeup.com</a>, or <a href="mailto:aaron@cyeyemakeup.com">aaron@cyeyemakeup.com</a>.
         </p>
       </form>
     </div>
