@@ -10,8 +10,8 @@ type InquiryActionsProps = {
   secondaryLabel: string;
 };
 
-// Enable only after crystal, Fengge, and Aaron have confirmed receipt of a real test submission.
-const formSubmitEnabled = false;
+// Delivery verified with crystal, Fengge, and Aaron on 10 September 2026.
+const formSubmitEnabled = true;
 const formSubmitEndpoint = "https://formsubmit.co/crystal@cyeyemakeup.com";
 
 export function InquiryActions({

@@ -283,6 +283,10 @@ test("renders privacy controls, live security headers, and verified compliance w
   const homepageHtml = await homepage.text();
   assert.match(homepageHtml, /gtag\('consent', 'default'/);
   assert.match(homepageHtml, /send_page_view: analyticsConsent === 'granted'/);
+  assert.match(homepageHtml, /action="https:\/\/formsubmit\.co\/crystal@cyeyemakeup\.com"/i);
+  assert.match(homepageHtml, /name="_cc" value="Fengge@cyeyemakeup\.com,aaron@cyeyemakeup\.com"/i);
+  assert.match(homepageHtml, /name="_next" value="https:\/\/cyeyemakeup\.com\/thank-you"/i);
+  assert.match(homepageHtml, /<input(?=[^>]*type="email")(?=[^>]*name="email")(?=[^>]*required)[^>]*>/i);
   assert.match(homepageHtml, /\['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'\]/);
   assert.doesNotMatch(homepageHtml, /page_location: location\.origin \+ location\.pathname/);
   assert.match(homepageHtml, /"logo":"https:\/\/cyeyemakeup\.com\/images\/logo\.png"/);
@@ -293,7 +297,7 @@ test("renders privacy controls, live security headers, and verified compliance w
   assert.match(privacyHtml, /Privacy and analytics choices/i);
   assert.match(privacyHtml, /utm_source, utm_medium, utm_campaign, utm_content, and utm_term/i);
   assert.match(privacyHtml, /10 September 2026/i);
-  assert.match(privacyHtml, /FormSubmit will process the form for us and retain submissions for up to 30 days/i);
+  assert.match(privacyHtml, /FormSubmit processes the submission for us and may retain it for up to 30 days/i);
   assert.match(privacyHtml, /<meta name="robots" content="index, follow"/i);
   assert.doesNotMatch(privacyHtml, /<meta name="robots" content="[^"]*noindex/i);
 
