@@ -175,7 +175,7 @@ export const pages: Record<string, SitePage> = {
       {
         question: "Can I use lash growth serum wording?",
         answer:
-          "Many buyers use that phrase when searching, but public packaging and claims should match the documents and rules for your market. We recommend cosmetic appearance wording unless stronger proof is available.",
+          "Label claims must match the evidence for the selected formula and the requirements of your destination market. Send the proposed wording with your product brief so we can review the available supporting documents.",
       },
       {
         question: "What is the best first step?",
@@ -941,7 +941,7 @@ export const pages: Record<string, SitePage> = {
   },
   "private-label-brow-gel": {
     slug: "private-label-brow-gel",
-    lastModified: "2026-09-10",
+    lastModified: "2026-09-11",
     title: "Private Label Brow Gel Manufacturer | MOQ & Packaging",
     description:
       "Private label brow gel manufacturer for clear brow gel, brow glue, and pencil-gel formats. Compare applicators, packaging, MOQ, samples, logo, and formula direction.",
@@ -955,7 +955,7 @@ export const pages: Record<string, SitePage> = {
     secondaryCta: "Send brow gel brief",
     badges: ["Clear brow gel", "Brow glue", "MOQ from 500", "Private label"],
     quickAnswer:
-      "We offer three traceable brow gel directions: a brow pencil-gel format listed from 1,000 pieces, a clear brow sculpt gel with brush listed from 500 pieces, and a 6 ml brow glue gel listed from 500 pieces. Final MOQ and availability are confirmed for the selected formula and pack.",
+      "Choose from three brow gel formats: a brow pencil-gel format listed from 1,000 pieces, a clear brow sculpt gel with brush listed from 500 pieces, and a 6 ml brow glue gel listed from 500 pieces. Final MOQ and availability are confirmed for the selected formula and pack.",
     decisionPoints: [
       { label: "Formats", value: "Pencil-gel, clear sculpt gel with brush, and 6 ml brow glue gel." },
       { label: "Reference MOQ", value: "500 pieces for the two brush-gel references and 1,000 pieces for the pencil-gel reference, subject to final confirmation." },
@@ -966,7 +966,7 @@ export const pages: Record<string, SitePage> = {
       {
         title: "Choose a brow gel format",
         body:
-          "The three initial references cover distinct product and packaging directions. Use the reference code to start the discussion, then confirm the exact formula, applicator, pack, and branding combination.",
+          "Choose a pencil-gel, clear brush gel, or 6 ml brow glue. Use the reference code to start the discussion, then confirm the exact formula, applicator, pack, and branding combination.",
         bullets: [
           "CY-BG-01: brow pencil-gel format, listed MOQ 1,000 pieces",
           "CY-BG-02: clear brow sculpt gel with brush, listed MOQ 500 pieces",
@@ -1017,7 +1017,7 @@ export const pages: Record<string, SitePage> = {
     gallery: [
       {
         title: "Brow gel reference formats",
-        intro: "Three initial references from the shared supplier product records. Use the code when requesting availability, samples, and a quote.",
+        intro: "Compare the formats below and include the product code in your sample or quotation request.",
         images: [
           { src: "/images/catalog-brow-01.png", alt: "CY-BG-01 brow pencil gel format" },
           { src: "/images/catalog-brow-02.jpg", alt: "CY-BG-02 clear brow sculpt gel with brush" },
